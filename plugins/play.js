@@ -5,6 +5,7 @@ const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { users, conn, command, text, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 14400) {
   if (!text) return conn.reply(m.chat, `que estas buscando?`, m)
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 14400) returnq
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
