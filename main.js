@@ -109,8 +109,6 @@ if (opts['test']) {
 process.on('uncaughtException', console.error)
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
-
 let isInit = true
 global.reloadHandler = function () {
   let handler = require('./handler')

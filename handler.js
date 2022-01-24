@@ -69,7 +69,6 @@ module.exports = {
           if (!'sDemote' in chat) chat.sDemote = ''
           if (!'delete' in chat) chat.delete = true
           if (!'porno' in chat) chat.porno = true
-          if (!'eliminate' in chat) chat.eliminate = 0
           if (!'antiLink' in chat) chat.antiLink = false
           if (!'aLink' in chat) chat.aLink = true
         } else global.DATABASE._data.chats[m.chat] = {
@@ -84,7 +83,6 @@ module.exports = {
           porno: true,
           antiLink: false,
           alink: true,
-         eliminate: 0,
         }
       } catch (e) {
         console.log(e, global.DATABASE.data)
@@ -226,11 +224,9 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-            require('./lib/image')
             m.error = e
             console.log(e)
             if (e) {
-            require('./lib/image')
              console.log(e)
             }
           } finally {
