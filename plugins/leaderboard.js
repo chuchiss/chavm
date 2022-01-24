@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args }) => {
- if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
+ if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
   let sortedExp = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].exp - a[1].exp)
   let sortedLim = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].limit - a[1].limit)
   let usersExp = sortedExp.map(v => v[0])
@@ -17,7 +17,7 @@ ${sortedLim.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`
       mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len)]
     }
   })
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
 }
 handler.help = ['ranking', 'top']
