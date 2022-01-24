@@ -4,16 +4,17 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts  = require('cfonts')
-CFonts.say('esubot\nWhatsApp Bot', {
+CFonts.say('enWhatsApp Bot', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`'Samu330'`, {
+CFonts.say(`'30'`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
 })
+
 
 /**
  * Start a js file
