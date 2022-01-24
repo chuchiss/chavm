@@ -3,7 +3,7 @@ let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { users, conn, command, text, isPrems, isOwner }) => {
-  if (new Date - global.DATABASE.data.users[m.sender].lastme > 14400) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastme > 14400) {
   if (!text) return conn.reply(m.chat, `que estas buscando?`, m)
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
@@ -24,7 +24,7 @@ ${isLimit ? ' ': ''}
 *🔥Title:* ${title}
 *📂Filesize:* ${filesizeF}
 `.trim(), m, false, _thumb || {})
-global.DATABASE.data.users[m.sender].lastme = new Date * 1
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else m.reply('Cargando..')
 }
 handler.help = ['play', 'play2'].map(v => v + ' <canción >')
