@@ -1,4 +1,4 @@
-export declare class TicTacToe {
+module.export = declare class TicTacToe {
     /* X PlayerName */
     playerX: string;
     /* Y PlayerName */
