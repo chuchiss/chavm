@@ -4,7 +4,8 @@ let chat = global.DATABASE._data.chats[m.chat]
     if (chat.porno === false) return
 let porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
            conn.sendFile(m.chat, `${porn.data.url}`, '', `${porn.data.title}`, m)
-  }
+  } else return m.reply("porno desactivado")
+}
 handler.help = ['porno']
 handler.tags = ['images']
 handler.command = /^(porno)$/i
