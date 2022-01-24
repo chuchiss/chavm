@@ -15,7 +15,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 4200) {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else return conn.reply(m.chat, `seleccione foto/video`, m)
+    else throw 'Conversion failed'
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
