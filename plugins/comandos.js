@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 5400) {
 m.reply(`
     📍🄻🄾🅂 🄲🄾🄼🄰🄽🄳🄾🅂 🅂🄾🄽 
 _.menu_
@@ -44,7 +44,7 @@ _proximo a salir preguntados..._
   ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
                                         
 `.trim()) 
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
 }
 handler.help = ['comandos']
