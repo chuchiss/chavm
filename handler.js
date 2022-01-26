@@ -32,7 +32,7 @@ module.exports = {
             if (!isNumber(user.age)) user.age = -1
             if (!isNumber(user.regTime)) user.regTime = -1
           }
-          if (!isNumber(user.afk)) user.afk = -1
+          if (!isNumber(user.afk)) user.afk = 0
           if (!'afkReason' in user) user.afkReason = ''
           if (!'banned' in user) user.banned = false
           if (!isNumber(user.level)) user.level = 0
@@ -50,7 +50,7 @@ module.exports = {
           name: this.getName(m.sender),
           age: -1,
           regTime: -1,
-          afk: -1,
+          afk: 0,
           afkReason: '',
           banned: false,
           warning: 0,
@@ -68,7 +68,8 @@ module.exports = {
           if (!'sPromote' in chat) chat.sPromote = ''
           if (!'sDemote' in chat) chat.sDemote = ''
           if (!'delete' in chat) chat.delete = true
-          if (!'porno' in chat) chat.porno = true
+          if (!'porno' in chat) chat.porno = true
+
           if (!'antiLink' in chat) chat.antiLink = false
           if (!'aLink' in chat) chat.aLink = true
         } else global.DATABASE._data.chats[m.chat] = {
@@ -82,7 +83,8 @@ module.exports = {
           delete: true,
           porno: true,
           antiLink: false,
-          alink: true,
+          alink: true,
+
         }
       } catch (e) {
         console.log(e, global.DATABASE.data)
