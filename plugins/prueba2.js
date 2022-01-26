@@ -7,7 +7,7 @@ let users = global.DATABASE.data.users
 console.log('desbloqueado a los usuarios') 
 
 }
-return setTimeout(desblock, 130018)
+ setTimeout(desblock, 130018)
 
 } 
 
