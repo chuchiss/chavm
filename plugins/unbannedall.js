@@ -7,7 +7,7 @@ users[m.sender].banned = false
 m.reply('desbloqueado a todos')
 console.log('desbloqueando usuario') 
 }
-handler.help = ['unbnall']
+handler.help = ['unbanall']
 handler.tags = ['owner']
 handler.command = /^unbanall?$/i
 handler.limit = false
