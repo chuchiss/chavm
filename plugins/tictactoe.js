@@ -57,7 +57,7 @@ ${usedPrefix}${command} ${text}` : ''))
         conn.game[room.id] = room
     }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else return m.reply('cargando..')
+  } else return 
 }
 
 handler.help = ['tateti', 'ttt'].map(v => v + ' [nombre de sala personalizada]')
