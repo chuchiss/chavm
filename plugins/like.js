@@ -36,10 +36,11 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
 	let groupMetadata = m.isGroup ? await conn.groupMetadata(m.chat) : {}
   let participants = m.isGroup ? groupMetadata.participants : []
 	let users = m.isGroup ? participants.find(u => u.jid == user) : {}
-	let isAdmin = users.isAdmin || users.isSuperAdmin || false
+	let isme = users.sender || users.isgroup || true
 	let number = user.split('@')[0]
+        let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-if (m.fromMe = m.quoted.sender) return m.reply('no puedes likearte solo')
+if (who = m.fromMe) return m.reply('no puedes likearte solo')
   
 	
 	global.DATABASE.data.users[user].like += 1
