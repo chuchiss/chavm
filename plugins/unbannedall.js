@@ -11,6 +11,6 @@ handler.help = ['unbanall']
 handler.tags = ['owner']
 handler.command = /^unbanall?$/i
 handler.limit = false
-handler.rowner = true
+handler.rowner = false
 
 module.exports = handler
