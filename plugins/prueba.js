@@ -20,7 +20,7 @@ handler.before = function (m, { user }) {
         lastspam: 0
     }
 require('./prueba2')
-await desblock()
+await lleno()
 }
 
 module.exports = handler 
