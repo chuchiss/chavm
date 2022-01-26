@@ -19,10 +19,11 @@ handler.before = function (m, { user }) {
         count: 0,
         lastspam: 0
     }
-function desblock() {
+\*function desblock() {
 global.DATABASE._data.users[m.sender].banned === false
 }
 setTimeout(desblock, 30000)
+*/
 }
 
 module.exports = handler 
