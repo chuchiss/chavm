@@ -8,6 +8,12 @@ handler.before = function (m, { user }) {
             if (this.spam[m.sender].count > 5) {
                 let users = global.DATABASE.data.users
                 users[m.sender].banned = true
+
+setTimeout(()=> {
+let users = global.DATABASE.data.users;
+users[m.sender].banned = false
+console.log('desbloqueado al usuario') 
+}, 20000)
                 //m.reply('no agas spam')
                 this.spam[m.sender].count-- 
                 this.spam[m.sender].lastspam--
