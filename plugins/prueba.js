@@ -9,6 +9,7 @@ handler.before = function (m, { user }) {
                 let users = global.DATABASE.data.users
                 //users[m.sender].banned = true
                 m.reply('*No agas Spam!!*')
+                this.spam[m.sender].count--
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
@@ -19,7 +20,6 @@ handler.before = function (m, { user }) {
         count: 0,
         lastspam: 0
     }
-
 }
 
 module.exports = handler 
