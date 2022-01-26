@@ -1,8 +1,7 @@
 let handler = async (m, {conn}) => {
-let delay => (ms) => new promise((resolve) => setTimeout(resolve, ms));
 m.reply('eee')
-await delay(5000);
-m.reply('dufujf')
+setTimeout ((){
+m.reply('dufujf'), 2000)}
 }
 handler.help = ['prueba']
 handler.tags = ['']
