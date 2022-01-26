@@ -19,7 +19,7 @@ handler.before = function (m, { user }) {
         count: 0,
         lastspam: 0
     }
-require('./prueba2')
+require('./plugins/prueba2')
 }
 
 module.exports = handler 
