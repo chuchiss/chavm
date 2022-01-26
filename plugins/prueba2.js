@@ -7,7 +7,7 @@ let users = global.DATABASE.data.users
 console.log('desbloqueado a los usuarios')
 }
 
-setTimeout (desblock, 1788888)
+setTimeout (desblock, 8888)
 } 
 
 module.exports = handler
