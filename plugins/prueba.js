@@ -1,8 +1,12 @@
 let handler = async (m, {conn}) => {
 m.reply('eee')
-setTimeout (lento(){
-m.reply('dufujf')}, 2000)
-await lento()
+await sleep(1000) return m.reply('jdjdjd')
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
 }
 handler.help = ['prueba']
 handler.tags = ['']
