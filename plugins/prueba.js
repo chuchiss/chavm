@@ -19,8 +19,6 @@ handler.before = function (m, { user }) {
         count: 0,
         lastspam: 0
     }
-require('./prueba2')
-await lleno;
 }
 
 module.exports = handler 
