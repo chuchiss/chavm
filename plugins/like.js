@@ -39,7 +39,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
 	let isAdmin = users.isAdmin || users.isSuperAdmin || false
 	let number = user.split('@')[0]
 
-if (m.sender & m.fromMe) return m.reply('no puedes likearte solo')
+if (m.sender = m.quoted) return m.reply('no puedes likearte solo')
   
 	
 	global.DATABASE.data.users[user].like += 1
