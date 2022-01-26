@@ -9,4 +9,5 @@ console.log('desbloqueado a los usuarios')
  setTimeout(desblock, 1118)
 } 
 
+module.exports = handler
 
