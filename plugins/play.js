@@ -25,7 +25,7 @@ ${isLimit ? ' ': ''}
 *📂Filesize:* ${filesizeF}
 `.trim(), m, false, _thumb || {})
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-if (!isPrems) global.DATABASE._data.users[m.sender].limit -= 2
+if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
   } else m.reply('Cargando..')
 }
 handler.help = ['play', 'play2'].map(v => v + ' <canción >')
