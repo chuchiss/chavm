@@ -38,9 +38,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
 	let users = m.isGroup ? participants.find(u => u.jid == user) : {}
 	let isme = users.fromMe || users.sender || false
 	let number = user.split('@')[0]
-        let who = m.fromMe ? conn.user.jid : m.sender
-
-if (isme) return m.reply('no puedes likearte solo')
+        
   
 	
 	global.DATABASE.data.users[user].like += 1
