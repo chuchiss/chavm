@@ -7,7 +7,7 @@ let users = global.DATABASE.data.users
 console.log('desbloqueado a los usuarios') 
 clearInterval(desblock)
 }
- setInterval(desblock, 130018)
+return setInterval(desblock, 130018)
 
 } 
 
