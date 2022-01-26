@@ -1,12 +1,26 @@
-let handler = async (m, {conn}) => {
-let lss = function dss() {
-m.reply('ndndjd')
-}
-setTimeout(lss, 3000)
-m.reply('eee')
-}
-handler.help = ['prueba']
-handler.tags = ['']
-handler.command = /^(prueba)$/i
+let handler = m => m
 
-module.exports = handler
+handler.before = function (m, { user }) {
+    this.spam = this.spam ? this.spam : {}
+    if (m.sender in this.spam) {
+        this.spam[m.sender].count++
+        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
+            if (this.spam[m.sender].count > 8) {
+                let users = global.DATABASE.data.users
+                users[m.sender].banned = true
+                m.reply('*No agas Spam!!*')
+              require('./prueba2')
+            }
+            this.spam[m.sender].count = 0
+            this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
+        }
+    }
+    else this.spam[m.sender] = {
+        jid: m.sender,
+        count: 0,
+        lastspam: 0
+    }
+}
+
+module.exports = handler 
+
