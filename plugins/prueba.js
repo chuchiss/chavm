@@ -1,5 +1,8 @@
 let handler = async (m, {conn}) => {
-if (m.messageTimestamp.toNumber() > 7){
+let lss = {
+m.reply('ndndjd')
+}
+setTimeout(lss, 3000)
 m.reply('eee')
 }
 handler.help = ['prueba']
