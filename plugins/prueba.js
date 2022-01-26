@@ -7,7 +7,7 @@ handler.before = function (m, { user }) {
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
             if (this.spam[m.sender].count > 8) {
                 let users = global.DATABASE._data.users
-                users[m.sender].banned = true
+                users[m.sender].banned === true
                 m.reply('*No agas Spam!!*')
             }
             this.spam[m.sender].count = 0
@@ -20,7 +20,7 @@ handler.before = function (m, { user }) {
         lastspam: 0
     }
 function desblock() {
-global.DATABASE._data.users[m.sender].banned = false
+global.DATABASE._data.users[m.sender].banned === false
 }
 setTimeout(desblock, 30000)
 }
