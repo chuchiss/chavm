@@ -5,9 +5,9 @@ handler.before = function (m, { user }) {
 let users = global.DATABASE.data.users
                 users[m.sender].banned = false
 console.log('desbloqueado a los usuarios') 
-clearTimeout(desblock)
+clearInterval(desblock)
 }
- setTimeout(desblock, 30018)
+ setInterval(desblock, 130018)
 
 } 
 
