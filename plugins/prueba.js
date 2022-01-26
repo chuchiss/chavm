@@ -6,7 +6,8 @@ handler.before = function (m, { user }) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
             if (this.spam[m.sender].count > 8) {
-                global.DATABASE._data.users[m.sender].banned = true
+                let users = global.DATABASE._data.users
+                users[m.sender].banned = true
                 m.reply('*No agas Spam!!*')
             }
             this.spam[m.sender].count = 0
