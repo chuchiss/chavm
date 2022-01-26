@@ -32,7 +32,7 @@ module.exports = {
             if (!isNumber(user.age)) user.age = -1
             if (!isNumber(user.regTime)) user.regTime = -1
           }
-          if (!isNumber(user.afk)) user.afk = 0
+          if (!isNumber(user.afk)) user.afk = -1
           if (!'afkReason' in user) user.afkReason = ''
           if (!'banned' in user) user.banned = false
           if (!isNumber(user.level)) user.level = 0
@@ -50,7 +50,7 @@ module.exports = {
           name: this.getName(m.sender),
           age: -1,
           regTime: -1,
-          afk: 0,
+          afk: -1,
           afkReason: '',
           banned: false,
           warning: 0,
