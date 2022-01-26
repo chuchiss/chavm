@@ -4,8 +4,8 @@ handler.before = async function (m, { conn, user } ) {
     this.spam = this.spam ? this.spam : {}
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
-        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
-            if (this.spam[m.sender].count > 6) {
+        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
+            if (this.spam[m.sender].count > 1) {
                 global.DATABASE._data.users[m.sender].banned = true
                 m.reply('*No agas Spam!!*')
             }
