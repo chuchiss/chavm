@@ -1,10 +1,7 @@
 let handler = async (m, {conn}) => {
+if (m.messageTimestamp.toNumber() > 7){
 m.reply('eee')
 }
-function dss() {
-m.reply('ndndjd')
-}
-setTimeout(dss, 3000)
 handler.help = ['prueba']
 handler.tags = ['']
 handler.command = /^(prueba)$/i
