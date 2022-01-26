@@ -6,7 +6,7 @@ handler.before = async function (m, { conn, user } ) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
             if (this.spam[m.sender].count > 6) {
-                global.DATABASE._data.users[user].isBanned == true
+                global.DATABASE._data.users[m.sender].isBanned == true
                 m.reply('*No agas Spam!!*')
             }
             this.spam[m.sender].count = 0
@@ -19,9 +19,9 @@ handler.before = async function (m, { conn, user } ) {
         lastspam: 0
     }
 function desblock() {
-global.DATABASE._data.users[user].isBanned == false
+global.DATABASE._data.users[m.sender].isBanned == false
 }
-setTimeout(desblock, 6000)
+setTimeout(desblock, 16000)
 }
 
 module.exports = handler 
