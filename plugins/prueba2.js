@@ -6,7 +6,7 @@ let users = global.DATABASE.data.users
                 users[m.sender].banned = false
 }
 console.log('desbloqueado a los usuarios')
-setTimeout (desblock, 2222)
+setTimeout (desblock, 222222)
 return false
 } 
 
