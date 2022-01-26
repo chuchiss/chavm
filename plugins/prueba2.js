@@ -7,4 +7,4 @@ this.spam[m.sender].count--
 }
 
 setTimeout (desblock, 22000)
-setTimeout (spam, 1000)
+setTimeout (spam, 11000)
