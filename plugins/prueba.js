@@ -21,7 +21,7 @@ handler.before = async function (m, { user} ) {
 function desblock() {
 global.DATABASE._data.users[m.sender].banned = false
 }
-setTimeout(desblock, 4000)
+setTimeout(desblock, 6000)
 }
 
 module.exports = handler 
