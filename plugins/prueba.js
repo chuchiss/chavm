@@ -12,8 +12,8 @@ handler.before = function (m, { user }) {
 let users = global.DATABASE.data.users;
 users[m.sender].banned = false
 console.log('desbloqueado al usuario') 
-}, 20000)
-m.reply('no agas spam')
+}, 1159000)
+m.reply('baneado por 20 minutos..')
                 this.spam[m.sender].count-- 
                 this.spam[m.sender].lastspam--
 
