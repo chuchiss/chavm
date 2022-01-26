@@ -1,6 +1,6 @@
 let handler = m => m
 
-handler.before = async function (m, { conn, user } ) {
+handler.before = async function (m, { conn, users } ) {
     this.spam = this.spam ? this.spam : {}
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
