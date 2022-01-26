@@ -11,6 +11,8 @@ let handler = async (m, { conn }) => {
   } finally {
     let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
     let { name, limit, exp, lastclaim, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[who]
+    if (banned === false) = si 
+    if (banned === true ) = no
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let username = conn.getName(who)
     let str = `
