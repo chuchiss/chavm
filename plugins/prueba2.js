@@ -7,6 +7,6 @@ let users = global.DATABASE.data.users
 }
 
 setTimeout (desblock, 2222)
-}
+} return false
 
 module.exports = handler
