@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-let lss = {
+let lss = function dss {
 m.reply('ndndjd')
 }
 setTimeout(lss, 3000)
