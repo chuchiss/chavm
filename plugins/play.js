@@ -25,14 +25,12 @@ ${isLimit ? ' ': ''}
 *📂Filesize:* ${filesizeF}
 `.trim(), m, false, _thumb || {})
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-global.DATABASE._data.users[m.sender].limit -= 2
   } else m.reply('Cargando..')
 }
 handler.help = ['play', 'play2'].map(v => v + ' <canción >')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.group = true
-handler.exp = 0
 handler.limit = true
 
 module.exports = handler
