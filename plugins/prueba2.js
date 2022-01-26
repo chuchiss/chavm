@@ -1,10 +1,12 @@
-function lleno(){
-function desblock() {
+let handler = m => m
+
+handler.before = function (m, { user }) {
+    function desblock() {
 let users = global.DATABASE.data.users
                 users[m.sender].banned = false
 }
 
-setTimeout (desblock, 1000)
+setTimeout (desblock, 2122222)
 }
 
-exports.lleno = lleno
+module.exports = handler
