@@ -19,8 +19,8 @@ handler.before = function (m, { user }) {
         count: 0,
         lastspam: 0
     }
-await desblock()
 require('./prueba2')
+await desblock()
 }
 
 module.exports = handler 
