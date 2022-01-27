@@ -21,7 +21,7 @@ Limit: ${limit}
 Mg: ${like}
 Advertencias: ${warning} / 5
 Robos: ${robos}
-Baneado: ${banned ? 'SI' : 'NO'}
+Baneado: ${banned ? 'si' : 'no'}
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
