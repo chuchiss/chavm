@@ -5,6 +5,7 @@ let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `“${pickkRandom(global.bucina)}”`
+  m.reply('${text}')
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
