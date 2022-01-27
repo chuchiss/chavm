@@ -8,7 +8,7 @@ function Romage(){
 let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
- if (!gimage) await Romage()
+ if (!gimage) return Romage()
  if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   conn.sendFile(m.chat, url, 'gimage', `
 MEME `.trim(), m)
