@@ -10,9 +10,10 @@ let handler  = async (m, { conn, args }) => {
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   conn.sendFile(m.chat, url, 'gimage', `
 MEME `.trim(), m)
-catch (e){ return Romage() }
-if (!gimage) await Romage()
 }
+catch (e){ await Romage() }
+if (!gimage) await Romage()
+
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
