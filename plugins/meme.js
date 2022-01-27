@@ -1,10 +1,12 @@
 let { promisify } = require('util')
 let _gis = require('g-i-s')
 let gis = promisify(_gis)
+let path = require('path')
 let Rimage = require('../lib/image')
 
 let handler  = async (m, { conn, args }) => {
 function Romage(){
+ let (!ext) = path.extname(filename||'bin').split('.'); throw ext[ext.length - 1]; }
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
@@ -26,7 +28,7 @@ function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
-function pickkRandom(list) {
+afunction pickkRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
@@ -44,5 +46,5 @@ global.bucina = [
   'memes de instagram',
   'meme de instagram',
   'memes de facebook',
-  'meme de facebook',
+  'meme  de facebook',
 ]
