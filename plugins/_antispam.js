@@ -13,7 +13,7 @@ let users = global.DATABASE.data.users;
 users[m.sender].banned = false
 console.log('desbloqueado al usuario') 
 }, 240000)
-m.reply('baneado por 20 minutos..')
+//m.reply('baneado por 20 minutos..')
                 this.spam[m.sender].count-- 
                 this.spam[m.sender].lastspam--
 
