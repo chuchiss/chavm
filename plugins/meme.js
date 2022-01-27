@@ -3,14 +3,15 @@ let _gis = require('g-i-s')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
-function Roimage() {
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
+  if (!gis)  console.error(e)
   conn.sendFile(m.chat, url, 'gimage', `
-MEME`.trim(), m)
-catch (e) {await Roimage()} } 
+MEME
+`.trim(), m)
+ global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
