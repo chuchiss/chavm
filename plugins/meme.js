@@ -6,7 +6,7 @@ let Rimage = require('../lib/image')
 
 let handler  = async (m, { conn, args }) => {
 function Romage(){
- let ext = path.extname(filename||'bin').split('.'); throw ext[ext.length - 1]; }
+ let ext = path.extname(filename||'bin').split('.')
   if (results = ext) throw e
 let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
