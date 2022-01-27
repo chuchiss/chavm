@@ -2,6 +2,7 @@ let { promisify } = require('util')
 let _gis = require('g-i-s')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
+function RImage(){
 let handler  = async (m, { conn, args }) => {
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
@@ -9,7 +10,8 @@ let handler  = async (m, { conn, args }) => {
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   conn.sendFile(m.chat, url, 'gimage', `
 MEME `.trim(), m)
-catch (e){ return Rimage() }
+catch (e){ return RImage() }
+}
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
