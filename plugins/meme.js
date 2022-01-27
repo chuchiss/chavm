@@ -1,13 +1,10 @@
 let { promisify } = require('util')
 let _gis = require('g-i-s')
 let gis = promisify(_gis)
-let path = require('path')
 let Rimage = require('../lib/image')
 
 let handler  = async (m, { conn, args }) => {
 function Romage(){
- let ext = path.extname(filename||'bin').split('.')
-  if (results = ext) throw e
 let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
