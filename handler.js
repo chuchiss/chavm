@@ -226,13 +226,13 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-            const image = require('./lib/image')
-            await image.image()
+            require('./lib/image')
+            await handler()
             m.error = e
             console.log(e)
             if (e) {
-            const image = require('./lib/image')
-            await image.image()
+            require('./lib/image')
+            await handler()
              console.log(e)
             }
           } finally {
