@@ -6,7 +6,7 @@ let handler  = async (m, { conn, text}) => {
  //   conn.reply(global.owner + '@s.whatsapp.net',`*Grupo enviado de: @${m.sender.split('@')[0]}*\n\n${text}`, m,{contextInfo: {
     //  mentionedJid: [m.sender]
    // }})
-    conn.reply(m.chat,`Puedes agregarme a tu grupo\n\nSeguime en ig @insanebot.oficial en ig\n\nSabías el hecho importante de que los grupos tienen que tener al menos mas de 25 participantes`,m)
+    conn.reply(m.chat,`Puedes agregarme a tu grupo\n\nSeguime en ig http://www.instagram.com/insanebot.oficial \n para enterarte de las últimas actualizaciones y números actualizados\nSabías el hecho importante de que los grupos tienen que tener al menos mas de 25 participantes`,m)
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
