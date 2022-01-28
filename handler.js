@@ -227,12 +227,12 @@ module.exports = {
           } catch (e) {
             // Error occured
             require('./lib/image')
-            await handler()
+           
             m.error = e
             console.log(e)
             if (e) {
             require('./lib/image')
-            await handler()
+           
              console.log(e)
             }
           } finally {
