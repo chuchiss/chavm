@@ -6,14 +6,14 @@ let handler  = async (m, { conn, text}) => {
  //   conn.reply(global.owner + '@s.whatsapp.net',`*Grupo enviado de: @${m.sender.split('@')[0]}*\n\n${text}`, m,{contextInfo: {
     //  mentionedJid: [m.sender]
    // }})
-    conn.reply(m.chat,`-Ya Puedes agregarme a tu grupo\n\nSeguime en ig http://www.instagram.com/insanebot.oficial \n\n para enterarte de las últimas actualizaciones y los números online \n\nSabías el hecho importante que es recomendado que el grupo tenga al menos mas de 25 participantes`,m)
+    conn.reply(m.chat,`-Ya Puedes agregarme a tu grupo\n\nSeguime en ig http://www.instagram.com/insanebot.oficial \n\n para enterarte de las últimas actualizaciones además de los números que están online \n\nSabías el hecho importante que es recomendado que el grupo tenga al menos mas de 25 participantes`,m)
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
 handler.help = ['nuevogrupo *link*']
 handler.tags = ['info']
-handler.command = /^(nuevogrupo)$/i
+handler.command = /^(nuevo|nuevogrupo)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
