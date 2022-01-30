@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
     if (/webp|audio/.test(mime)) {
         out = await webp2mp4(media)
     } 
-    await conn.sendFile(m.chat, out, 'out.mp4', null, m)
+    await conn.sendFile(m.chat, out, 'out.mp3', null, m)
 }
 handler.help = ['iphone (tomp3) (reply)']
 handler.tags = ['audio']
