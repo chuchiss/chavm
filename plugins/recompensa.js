@@ -45,7 +45,7 @@ En total es ${users[m.sender].ref_count} la gente que ha utilizado su código de
 Codigo de recompensa: ${code}\n
 Comparte este enlace con amigos ${command_link}\n
 O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)}
-${Object.entries(xp_bonus).map(([count, xp]) => ` \n${count} Personas = Bonus ${xp} XP`).join('\n')}
+${Object.entries(xp_bonus).map(([count, xp]) => ` ${count} Personas = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
 }
