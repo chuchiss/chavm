@@ -1,6 +1,6 @@
 global.tutti = global.tutti ? global.tutti : {}
-let handler = async (m, { conn, users}) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
+let handler = async (m, { conn, user}) => {
+if (new Date - global.DATABASE._data.users[m.sender].lastmp > 20400) {
 let id = m.chat
 if (id in global.tutti) return conn.reply(m.chat, 'sjdjdjkd', global.tutti[id][0])
 
@@ -21,7 +21,7 @@ setTimeout(awaiting, 4000)
 setTimeout(awaitingg, 8000)
 setTimeout(tutti, 12000)
 setTimeout(final, 20000)
-
+global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 } else return m.reply('todavia estas en juego')
 }
 
