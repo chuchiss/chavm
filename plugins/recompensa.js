@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 
-const xp_first_time = 1500
+const xp_first_time = 2500
 const xp_link_creator = 5000
 const xp_bonus = {
     5: 20000,
