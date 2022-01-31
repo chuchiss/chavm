@@ -1,7 +1,7 @@
 const axios = require('axios')
 let handler = async(m, { conn }) => {
 let chat = global.DATABASE._data.chats[m.chat]
-    if (chat.porno === false) return
+    if (chat.porno === enable) {
 let porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
            conn.sendFile(m.chat, `${porn.data.url}`, '', `${porn.data.title}`, m)
 global.DATABASE._data.users[m.sender].limit -= 3
