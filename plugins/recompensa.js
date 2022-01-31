@@ -15,7 +15,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
   if (text) {
     if ('ref_count' in users[m.sender]) throw 'Tidak bisa menggunakan kode referal!'
     let link_creator = (Object.entries(users).find(([, { ref_code }]) => ref_code === text.trim()) || [])[0]
-    if (!link_creator) throw 'Kode referal tidak valid'
+    if (!link_creator) return m.reply('Código de recompensa no válido')
     let count = users[link_creator].ref_count++
     let extra = xp_bonus[count] || 0
     users[link_creator].exp += xp_link_creator + extra
@@ -35,23 +35,23 @@ Alguien ha usado su código de recompensa
     let command_text = `${usedPrefix}recompensa ${code}`
     let command_link = `wa.me/${conn.user.jid.split('@')[0]}?text=${encodeURIComponent(command_text)}`
     let share_text = `
-Obtenga ${xp_first_time} XP para aquellos que usan el enlace/código de referencia a continuación
+Obtenga ${xp_first_time} XP para aquellos que usan el enlace/código de recompensa a continuación
 Codigo de recompensa: *${code}*
 ${command_link}
 `.trim()
     m.reply(`
-Obtenga ${xp_link_creator} XP por cada nuevo usuario que use su código de referencia
-${users[m.sender].ref_count} es la gente que ha usado su código de referencia
+Obtenga ${xp_link_creator} XP por cada nuevo usuario que use su código de recompensas\n
+En total es ${users[m.sender].ref_count} la gente que ha utilizado su código de recompensas
 Codigo de recompensa: ${code}\n
-Comparte el enlace con amigos ${command_link}\n
-O dile que envie un mensaje con este link wa.me/?text=${encodeURIComponent(share_text)}
+Comparte este enlace con amigos ${command_link}\n
+O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)}
 ${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^recompensa$/i
+handler.command = /^(rec|recompensa)$/i
 
 handler.register = false
 
