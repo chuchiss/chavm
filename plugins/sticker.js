@@ -9,7 +9,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 4200) {
     if (/image|video/.test(mime)) {
       let img = await q.download()
       if (!img) return conn.reply(m.chat, `seleccione foto/video`, m)
-    global.DATABASE._data.users[m.sender].limit -= 1
+      if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
   } finally {
