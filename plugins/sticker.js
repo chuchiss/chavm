@@ -15,7 +15,7 @@ let handler  = async (m, { conn, args }) => {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else return m.reply('Selecciona la imagen o hubo un error')
+    else m.reply('Selecciona la imagen o hubo un error')
   }
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
