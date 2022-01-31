@@ -45,7 +45,7 @@ Obtenga ${xp_link_creator} XP por cada nuevo usuario que use su código de recom
 En total es ${users[m.sender].ref_count} la gente que ha utilizado su código de recompensas
 Codigo de recompensa: ${code}\n
 Comparte este enlace con amigos ${command_link}\n
-O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)\n}
+O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)}\n
 ${Object.entries(xp_bonus).map(([count, xp]) => ` ${count} Personas = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
