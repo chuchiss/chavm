@@ -69,6 +69,10 @@ Escribe abandonar para salir del juego
             }
         })
         m.reply(str, room.o, {
+setTimeout(()=> {
+delete this.game[room.id]
+m.reply('tiempo finalizado') 
+}, 3000)
             contextInfo: {
                 mentionedJid: this.parseMention(str)
             }
