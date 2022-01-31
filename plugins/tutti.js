@@ -1,5 +1,8 @@
-
+global.tutti = global.tutti ? global.tutti : {}
 let handler = async (m, {conn}) => {
+let id = m.chat
+if (id in global.tutti) return m.reply(' Espera terminar el tutti frutti anterior ' )
+
 m.reply('you are ready for the tutti frutti? \n Minimo 2 jugadores')
 function awaiting(){
  m.reply('Esperando compañero..')
@@ -10,10 +13,14 @@ function tutti(){
 conn.reply(m.chat,` empieza la letra “${pickRandom(global.chicle)}”`, m)
 m.reply(' nombre , apellido , cosa , animal , pais ')
 }
-setTimeout(awaiting, 4000)
+global.tutti[id] = [
+    await setTimeout(awaiting, 4000)
 setTimeout(awaitingg, 8000)
 setTimeout(tutti, 12000)
+delete global.math[id]
+  ]
 }
+
 handler.help = ['tutti']
 handler.tags = ['']
 handler.command = /^(tutti)$/i
