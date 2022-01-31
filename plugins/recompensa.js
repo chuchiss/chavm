@@ -1,13 +1,13 @@
 const crypto = require('crypto')
 
-const xp_first_time = 2500
-const xp_link_creator = 15000
+const xp_first_time = 1500
+const xp_link_creator = 5000
 const xp_bonus = {
-    5: 40000,
-   10: 100000,
-   20: 250000,
-   50: 1000000,
-  100: 10000000,
+    5: 20000,
+   10: 50000,
+   20: 125000,
+   50: 500000,
+  100: 10900000,
 }
 
 let handler = async (m, { conn, usedPrefix, text }) => {
@@ -32,7 +32,7 @@ Alguien ha usado su código de recompensa
   } else {
     let code = users[m.sender].ref_code = users[m.sender].ref_code || new Array(11).fill().map(() => [...'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'][crypto.randomInt(62)]).join('')
     users[m.sender].ref_count = users[m.sender].ref_count ? users[m.sender].ref_count : 0
-    let command_text = `${usedPrefix}recompensa ${code}`
+    let command_text = `${usedPrefix}rec ${code}`
     let command_link = `wa.me/${conn.user.jid.split('@')[0]}?text=${encodeURIComponent(command_text)}`
     let share_text = `
 Obtenga ${xp_first_time} XP para aquellos que usan el enlace/código de recompensa a continuación
@@ -45,13 +45,13 @@ En total es ${users[m.sender].ref_count} la gente que ha utilizado su código de
 Codigo de recompensa: ${code}\n
 Comparte este enlace con amigos ${command_link}\n
 O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)}
-${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP`).join('\n')}
+${Object.entries(xp_bonus).map(([count, xp]) => ` \n${count} Personas = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(rec|recompensa)$/i
+handler.command = /^(rec|recompensa|recompensas)$/i
 
 handler.register = false
 
