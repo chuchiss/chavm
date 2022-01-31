@@ -36,9 +36,9 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
 	let groupMetadata = m.isGroup ? await conn.groupMetadata(m.chat) : {}
   let participants = m.isGroup ? groupMetadata.participants : []
 	let users = m.isGroup ? participants.find(u => u.jid == user) : {}
-	let isme = users.fromMe || users.sender || false
+	let isAdmin = users.isAdmin || users.isSuperAdmin || false
 	let number = user.split('@')[0]
-        
+
   
 	
 	global.DATABASE.data.users[user].like += 1
@@ -57,8 +57,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
  
  }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else {
-m.reply('no puedes dar tantos like intenta luego..')
+  } else m.reply('no puedes dar tantos like intenta luego..')
 }
 handler.help = ['like  *tag*']
 handler.tags = ['main']
