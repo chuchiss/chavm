@@ -1,8 +1,10 @@
 let { Presence } = require('@adiwajshing/baileys')
 let fetch = require('node-fetch')
 
-let handler  = async (m, { conn, args, usedPrefix, command }) => {
+let handler  = async (m, { conn, args, usedPrefix, command, isLimit}) => {
+
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
+        if (!isLimit) return m.reply('no tienes limites para comprar utiliza .buy\n Más info .limit')
 	let text = args.join` `
 	fetch("https://api.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lc=es")
   .then(res => res.json())
@@ -11,7 +13,8 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
   conn.reply(m.chat, `${batch.success}`, m)
   }) .catch(() => { conn.reply(m.chat, `_Perdón :(_`, m) })
 global.DATABASE._data.users[m.sender].limit -= 1
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
+
 }
 handler.help = ['simi','s','bot'].map(v => v + ' *text*')
 handler.tags = ['fun']
@@ -25,7 +28,6 @@ handler.admin = false
 handler.botAdmin = false
 handler.fail = null
 handler.limit = false
-handler.exp = 750
 module.exports = handler
 
 
