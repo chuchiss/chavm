@@ -12,6 +12,10 @@ handler.before = function (m, { user }) {
     this.game = this.game ? this.game : {}
     let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
     if (room) {
+setTimeout(()=> {
+delete this.game[room.id]
+m.reply('tiempo finalizado') 
+}, 3000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
         if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
         isSurrender = !/^[1-9]$/.test(m.text)
@@ -69,10 +73,6 @@ Escribe abandonar para salir del juego
             }
         })
         m.reply(str, room.o, {
-setTimeout(()=> {
-delete this.game[room.id]
-m.reply('tiempo finalizado') 
-}, 3000)
             contextInfo: {
                 mentionedJid: this.parseMention(str)
             }
