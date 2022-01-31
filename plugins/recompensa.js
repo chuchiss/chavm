@@ -13,7 +13,7 @@ const xp_bonus = {
 let handler = async (m, { conn, usedPrefix, text }) => {
   let users = global.DATABASE._data.users
   if (text) {
-    if ('ref_count' in users[m.sender]) m.reply('No se puede usar otra vez el mismo código de referencia')
+    if ('ref_count' in users[m.sender]) return m.reply('No se puede usar otra vez el mismo código de referencia')
     let link_creator = (Object.entries(users).find(([, { ref_code }]) => ref_code === text.trim()) || [])[0]
     if (!link_creator) return m.reply('Código de recompensa no válido')
     let count = users[link_creator].ref_count++
