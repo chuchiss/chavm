@@ -59,7 +59,6 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 40400) {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else {
 m.reply('no puedes dar tantos like intenta luego..')
-else if { return}
 }
 handler.help = ['like  *tag*']
 handler.tags = ['main']
