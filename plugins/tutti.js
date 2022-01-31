@@ -23,3 +23,6 @@ module.exports = handler
 global.chicle = [
 'a','b','c','d','e','f','g','h','i','o','u'
 ]
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
