@@ -16,7 +16,7 @@ setTimeout(()=> {
 if (!isTie || !isWin) delete this.game[room.id]
 m.reply('*×ttt×* se acabo el tiempo ') return !0
 else return !0
-}, 15000)
+}, 3000)
 //900000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
         if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
