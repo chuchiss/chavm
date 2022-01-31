@@ -13,7 +13,7 @@ const xp_bonus = {
 let handler = async (m, { conn, usedPrefix, text }) => {
   let users = global.DATABASE._data.users
   if (text) {
-    if ('ref_count' in users[m.sender]) return m.reply('No se puede usar otra vez el mismo código de referencia')
+    if ('ref_count' in users[m.sender]) return m.reply('Ya has utilizado un código de recompensa')
     let link_creator = (Object.entries(users).find(([, { ref_code }]) => ref_code === text.trim()) || [])[0]
     if (!link_creator) return m.reply('Código de recompensa no válido')
     let count = users[link_creator].ref_count++
@@ -45,7 +45,7 @@ Obtenga ${xp_link_creator} XP por cada nuevo usuario que use su código de recom
 En total es ${users[m.sender].ref_count} la gente que ha utilizado su código de recompensas
 Codigo de recompensa: ${code}\n
 Comparte este enlace con amigos ${command_link}\n
-O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)}
+O enviales un mensaje directo wa.me/?text=${encodeURIComponent(share_text)\n}
 ${Object.entries(xp_bonus).map(([count, xp]) => ` ${count} Personas = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
