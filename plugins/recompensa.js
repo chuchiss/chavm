@@ -50,10 +50,10 @@ ${Object.entries(xp_bonus).map(([count, xp]) => ` ${count} Personas = Bonus ${xp
 `.trim())
   }
 }
-handler.help = ['']
-handler.tags = ['']
+handler.help = ['recompensas']
+handler.tags = ['info']
 handler.command = /^(rec|recompensa|recompensas)$/i
 
 handler.register = false
-
+handler.private = true
 module.exports = handler
