@@ -49,9 +49,9 @@ ${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP
 `.trim())
   }
 }
-handler.help = ['ref']
-handler.tags = ['fun']
-handler.command = ['recompensa']
+handler.help = ['']
+handler.tags = ['']
+handler.command = /^recompensa$/i
 
 handler.register = false
 
