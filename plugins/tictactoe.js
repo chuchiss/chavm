@@ -7,7 +7,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 22200) {
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
-        m.reply('Exitoso! Creando sala..')
+        m.reply('Exitoso! Creando sala..\n Tiempo: 10 min')
         room.o = m.chat
         room.game.playerO = m.sender
         room.state = 'PLAYING'
