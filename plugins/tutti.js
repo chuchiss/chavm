@@ -12,12 +12,12 @@ m.reply('el que termina primero dice basta \n\nPreparado ...\n\n Listo???') }
 function tutti(){
 conn.reply(m.chat,` empieza la letra “${pickRandom(global.chicle)}”`, m)
 m.reply(' nombre , apellido , cosa , animal , pais ')
+delete global.tutti[id]
 }
 global.tutti[id] = [
     await setTimeout(awaiting, 4000)
 setTimeout(awaitingg, 8000)
 setTimeout(tutti, 12000)
-delete global.tutti[id]
   ]
 }
 
