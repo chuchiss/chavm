@@ -17,7 +17,7 @@ global.tutti[id] = [
     await setTimeout(awaiting, 4000)
 setTimeout(awaitingg, 8000)
 setTimeout(tutti, 12000)
-delete global.math[id]
+delete global.tutti[id]
   ]
 }
 
