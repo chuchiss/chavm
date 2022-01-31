@@ -1,6 +1,6 @@
 let handler = async (m, {conn}) => {
-m.reply('you are ready for the tutti frutti? \n Minimo 2 jugadores
-functions awaiting(){
+m.reply('you are ready for the tutti frutti? \n Minimo 2 jugadores')
+function awaiting(){
  m.reply('esperando compañero..')
 }
 setTimeout(awaiting, 4000)
