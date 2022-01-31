@@ -12,7 +12,7 @@ let handler  = async (m, { conn, args, usedPrefix, command, isLimit}) => {
     conn.updatePresence(m.chat, Presence.composing)
   conn.reply(m.chat, `${batch.success}`, m)
   }) .catch(() => { conn.reply(m.chat, `_Perdón :(_`, m) })
-global.DATABASE._data.users[m.sender].limit -= 1
+if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 
 }
 handler.help = ['simi','s','bot'].map(v => v + ' *text*')
