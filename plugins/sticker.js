@@ -1,7 +1,6 @@
 const { MessageType } = require('@adiwajshing/baileys')
 const { sticker } = require('../lib/sticker')
 let handler  = async (m, { conn, args }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 4200) {
   let stiker = false
   try {
     let q = m.quoted ? m.quoted : m
@@ -16,10 +15,8 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 4200) {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw 'Conversion failed'
+    else return m.reply('Selecciona la imagen o hubo un error')
   }
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else return
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
