@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args }) => {
   let upi = global.DATABASE._data.chats[m.chat]
-  if (upi.alink === true) return conn.reply(m.chat, 'https://chat.whatsapp.com/' + (await conn.groupInviteCode(m.chat)), m)
+  if (upi.alink === true){ return conn.reply(m.chat, 'https://chat.whatsapp.com/' + (await conn.groupInviteCode(m.chat)), m)
 } else return m.reply("el link esta desactivado")
 }
 handler.help = ['linkgroup']
