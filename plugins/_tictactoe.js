@@ -13,8 +13,7 @@ handler.before = function (m, { user }) {
     let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
     if (room) {
 setTimeout(()=> {
-return
- delete this.game[room.id]
+return delete this.game[room.id]
 }, 3000)
 //900000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
