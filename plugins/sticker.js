@@ -1,6 +1,7 @@
 const { MessageType } = require('@adiwajshing/baileys')
 const { sticker } = require('../lib/sticker')
 let handler  = async (m, { conn, args }) => {
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 4200) {
   let stiker = false
   try {
     let q = m.quoted ? m.quoted : m
@@ -8,15 +9,16 @@ let handler  = async (m, { conn, args }) => {
     if (/image|video/.test(mime)) {
       let img = await q.download()
       if (!img) return conn.reply(m.chat, `seleccione foto/video`, m)
-      if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else m.reply('Selecciona la imagen o hubo un error')
+    else return conn.reply(m.chat, `error`, m)
   }
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
+  } else return
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
