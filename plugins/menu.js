@@ -51,7 +51,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
       'vote': 'Votacion',
       'downloader': 'Descargas',
       'tools': 'Herramientas',
-      'audio': 'personalizar audios',
+      'audio': 'personalizar audios(mantenimiento)',
       'fun': 'Habla conmigo',
       'anony': 'Chat anónimos',
       'jadibot': 'Solo persona autorizada',
@@ -87,7 +87,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
     let before = conn.menu.before || `
 ╭─「🙂𝗛ola, %name!」
 │ Tienes *%limit Limit* *%exp XP* 
-│🆕 .chatear (Chat Anónimo)
+│🆕 .recompensas (Gana mucha exp)
 │Más novedades en .info
 ╰────
 %readmore
