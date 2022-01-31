@@ -24,6 +24,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
     m.reply(`
 Exitoso!
 +${xp_first_time} XP
+para aprender a usar escribe .help
 `.trim())
     m.reply(`
 Alguien ha usado su código de recompensa
