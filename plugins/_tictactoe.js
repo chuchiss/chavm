@@ -63,13 +63,13 @@ Escribe abandonar para salir del juego
         let users = global.DATABASE._data.users
         if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
             room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
-        if (room.x !== room.o) m.reply(str, room.x, {
-            contextInfo: {
-                mentionedJid: this.parseMention(str)
-setTimeout(()=> {
+        if (room.x !== room.o) setTimeout(()=> {
 delete this.game[room.id]
 m.reply('tiempo finalizado') 
 }, 3000)
+m.reply(str, room.x, {
+            contextInfo: {
+                mentionedJid: this.parseMention(str)
             }
         })
         m.reply(str, room.o, {
