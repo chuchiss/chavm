@@ -22,29 +22,29 @@ let handler = async (m, { conn, usedPrefix, text }) => {
     users[m.sender].exp += xp_first_time
     users[m.sender].ref_count = 0
     m.reply(`
-Selamat!
+Exitoso!
 +${xp_first_time} XP
 `.trim())
     m.reply(`
-Seseorang telah menggunakan kode referal kamu
+Alguien ha usado su código de recompensa
 +${xp_link_creator + extra} XP
 `.trim(), link_creator)
   } else {
     let code = users[m.sender].ref_code = users[m.sender].ref_code || new Array(11).fill().map(() => [...'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'][crypto.randomInt(62)]).join('')
     users[m.sender].ref_count = users[m.sender].ref_count ? users[m.sender].ref_count : 0
-    let command_text = `${usedPrefix}ref ${code}`
+    let command_text = `${usedPrefix}recompensa ${code}`
     let command_link = `wa.me/${conn.user.jid.split('@')[0]}?text=${encodeURIComponent(command_text)}`
     let share_text = `
-Dapatkan ${xp_first_time} XP untuk yang menggunakan link/kode referal dibawah ini
-Referal Code: *${code}*
+Obtenga ${xp_first_time} XP para aquellos que usan el enlace/código de referencia a continuación
+Codigo de recompensa: *${code}*
 ${command_link}
 `.trim()
     m.reply(`
-Dapatkan ${xp_link_creator} XP untuk setiap pengguna baru yang menggunakan kode referal kamu
-${users[m.sender].ref_count} orang telah menggunakan kode referal kamu
-Kode referal kamu: ${code}
-Bagikan link kepada teman: ${command_link}
-atau kirim pesan kepada teman wa.me/?text=${encodeURIComponent(share_text)}
+Obtenga ${xp_link_creator} XP por cada nuevo usuario que use su código de referencia
+${users[m.sender].ref_count} es la gente que ha usado su código de referencia
+Codigo de recompensa: ${code}\n
+Comparte el enlace con amigos ${command_link}\n
+O dile que envie un mensaje con este link wa.me/?text=${encodeURIComponent(share_text)}
 ${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP`).join('\n')}
 `.trim())
   }
