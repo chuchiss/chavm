@@ -1,6 +1,9 @@
 let handler = async (m, {conn}) => {
-if (/tutti/.test(command)) return m.reply('you are ready for the tutti frutti? \n Minimo 2 jugadores\nescribe .jugar')
-if (/listo/.test(command)) return m.reply('esperando compañero..')
+m.reply('you are ready for the tutti frutti? \n Minimo 2 jugadores
+function awaiting(){
+ m.reply('esperando compañero..')
+}
+setTimeout(awaiting, 4000)
 }
 handler.help = ['tutti']
 handler.tags = ['']
