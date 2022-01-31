@@ -14,8 +14,7 @@ handler.before = function (m, { user }) {
     if (room) {
 setTimeout(()=> {
 return delete this.game[room.id]
-}, 3000)
-//900000)
+}, 900000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
         if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
         isSurrender = !/^[1-9]$/.test(m.text)
