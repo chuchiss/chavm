@@ -16,7 +16,8 @@ setTimeout(()=> {
 if (room.state == 'PLAYING') delete this.game[room.id]
 m.reply('*×ttt×* se acabo el tiempo ') return !0
 } else return !0
-}, 900000)
+}, 15000)
+//900000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
         if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
         isSurrender = !/^[1-9]$/.test(m.text)
