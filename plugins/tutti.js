@@ -1,4 +1,3 @@
-global.tutti = global.tutti ? global.tutti : {}
 let handler = async (m, { users, conn, command }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
 setTimeout(tutti, 1000)
