@@ -1,7 +1,8 @@
 let handler = async (m, { users, conn, command }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
-setTimeout(tutti, 1000)
-  setTimeout(tutti2, 11000)
+//setTimeout(tutti, 1000)
+//  setTimeout(tutti2, 11000)
+return m.reply('hola')
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else m.reply('intenta luego')
 }
