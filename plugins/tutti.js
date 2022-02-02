@@ -3,13 +3,7 @@ let handler = async (m, { users, conn, command }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
   let id = m.chat
 if (id in (global.tutti)) return conn.reply(m.chat, '⚠️Todavía hay preguntas⚠️\n, m)
-let tutti = return chulo()
-global.tutti[id] = [
     await chulo()
-    setTimeout(() => {
-      delete global.math[id]
-    }, 10000)
-]
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else m.reply('ya estas en juego')
 }
