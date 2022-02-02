@@ -10,7 +10,6 @@ if (id in (global.tutti)) return conn.reply(m.chat, `⚠️Todavía hay pregunta
       if (global.math[id]) return delete global.tutti[id]
     }, 10000)
   ]
- await chulo()
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else m.reply('intenta luego')
 }
