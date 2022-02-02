@@ -1,15 +1,8 @@
 global.tutti = global.tutti ? global.tutti : {}
 let handler = async (m, { users, conn, command }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
-  let id = m.chat
-if (id in (global.tutti)) return conn.reply(m.chat, `⚠️Todavía hay preguntas⚠️`, m)
-   let tutti = chulo()
- global.tutti[id] = [
-    await chulo() 
-    setTimeout(() => {
-      if (global.math[id]) return delete global.tutti[id]
-    }, 10000)
-  ]
+setTimeout(tutti, 1000)
+  setTimeout(tutti2, 11000)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else m.reply('intenta luego')
 }
@@ -41,7 +34,5 @@ global.tusti = [
 ]
 
 
-function chulo(){
-setTimeout(tutti, 1000)
-  setTimeout(tutti2, 11000)
-}
+
+
