@@ -36,8 +36,6 @@ global.tusti = [
 
 
 function chulo(){
-return{
 setTimeout(tutti, 1000)
   setTimeout(tutti2, 11000)
-}
 }
