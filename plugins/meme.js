@@ -1,5 +1,6 @@
 let { promisify } = require('util')
 let _gis = require('g-i-s')
+let path = require('path')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
@@ -8,7 +9,7 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (!gis)  console.error(e)
+  if (gimage = path.extname('index.bin')) { throw e; }
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
