@@ -227,15 +227,17 @@ module.exports = {
           } catch (e) {
             // Error occured
             let errores = require('./lib/image')
-            async erro(){
+            async function erro(){
             await errores.handler
             }
+            erro();
             m.error = e
             console.log(e)
             if (e) {
-            async erro(){
+            async function erro(){
             await errores.handler
             }
+            erro();
              console.log(e)
             }
           } finally {
