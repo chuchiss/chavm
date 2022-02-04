@@ -9,7 +9,6 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (gimage = path.ext('*.bin')) { return throw e; }
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
