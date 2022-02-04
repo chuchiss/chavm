@@ -25,7 +25,7 @@ _.style_ texto
 _.sticker_ (seleccionando imagen)
 _.imagen_ texto
 _.frases_
-_.memes_  (en reparación)
+_.memes_  
 _.play_ (nombre de la musica)
 _.play2_ (nombre del video)
 _.anime_
