@@ -1,8 +1,7 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti < 0) {
+ if (chencho.tutti = 0) {
 
-if(chencho.tutti = 0) return conn.reply(m.chat, `no`, m)
 
 //function resolveafte(){
 //setTimeout(() =>{
