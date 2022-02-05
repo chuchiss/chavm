@@ -14,9 +14,12 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 }, 1000)
 }
 
-//m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
-//cuando termines di basta!
-//[empieza en 20 segundos]')
+function chelo(){
+m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+cuando termines di basta!
+[empieza en 20 segundos]')
+}
+
 // return global.DATABASE._data.chats[m.chat].tutti = false
 
 //function resolveadd(){
@@ -26,8 +29,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 
-
-return resolveafte()
+setTimeout(chelo, 3000)
+return{
+ resolveafte()
+}
 //asyncCall();
 //setTimeout(resolveadd, 2000);
 
