@@ -1,7 +1,7 @@
 let handler = async (m, {conn}) => {
   if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
-
+async function asyncCall(){
 functions resolveafte(){
 return new promise(resolve => {
 setTimeout(() =>{
@@ -31,16 +31,16 @@ global.DATABASE._data.chats[m.chat].tutti = true
 
 global.DATABASE._data.chats[m.chat].tutti = false
 
-async function asyncCall(){
+//async function asyncCall(){
 await resolveafte()
 await resolveadd()
 //m.reply(result);
 //m.reply(resulta);
+//}
+
+asyncCall()
+
 }
-
-asyncCall();
-
-
   } else return m.reply('todavia estas en juego')
 }
 handler.help = ['tutti']
