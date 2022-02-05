@@ -1,6 +1,6 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti < 1) {
+ if (chencho.tutti = 1) {
 
 
 
@@ -41,10 +41,10 @@ chencho.tutti == 1
 
 
 //return{
-setTimeout(lok, 500)
+//setTimeout(lok, 500)
 setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
-setTimeout(deslok, 15000)
+//setTimeout(deslok, 15000)
 //}
 //asyncCall();
 //setTimeout(resolveadd, 2000);
