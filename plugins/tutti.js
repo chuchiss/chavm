@@ -15,7 +15,7 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 //}
 
 function chelo(){
-m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+m.reply('Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 cuando termines di basta!
 [empieza en 20 segundos]')
 }
