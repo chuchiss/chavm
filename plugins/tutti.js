@@ -9,11 +9,6 @@ let handler = async (m, {user, conn}) => {
 //}, 1000)
 //}
 
-function chelo(){
-conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
-cuando termines di basta!
-empieza en 20 segundos..`, m)
-}
 
 function chelio(){
  conn.reply(m.chat,`
@@ -40,7 +35,7 @@ return global.DATABASE._data.chats[m.chat].tutti = true
 
 //return{
 //setTimeout(lok, 500)
-setTimeout(chelo, 1000)
+//setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
 //setTimeout(deslok, 15000)
 //}
@@ -57,6 +52,11 @@ module.exports = handler
 
 
 
+function chelo(){
+conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+cuando termines di basta!
+empieza en 20 segundos..`, m)
+}
 
 function picktRandom(list) {
   return list[Math.floor(list.length * Math.random())]
