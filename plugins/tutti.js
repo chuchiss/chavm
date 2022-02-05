@@ -1,6 +1,6 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti > 1) {
+ if (chencho.tutti < 1) {
 
 
 
