@@ -84,7 +84,7 @@ module.exports = {
           porno: true,
           antiLink: false,
           alink: true,
-          tutti: 0,
+          tutti: 1,
         }
       } catch (e) {
         console.log(e, global.DATABASE.data)
