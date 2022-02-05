@@ -11,14 +11,14 @@ let chencho = global.DATABASE._data.chats[m.chat]
 //}
 
 function chelo(){
-conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 cuando termines di basta!
 empieza en 20 segundos..`, m)
 }
 
 
 function chelio(){
- conn.reply(m.chat,`
+return conn.reply(m.chat,`
 Con la letra:   “${picktRandom(global.tuttis)}” \n
 Nombre, apellido , cosas , animal , fruta , país o província\n
 [GOoooo] `, m)
@@ -26,10 +26,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-chencho.tutti -= 1
+return chencho.tutti -= 1
 }
 function deslok(){
-chencho.tutti += 1
+return chencho.tutti += 1
 }
 
 //function resolveadd(){
