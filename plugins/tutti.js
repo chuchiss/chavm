@@ -1,6 +1,6 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti > 0) {
+ if (chencho.tutti < 0) {
 
 if(chencho.tutti = 0) return conn.reply(m.chat, `no`, m)
 
@@ -29,7 +29,7 @@ function lok(){
 return chencho.tutti -= 1
 }
 function deslok(){
-return chencho.tutti += 1
+return chencho.tutti += 2
 }
 
 //function resolveadd(){
