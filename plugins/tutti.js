@@ -29,7 +29,7 @@ function lok(){
 chencho.tutti =+ 1
 }
 function deslok(){
-chencho.tutti =- 1
+chencho.tutti == 0
 }
 
 //function resolveadd(){
