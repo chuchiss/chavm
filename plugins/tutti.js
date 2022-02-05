@@ -2,7 +2,8 @@ let handler = async (m, {user, conn}) => {
   if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
 async function asyncCall(){
-functions resolveafte(){
+
+function resolveafte(){
 return new promise(resolve => {
 setTimeout(() =>{
 
