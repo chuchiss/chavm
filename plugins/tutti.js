@@ -26,10 +26,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-chencho.tutti -= 2
+chencho.tutti -= 1
 }
 function deslok(){
-chencho.tutti += 2
+chencho.tutti += 1
 }
 
 //function resolveadd(){
@@ -41,7 +41,9 @@ chencho.tutti += 2
 
 
 //return{
-m.reply(`  ${tutti} XP*`)
+conn.reply(m.chat,`
+Con la letra:   “${chencho.tuttis}”, m)
+
 setTimeout(lok, 500)
 setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
