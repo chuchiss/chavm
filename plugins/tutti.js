@@ -32,8 +32,8 @@ global.DATABASE._data.chats[m.chat].tutti = true
 global.DATABASE._data.chats[m.chat].tutti = false
 
 async function asyncCall(){
-await resolveafte
-await resolveadd
+await resolveafte()
+await resolveadd()
 //m.reply(result);
 //m.reply(resulta);
 }
