@@ -20,13 +20,9 @@ cuando termines di basta!
 [empieza en 20 segundos]')
 
 function resolveadd(){
-return new promise(resolve => {
-setTimeout(() =>{
 
 global.DATABASE._data.chats[m.chat].tutti = true
 
-}, 20000);
-});
 }
 
 
@@ -34,13 +30,13 @@ global.DATABASE._data.chats[m.chat].tutti = false
 
 //async function asyncCall(){
 await resolveafte()
-await resolveadd()
+//await resolveadd()
 //m.reply(result);
 //m.reply(resulta);
 //}
 }
 asyncCall()
-
+setTimeout(resolveadd, 10000);
 
   } else return m.reply('todavia estas en juego')
 }
