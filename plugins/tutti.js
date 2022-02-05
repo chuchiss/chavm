@@ -25,10 +25,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-return global.DATABASE._data.chats[m.chat].tutti = false
+global.DATABASE._data.chats[m.chat].tutti = false
 }
 function deslok(){
-return global.DATABASE._data.chats[m.chat].tutti = true
+global.DATABASE._data.chats[m.chat].tutti = true
 }
 
 //function resolveadd(){
