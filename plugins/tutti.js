@@ -1,4 +1,4 @@
-let handler = async (m, {conn}) => {
+let handler = async (m, {user, conn}) => {
   if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
 async function asyncCall(){
@@ -37,10 +37,10 @@ await resolveadd()
 //m.reply(result);
 //m.reply(resulta);
 //}
-
+}
 asyncCall()
 
-}
+
   } else return m.reply('todavia estas en juego')
 }
 handler.help = ['tutti']
