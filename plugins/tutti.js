@@ -1,8 +1,3 @@
-
-
-
-
-
 let handler = async (m, {conn}) => {
   if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
