@@ -21,10 +21,10 @@ empieza en 20 segundos..`, m)
 }
 
 function lok(){
-global.DATABASE._data.chats[m.chat].tutti = false
+return global.DATABASE._data.chats[m.chat].tutti = false
 }
 function deslok(){
-global.DATABASE._data.chats[m.chat].tutti = true
+return global.DATABASE._data.chats[m.chat].tutti = true
 }
 
 //function resolveadd(){
