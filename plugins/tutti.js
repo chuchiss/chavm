@@ -16,9 +16,9 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 });
 }
 
-m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
-cuando termines di basta!
-[empieza en 20 segundos]')
+//m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+//cuando termines di basta!
+//[empieza en 20 segundos]')
 global.DATABASE._data.chats[m.chat].tutti = false
 
 function resolveadd(){
