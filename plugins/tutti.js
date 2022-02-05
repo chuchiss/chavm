@@ -26,7 +26,7 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-chencho.tutti -= 2
+chencho.tutti -= 1
 }
 function deslok(){
 chencho.tutti += 1
