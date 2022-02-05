@@ -1,6 +1,6 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti = 1) {
+ if (chencho.tutti > 1) {
 
 
 
@@ -41,6 +41,7 @@ chencho.tutti += 2
 
 
 //return{
+m.reply(`  ${tutti} XP*`)
 setTimeout(lok, 500)
 setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
