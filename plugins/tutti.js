@@ -19,9 +19,9 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 //[empieza en 20 segundos]')
 // return global.DATABASE._data.chats[m.chat].tutti = false
 
-function resolveadd(){
+//function resolveadd(){
 //return global.DATABASE._data.chats[m.chat].tutti = true
-}
+//}
 
 
 
