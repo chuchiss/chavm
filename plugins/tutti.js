@@ -1,6 +1,6 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- if (chencho.tutti > 1) {
+ if (chencho.tutti > 0) {
 
 
 
@@ -41,8 +41,6 @@ chencho.tutti += 1
 
 
 //return{
-conn.reply(m.chat,`
-Con la letra:   “${chencho.tuttis}”, m)
 
 setTimeout(lok, 500)
 setTimeout(chelo, 1000)
