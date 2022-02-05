@@ -35,7 +35,7 @@ return global.DATABASE._data.chats[m.chat].tutti = true
 
 //return{
 //setTimeout(lok, 500)
-//setTimeout(chelo, 1000)
+setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
 //setTimeout(deslok, 15000)
 //}
