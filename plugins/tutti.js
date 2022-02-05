@@ -1,5 +1,5 @@
 let handler = async (m, {user, conn}) => {
-  if (global.DATABASE._data.chats[m.chat].tutti == true) {
+  if (global.DATABASE._data.chats[m.chat].tutti = true) {
 
 
 
@@ -19,10 +19,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 //m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 //cuando termines di basta!
 //[empieza en 20 segundos]')
-global.DATABASE._data.chats[m.chat].tutti = false
+return global.DATABASE._data.chats[m.chat].tutti = false
 
 function resolveadd(){
-global.DATABASE._data.chats[m.chat].tutti = true
+return global.DATABASE._data.chats[m.chat].tutti = true
 }
 
 
@@ -32,7 +32,7 @@ async function asyncCall(){
 await resolveafte()
 }
 asyncCall();
-setTimeout(resolveadd, 10000);
+setTimeout(resolveadd, 2000);
 
   } else return m.reply('todavia estas en juego')
 }
