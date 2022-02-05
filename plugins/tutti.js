@@ -20,7 +20,7 @@ cuando termines di basta!
 empieza en 20 segundos`, m)
 }
 
-// return global.DATABASE._data.chats[m.chat].tutti = false
+global.DATABASE._data.chats[m.chat].tutti = false
 
 //function resolveadd(){
 //return global.DATABASE._data.chats[m.chat].tutti = true
