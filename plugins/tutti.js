@@ -6,7 +6,7 @@ let handler = async (m, {user, conn}) => {
 //function resolveafte(){
 //setTimeout(() =>{
 function chelio(){
-return conn.reply(m.chat,`
+ conn.reply(m.chat,`
 Con la letra:   “${picktRandom(global.tuttis)}” \n
 Nombre, apellido , cosas , animal , fruta , país o província\n
 [GOoooo] `, m)
@@ -15,7 +15,7 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 //}
 
 function chelo(){
-return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 cuando termines di basta!
 empieza en 20 segundos..`, m)
 }
