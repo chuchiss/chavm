@@ -1,5 +1,5 @@
 let handler = async (m, {user, conn}) => {
- //if (global.DATABASE._data.chats[m.chat].tutti == true) {
+ if (global.DATABASE._data.chats[m.chat].tutti = true) {
 
 
 
@@ -40,15 +40,15 @@ return global.DATABASE._data.chats[m.chat].tutti = true
 
 
 //return{
-//setTimeout(lok, 500)
+setTimeout(lok, 500)
 setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
-//setTimeout(deslok, 15000)
+setTimeout(deslok, 15000)
 //}
 //asyncCall();
 //setTimeout(resolveadd, 2000);
 
-// } else return m.reply('todavia estas en juego')
+ } else return m.reply('todavia estas en juego')
 }
 handler.help = ['tutti']
 handler.tags = ['game']
