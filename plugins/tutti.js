@@ -3,16 +3,16 @@ let handler = async (m, {user, conn}) => {
 
 
 
-function resolveafte(){
-setTimeout(() =>{
-
+//function resolveafte(){
+//setTimeout(() =>{
+function chelio(){
 conn.reply(m.chat,`
 Con la letra:   “${picktRandom(global.tuttis)}” \n
 Nombre, apellido , cosas , animal , fruta , país o província\n
 [GOoooo] `, m)
-
-}, 1000)
 }
+//}, 1000)
+//}
 
 function chelo(){
 m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
@@ -30,10 +30,10 @@ cuando termines di basta!
 
 
 
-return{
+//return{
 setTimeout(chelo, 3000)
- resolveafte()
-}
+setTimeout(chelio, 1000)
+//}
 //asyncCall();
 //setTimeout(resolveadd, 2000);
 
