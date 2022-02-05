@@ -29,8 +29,9 @@ cuando termines di basta!
 
 
 
-setTimeout(chelo, 3000)
+
 return{
+setTimeout(chelo, 3000)
  resolveafte()
 }
 //asyncCall();
