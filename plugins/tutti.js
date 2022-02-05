@@ -22,7 +22,7 @@ cuando termines di basta!
 global.DATABASE._data.chats[m.chat].tutti = false
 
 function resolveadd(){
-return global.DATABASE._data.chats[m.chat].tutti = true
+global.DATABASE._data.chats[m.chat].tutti = true
 }
 
 
@@ -30,10 +30,6 @@ return global.DATABASE._data.chats[m.chat].tutti = true
 
 async function asyncCall(){
 await resolveafte()
-//await resolveadd()
-//m.reply(result);
-//m.reply(resulta);
-//}
 }
 asyncCall();
 setTimeout(resolveadd, 10000);
