@@ -11,8 +11,7 @@ Con la letra:   “${picktRandom(global.tuttis)}” \n
 Nombre, apellido , cosas , animal , fruta , país o província\n
 [GOoooo] `, m)
 
-}, 1000);
-});
+}, 1000)
 }
 
 //m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
