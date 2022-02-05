@@ -1,7 +1,7 @@
 let handler = async (m, {user, conn}) => {
   if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
-async function asyncCall(){
+
 
 function resolveafte(){
 return new promise(resolve => {
@@ -15,27 +15,27 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 }, 8000);
 });
 }
+
 m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 cuando termines di basta!
 [empieza en 20 segundos]')
+global.DATABASE._data.chats[m.chat].tutti = false
 
 function resolveadd(){
-
 return global.DATABASE._data.chats[m.chat].tutti = true
-
 }
 
 
-global.DATABASE._data.chats[m.chat].tutti = false
 
-//async function asyncCall(){
+
+async function asyncCall(){
 await resolveafte()
 //await resolveadd()
 //m.reply(result);
 //m.reply(resulta);
 //}
 }
-asyncCall()
+asyncCall();
 setTimeout(resolveadd, 10000);
 
   } else return m.reply('todavia estas en juego')
