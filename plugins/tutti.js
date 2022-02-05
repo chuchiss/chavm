@@ -1,5 +1,5 @@
 let handler = async (m, {user, conn}) => {
- if (global.DATABASE._data.chats[m.chat].tutti == true) {
+ //if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
 
 
