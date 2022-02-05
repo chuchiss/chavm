@@ -17,7 +17,7 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 function chelo(){
 m.reply('Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
 cuando termines di basta!
-[empieza en 20 segundos]')
+empieza en 20 segundos')
 }
 
 // return global.DATABASE._data.chats[m.chat].tutti = false
