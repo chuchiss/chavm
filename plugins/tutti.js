@@ -1,5 +1,5 @@
 let handler = async (m, {user, conn}) => {
- if (global.DATABASE._data.chats[m.chat].tutti = true) {
+ if (global.DATABASE._data.chats[m.chat].tutti == true) {
 
 
 
@@ -25,14 +25,14 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-global.DATABASE._data.chats[m.chat].tutti = false
+global.DATABASE._data.chats[m.chat].tutti == false
 }
 function deslok(){
-global.DATABASE._data.chats[m.chat].tutti = true
+global.DATABASE._data.chats[m.chat].tutti == true
 }
 
 //function resolveadd(){
-//global.DATABASE._data.chats[m.chat].tutti = true
+//global.DATABASE._data.chats[m.chat].tutti == true
 //}
 
 
