@@ -32,7 +32,7 @@ return global.DATABASE._data.chats[m.chat].tutti = true
 }
 
 //function resolveadd(){
-//return global.DATABASE._data.chats[m.chat].tutti = true
+//global.DATABASE._data.chats[m.chat].tutti = true
 //}
 
 
