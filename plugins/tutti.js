@@ -4,7 +4,6 @@ let handler = async (m, {user, conn}) => {
 
 
 function resolveafte(){
-return new promise(resolve => {
 setTimeout(() =>{
 
 conn.reply(m.chat,`
@@ -28,10 +27,9 @@ function resolveadd(){
 
 
 
-async function asyncCall(){
-await resolveafte()
-}
-asyncCall();
+
+return resolveafte()
+//asyncCall();
 //setTimeout(resolveadd, 2000);
 
 //  } else return m.reply('todavia estas en juego')
