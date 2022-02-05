@@ -21,7 +21,7 @@ cuando termines di basta!
 
 function resolveadd(){
 
-global.DATABASE._data.chats[m.chat].tutti = true
+return global.DATABASE._data.chats[m.chat].tutti = true
 
 }
 
