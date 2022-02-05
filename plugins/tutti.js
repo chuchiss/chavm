@@ -19,7 +19,7 @@ m.reply('[bet£]Listo para jugar al tutti frutti?\nPara leer las reglas escribe 
 cuando termines di basta!
 [empieza en 20 segundos]')
 
-functions resolveadd(){
+function resolveadd(){
 return new promise(resolve => {
 setTimeout(() =>{
 
