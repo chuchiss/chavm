@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 
-m.reply(`x`)
+m.reply(`${x}`)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
