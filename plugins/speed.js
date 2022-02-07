@@ -4,9 +4,6 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 
-let ero = global.DATABASE.data.users[m.sender].lastrob
-let result = ero 
-m.reply(`${result}`)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
