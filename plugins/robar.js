@@ -25,6 +25,7 @@ conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
   users[m.sender].robos += 1
   users[who].exp -= xp
   await m.reply('_*Robando....*_') 
+conn.sendFile(m.chat, 'media/roba2.jpg', 'jpg', null, m, true)
   await
   await
   await
