@@ -31,10 +31,10 @@ let result = global.DATABASE.data.users[who].exp
   await
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
  let ero = pickRandom(global.funi)
-if (ero > 3) { return conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
-// global.DATABASE._data.users[m.sender].lastrob = new Date * 1
+if (ero > 3) { conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
+ global.DATABASE._data.users[m.sender].lastrob = new Date * 1
 }
-  } else m.reply('Solo puedes robar cada 1 horas:)')
+  } else m.reply('🌟 estas detenido 🌟\npuedes volver a robar cada 6 horas:)')
 }
 handler.help = ['robar @user <cantidad>']
 handler.tags = ['xp']
