@@ -10,7 +10,7 @@ let chencho = global.DATABASE._data.chats[m.chat]
 //}
 
 function chelo(){
-return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
+return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .it
 cuando termines di basta!
 empieza en 20 segundos..`, m)
 }
@@ -49,7 +49,7 @@ setTimeout(deslok, 40000)
 //asyncCall();
 //setTimeout(resolveadd, 2000);
 
-} else return m.reply('todavia estas en juego')
+} else return m.reply('todavia estas en juego.. \espera unos segundos..')
 }
 handler.help = ['tutti']
 handler.tags = ['game']
