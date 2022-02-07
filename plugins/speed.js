@@ -10,7 +10,7 @@ function randomInt(, to) {
   to = Math.floor(50)
   return Math.floor((to - from) * Math.random() + from)
 
-m.reply(`Math.floor(50)`)
+m.reply(Math.floor(50))
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
