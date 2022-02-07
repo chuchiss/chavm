@@ -72,6 +72,7 @@ module.exports = {
           if (!'delete' in chat) chat.delete = true
           if (!'porno' in chat) chat.porno = true
           if (!isNumber(chat.tutti)) chat.tutti = 0
+          if (!isNumber(chat.tutti)) chat.jog = 0
           if (!'antiLink' in chat) chat.antiLink = false
           if (!'aLink' in chat) chat.aLink = true
         } else global.DATABASE._data.chats[m.chat] = {
@@ -87,6 +88,7 @@ module.exports = {
           antiLink: false,
           alink: true,
           tutti: 0,
+          jog: 0,
         }
       } catch (e) {
         console.log(e, global.DATABASE.data)
