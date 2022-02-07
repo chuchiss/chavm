@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
-catch(e) {require('./lib/image.js')}
+
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
