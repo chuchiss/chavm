@@ -232,20 +232,46 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-            Jimp.read("file.jpg").then(function(image) {
-    image.scale(0.5).write("file-sm.jpg");
-}).catch(function (err) {
-    console.log(err);
-});
+          async function retryResize(options, retries = 0) {
+    let { imagePath, size, quality = 60, maxRetries = 5 } = options;
+
+    let image = null;
+    try {
+        image = await Jimp.read(imagePath);
+        await image.resize(size, Jimp.AUTO);
+        await image.quality(quality);
+    } catch (e) {
+        if (retries >= maxRetries) {
+            throw e;
+        }
+
+        image = await retryResize(options, retries++);
+    }
+
+    return image;
+}
             m.error = e
             console.log(e)
             if (e) {
             
-            Jimp.read("file.jpg").then(function(image) {
-    image.scale(0.5).write("file-sm.jpg");
-}).catch(function (err) {
-    console.log(err);
-});
+            async function retryResize(options, retries = 0) {
+    let { imagePath, size, quality = 60, maxRetries = 5 } = options;
+
+    let image = null;
+    try {
+        image = await Jimp.read(imagePath);
+        await image.resize(size, Jimp.AUTO);
+        await image.quality(quality);
+    } catch (e) {
+        if (retries >= maxRetries) {
+            throw e;
+        }
+
+        image = await retryResize(options, retries++);
+    }
+
+    return image;
+}
              console.log(e)
             }
           } finally {
