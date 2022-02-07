@@ -12,5 +12,5 @@ handler.command = /^(ping|speed)$/i
 module.exports = handler
 
 
-let myNumeroAleatorio = Math.floor(Math.random()*(200+1))
+let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
 let number = pickRandom(myNumeroAleatorio)
