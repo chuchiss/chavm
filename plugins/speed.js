@@ -10,7 +10,7 @@ function randomInt(, to) {
   to = Math.floor(50)
   return Math.floor((to - from) * Math.random() + from)
 
-m.reply(Math.floor(50))
+conn.reply(Math.floor(50))
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -18,6 +18,11 @@ handler.tags = ['info', 'tools']
 handler.command = /^(ping|speed)$/i
 module.exports = handler
 
+
+
+function pickRandom(x) {
+  return x[Math.floor(Math.random() * 28)]
+}
 
 let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
 let number = pickRandom(myNumeroAleatorio)
