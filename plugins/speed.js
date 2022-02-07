@@ -18,7 +18,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.funis = [ 'detenidou.jpg','detenido2.jpg','detenido3.jpg']
+global.funis = [ 'media/detenidou.jpg','media/detenido2.jpg','media/detenido3.jpg']
 
 global.funi = [
   '1','2','3','4','5','6']
