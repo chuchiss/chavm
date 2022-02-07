@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 
 if (global.DATABASE._data.users[m.sender].limit < 10) return m.reply('No tienes mas limites para comprar pon .buy')
 let pajak = Math.random()
-let xp = 35000
+let xp = 30000
 let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
