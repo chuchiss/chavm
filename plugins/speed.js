@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   m.reply(neww - old + 'ms')
 
 
-m.reply(`${x}`)
+m.reply('${x}')
 let x = pickRandom(global.culo)
 }
 handler.help = ['ping', 'speed']
