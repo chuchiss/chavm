@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   m.reply(neww - old + 'ms')
 
 let pajak = Math.random()
-let xp = 10
+let xp = 10000
 let result = Math.ceil(xp * pajak)
 
 
