@@ -30,7 +30,7 @@ let result = global.DATABASE.data.users[who].exp
   await
   await
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
-  global.DATABASE._data.users[m.sender].lastrob = new Date * 1
+ // global.DATABASE._data.users[m.sender].lastrob = new Date * 1
   } else m.reply('Solo puedes robar cada 1 horas:)')
 }
 handler.help = ['robar @user <cantidad>']
