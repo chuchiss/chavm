@@ -16,7 +16,7 @@ module.exports = handler
 
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.lenght)]
-let x = Math.floor(Math.random() * 10)
+var x = Math.floor(Math.random() * 10)
 
 let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
 let number = pickRandom(myNumeroAleatorio)
