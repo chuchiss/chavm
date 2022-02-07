@@ -3,8 +3,9 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
-let x = Math.floor(Math.random() * 10)
-m.reply(`${x}`)
+
+
+m.reply(`pickRandom(global.culo)`)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -13,10 +14,10 @@ handler.command = /^(ping|speed)$/i
 module.exports = handler
 
 
-
 function pickRandom(list) {
-  return list[Math.floor(Math.random() * list.lenght)]
+  return list[Math.floor(list.length * Math.random())]
+}
 
 
-let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
-let number = pickRandom(myNumeroAleatorio)
+global.culo=[
+1,2,3,3,2,1]
