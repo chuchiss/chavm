@@ -25,6 +25,7 @@ module.exports = {
           if (!isNumber(user.lastme)) user.lastme = 0
           if (!isNumber(user.robos)) user.robos = 0
           if (!isNumber(user.like)) user.like = 0
+          if (!isNumber(user.point)) user.point = 0
           if (!isNumber(user.warning)) user.warning = 0
           if (!'registered' in user) user.registered = false
           if (!user.registered) {
@@ -51,6 +52,7 @@ module.exports = {
           age: -1,
           regTime: -1,
           afk: -1,
+          point: 0,
           afkReason: '',
           banned: false,
           warning: 0,
