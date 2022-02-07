@@ -18,7 +18,10 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.funis = [ 'media/detenidou.jpg','media/detenido2.jpg','media/detenido3.jpg']
+global.funis = [ 'cheli','chelo','chelu']
+let cheli = 'media/detenidou.jpg'
+let chelo = 'media/detenido2.jpg'
+let chelu = 'media/detenido3.jpg'
 
 global.funi = [
   '1','2','3','4','5','6']
