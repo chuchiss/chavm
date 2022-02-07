@@ -48,6 +48,7 @@ module.exports = {
           robos: 0,
           lastmp: 0,
           lastme: 0,
+          mismo: 0,
           registered: false,
           name: this.getName(m.sender),
           age: -1,
