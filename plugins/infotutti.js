@@ -1,9 +1,9 @@
 let handler = async (m, {conn}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 m.reply(`
-el primero que completa todo debe decir “Tutti Frutti”, 
-y de inmediato, los demás deben enviar el mensaje
-por donde se quedaron en completar las características. 
+El primero que completa todo debe decir “Tutti Frutti”, 
+y de inmediato, los demás jugadores deberan enviar el mensaje
+por donde se quedaron completando las características. 
 Luego, 
 viene la puntuación: 
 · Palabras válidas escritas  se asignan 10 puntos
