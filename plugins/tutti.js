@@ -1,11 +1,11 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
 let chenchu = global.DATABASE._data.users[m.sender]
-return conn.reply(m.chat, `EsperNdo contrincante..`, m)
+if (chencho.tutti <= 0 && chencho.jog <= 2){ return conn.reply(m.chat, `EsperNdo contrincante..`, m) 
 chencho.jog += 1
 chenchu.mismo += 1
+}
 if (chenchu.mismo >= 1) {return}
-if (chencho.tutti >= 0 && chencho.jog >= 2) {
 
 
 function chelo(){
@@ -24,10 +24,10 @@ Nombre, apellido , cosas , animal , fruta , país o província\n
 
 
 function lok(){
-return chencho.tutti -= 1
+return chencho.tutti += 1
 }
 function deslok(){
-return chencho.tutti += 1
+return chencho.tutti -= 1
 }
 
 
