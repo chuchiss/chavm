@@ -4,8 +4,9 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 
-let ero = pickRandom(global.funi)
-if (ero > 3) conn.sendFile(m.chat, 'pickRandom(global.funis)', 'jpg', null, m, true)
+let ero = global.DATABASE.data.users[m.sender].lastrob
+let result = ero / 1000
+m.reply(result)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -14,14 +15,3 @@ handler.command = /^(ping|speed)$/i
 module.exports = handler
 
 
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
-
-global.funis = [ 'cheli','chelo','chelu']
-let cheli = 'media/detenidou.jpg'
-let chelo = 'media/detenido2.jpg'
-let chelu = 'media/detenido3.jpg'
-
-global.funi = [
-  '1','2','3','4','5','6']
