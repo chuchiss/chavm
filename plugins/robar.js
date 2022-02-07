@@ -1,7 +1,7 @@
 let { MessageType } = require('@adiwajshing/baileys')
 let pajak = 0.04
 let handler = async (m, { conn, text }) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastrob > 3600000) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastrob > 7000000) {
   if (!text) return conn.reply(m.chat, `ingrese la cantidad de exp que vas a robar`, m)
   let who
   if (m.isGroup) who = m.mentionedJid[0]
@@ -37,7 +37,7 @@ conn.sendFile(m.chat, 'media/roba2.jpg', 'jpg', null, m, true)
   await
   await
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
-  } else m.reply(' DETENIDO 🌟\npuedes volver a robar cada 1 horas:)')
+  } else m.reply(' DETENIDO 🌟\npuedes volver a robar cada 2 horas:)')
 }
 handler.help = ['robar @user <cantidad>']
 handler.tags = ['xp']
