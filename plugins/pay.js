@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
   let exp = xp
   let pjk = Math.ceil(xp * pajak)
   exp += pjk
- let result = user[m.sender].exp
+ let result = users[m.sender].exp
   if (exp < 50) return conn.reply(m.chat, `minimo 50`, m)
   let users = global.DATABASE._data.users
   if (exp > users[m.sender].exp) return conn.reply(m.chat, `no tenes esa exp`, m)
