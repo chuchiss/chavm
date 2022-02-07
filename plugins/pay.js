@@ -9,18 +9,19 @@ let handler = async (m, { conn, text }) => {
   let txt = text.replace('@' + who.split`@`[0], '').trim()
   let xp = parseInt(txt)
   if (isNaN(xp)) return conn.reply(m.chat, `es .pagar @mension cantidad`, m)
-  let exp = xp
+  let expe = xp
   let pjk = Math.ceil(xp * pajak)
   exp += pjk
-  if (exp < 50) return conn.reply(m.chat, `minimo 50`, m)
+let { exp} = global.DATABASE.data.users[m.sender]
+  if (expe < 50) return conn.reply(m.chat, `minimo 50`, m)
   let users = global.DATABASE._data.users
-  if (exp > users[m.sender].exp) return conn.reply(m.chat, `no tenes esa exp`, m)
+  if (expe > users[m.sender].exp) return conn.reply(m.chat, `no tenes esa exp`, m)
  if (users[m.sender].limit < 1) return conn.reply(m.chat, `se requiere un limit m?nimo`, m)
-  users[m.sender].exp -= exp
+  users[m.sender].exp -= expe
   users[who].exp += xp
   users[m.sender].limit -= 1
   
-  m.reply(`Más impuestos gastaste  *${-exp} XP*`)
+  m.reply(`Más impuestos gastaste  *${-expe} XP* total ${exp}`)
   conn.fakeReply(m.chat, `te enviaron *+${xp} XP*`, who, m.text)
 }
 handler.help = ['pagar @user <amount>']
