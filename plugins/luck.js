@@ -6,7 +6,7 @@ let xp = 35000
 let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
-global.DATABASE._data.users[m.sender].limit -= 1000
+global.DATABASE._data.users[m.sender].limit -= 10
 let chelo = (resulta + result)
 m.reply(`*Ganaste* *${result}*\n  - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`)
 }
