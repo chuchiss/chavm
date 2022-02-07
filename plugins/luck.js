@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
 function chuqui(){
 if (global.DATABASE._data.users[m.sender].limit < 10) return m.reply('No tienes mas limites para comprar pon .buy')
 let pajak = Math.random()
-let xp = 25000
+let xp = 28000
 let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
