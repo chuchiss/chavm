@@ -12,10 +12,10 @@ let chelo = (resulta + result)
 conn.reply(m.chat, `*Ganaste* *${result}*\n  - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
 }
 function prueba(){
-conn.reply(m.chat, `Prueba tu suerte check \n Gana hasta 30 mil exp \n Costo 10 limites\n \n cargando....`, m)
+conn.reply(m.chat, `Prueba tu suerte check🤙 \n ▫️Gana hasta 30 mil exp \n ▫️Costo 10 limites\n \n Cargando....`, m)
 }
 setTimeout(prueba, 1000)
-setTimeout(chiqui, 12000)
+setTimeout(chuqui, 12000)
 }
 handler.help = ['luck', 'suerte']
 handler.tags = ['game']
