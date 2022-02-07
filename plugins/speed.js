@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   m.reply(neww - old + 'ms')
 
 let ero = pickRandom(global.funi)
-if (ero > 3) conn.sendFile(m.chat, `pickRandom(global.funis)`, 'jpg', null, m, true)
+if (ero > 3) conn.sendFile(m.chat, 'pickRandom(global.funis)', 'jpg', null, m, true)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
