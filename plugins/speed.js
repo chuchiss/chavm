@@ -4,9 +4,12 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 
+let pajak = 0.02
+let xp = 10
+let result = Math.ceil(xp * pajak)
 
-m.reply(x)
-let x = ${pickRandom(global.culo)}
+
+m.reply(result)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
