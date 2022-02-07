@@ -34,7 +34,7 @@ if (ero > 3) { conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true
   await
   await
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
-  } else m.reply('🌟 estas detenido 🌟\npuedes volver a robar cada 6 horas:)')
+  } else m.reply(' DETENIDO 🌟\npuedes volver a robar cada 6 horas:)')
 }
 handler.help = ['robar @user <cantidad>']
 handler.tags = ['xp']
