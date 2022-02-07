@@ -2,7 +2,7 @@ let { MessageType } = require('@adiwajshing/baileys')
 let pajak = 0.02
 let handler = async (m, { conn, text }) => {
   if (!text) return conn.reply(m.chat, `es n cantidad`, m)
-  let puntos = text
+  let puntos = isNumber
   if (isNaN(puntos)) return conn.reply(m.chat, `es d`, m)
 
 //  if (exp < 50) return conn.reply(m.chat, `minimo 50`, m)
