@@ -6,10 +6,10 @@ handler.before = function (m, { user }) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 6) {
             if (this.spam[m.sender].count > 6) {
-                let users = global.DATABASE.data.users
+                let users = global.DATABASE._data.users
                 users[m.sender].banned = true
                setTimeout(()=> {
-let users = global.DATABASE.data.users;
+let users = global.DATABASE._data.users
 users[m.sender].banned = false
 console.log('desbloqueado al usuario') 
 }, 120000)
