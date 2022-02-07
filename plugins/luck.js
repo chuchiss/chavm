@@ -7,7 +7,7 @@ let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
 global.DATABASE._data.users[m.sender].limit -= 12
 let chelo = (resulta + result)
-m.reply(`Ganaste ${result} ${chumchi}\n  _tenias un total de_ ${resulta} \n _Ahora tienes_ ${chelo}`)
+m.reply(`Ganaste ${result}\n  _tenias un total de_ ${resulta} \n _Ahora tienes_ ${chelo}`)
 }
 handler.help = ['luck', 'suerte']
 handler.tags = ['game']
