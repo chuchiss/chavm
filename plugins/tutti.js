@@ -19,7 +19,7 @@ empieza en 20 segundos..`, m)
 function chelio(){
 return conn.reply(m.chat,`
 Con la letra:   “${picktRandom(global.tuttis)}” \n
-Nombre, apellido , cosas , animal , fruta , país o província\n
+Nombre, apellido , cosas , animal , color,  fruta , país o província \n
 [GOoooo] `, m)
 }
 
