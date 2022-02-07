@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
   let neww = performance.now()
   m.reply(neww - old + 'ms')
 
-let pajak = 0.02
+let pajak = Math.random()
 let xp = 10
 let result = Math.ceil(xp * pajak)
 
