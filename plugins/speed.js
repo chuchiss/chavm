@@ -3,7 +3,10 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
-if (old > 0.0122321001410484314) m.reply ('ass')
+function getRandom() {
+  return Math.random();
+}
+m.reply(getRandom())
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
