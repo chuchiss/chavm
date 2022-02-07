@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
-m.reply(`${myNumeroAleatorio}`)
+m.reply(myNumeroAleatorio)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
