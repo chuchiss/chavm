@@ -17,7 +17,7 @@ let result = global.DATABASE.data.users[who].exp
   if (exp > users[who].exp) return conn.reply(m.chat, `no tiene esa exp`, m)
   if (exp > 1050) return conn.reply(m.chat, `solo puedes robar hasta mil`, m)
 let ero = pickRandom(global.funi)
-if (ero > 3) { return m.reply ('ah sido detenido por la policía')
+if (ero > 3) { return m.reply ('ha sido detenido por la policía')
 conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
  global.DATABASE._data.users[m.sender].lastrob = new Date * 1
 }
