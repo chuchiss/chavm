@@ -3,8 +3,8 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
-let ero = conn.reply(m.chat,`${pickRandom(global.funi)}`, m)
-if (pickRandom > 3) m.reply('cheko')
+let ero = pickRandom(global.funi)
+if (ero > 3) m.reply('cheko')
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
