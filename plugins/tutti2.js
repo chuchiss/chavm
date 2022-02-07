@@ -7,10 +7,17 @@ let handler = async (m, { conn, text }) => {
 
 //  if (exp < 50) return conn.reply(m.chat, `minimo 50`, m)
   let users = global.DATABASE._data.users
-//  if (exp > users[m.sender].exp) return conn.reply(m.chat, `no tenes esa exp`, m)
-// if (users[m.sender].limit < 1) return conn.reply(m.chat, `se requiere un limit m?nimo`, m)
-  
-  m.reply(`Más ${puntos} XP*`)
+ let chats = global.DATABASE._data.chats
+  if (0 = chats[m.chat].jog){ return conn.reply(m.chat, `no estss ennjuego`, m)
+users[m.sender].point -= puntos}
+if (users[m.sender].point >= 100) { return conn.reply(m.chat, `finalizado Ganaste +500 exp`, m)
+users[m.sender].exp += 500
+users[m.sender].point -= puntos 
+chats[m.chat].jog = 0
+users[m.sender].mismo = 0}
+  users[m.sender].point += puntos
+
+  m.reply(`Tenes ${puntos} en el tutti frutti`)
 }
 handler.help = ['']
 handler.tags = ['']
