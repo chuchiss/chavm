@@ -3,8 +3,14 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
-let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
-m.reply(myNumeroAleatorio)
+
+function randomInt(from, to) {
+  if (from > to) [from, to] = [to, from]
+  from = Math.floor(12)
+  to = Math.floor(50)
+  return Math.floor((to - from) * Math.random() + from)
+
+m.reply(randomInt)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
