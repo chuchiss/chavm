@@ -3,6 +3,7 @@ let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
   m.reply(neww - old + 'ms')
+let myNumeroAleatorio = Math.floor(Math.random()*(X+1))
 m.reply(myNumeroAleatorio)
 }
 handler.help = ['ping', 'speed']
