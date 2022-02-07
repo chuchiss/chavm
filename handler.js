@@ -237,15 +237,13 @@ module.exports = {
 
     let image = null;
     try {
-        image = await Jimp.read(imagePath);
-        await image.resize(size, Jimp.AUTO);
-        await image.quality(quality);
+        await handler()
     } catch (e) {
         if (retries >= maxRetries) {
             throw e;
         }
 
-        image = await retryResize(options, retries++);
+        image = await handler(options, retries++);
     }
 
     return image;
@@ -254,20 +252,18 @@ module.exports = {
             console.log(e)
             if (e) {
             
-            async function retryResize(options, retries = 0) {
+            async function handler(options, retries = 0) {
     let { imagePath, size, quality = 60, maxRetries = 5 } = options;
 
     let image = null;
     try {
-        image = await Jimp.read(imagePath);
-        await image.resize(size, Jimp.AUTO);
-        await image.quality(quality);
+        await handler()
     } catch (e) {
         if (retries >= maxRetries) {
             throw e;
         }
 
-        image = await retryResize(options, retries++);
+        image = await handler(options, retries++);
     }
 
     return image;
