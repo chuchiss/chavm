@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
   users[who].exp += xp
   users[m.sender].limit -= 1
   
-  m.reply(`Mรกs impuestos gastaste  *${-exp} XP* total ${result}`)
+  m.reply(`Mas impuestos gastaste  *${-exp} XP* tienes en total ${result}`)
   conn.fakeReply(m.chat, `te enviaron *+${xp} XP*`, who, m.text)
 }
 handler.help = ['pagar @user <amount>']
