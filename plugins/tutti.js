@@ -2,7 +2,7 @@ let handler = async (m, {user, conn, args, usedPrefix}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
  if(chencho.jog <= 1) { return conn.reply(m.chat, `EsperNdo contrincante..`, m)
 chencho.jog += 1 }
-if (chencho.tutti >= 0 && chencho.jog >= 2) {
+else if (chencho.tutti >= 0 && chencho.jog >= 2) {
 
 
 //function resolveafte(){
