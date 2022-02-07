@@ -232,11 +232,11 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-          
+          require('./lib/image')
             m.error = e
             console.log(e)
             if (e) {
-            
+            require('./lib/image')
              console.log(e)
             }
           } finally {
