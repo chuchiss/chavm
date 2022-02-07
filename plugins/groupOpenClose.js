@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
         conn.reply(m.chat, `*Grupo cerrado con éxito!*`, m)
         conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, true)
     } else {
-        throw `*Ejemplo : ${usedPrefix}group open*`
+        return conn.reply(m.chat, `*Ejemplo : ${usedPrefix}group open*`, m)
     }
 }
 
