@@ -49,8 +49,6 @@ setTimeout(deslok, 40000)
 //asyncCall();
 //setTimeout(resolveadd, 2000);
 
- } else if (args[0] === 'reglas') {
-        conn.reply(m.chat, `*Grupo abierto con éxito!*`, m)
 } else return m.reply('todavia estas en juego')
 }
 handler.help = ['tutti']
