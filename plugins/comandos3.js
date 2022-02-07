@@ -5,6 +5,8 @@ m.reply(`
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
 _.tateti_
+_.tutti._ (beta)
+_.luck_
 _proximo a salir preguntados..._
 *___________________________________*
   ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
