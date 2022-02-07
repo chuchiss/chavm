@@ -32,7 +32,7 @@ let result = global.DATABASE.data.users[who].exp
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
  let ero = pickRandom(global.funi)
 if (ero > 3) { return conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
- global.DATABASE._data.users[m.sender].lastrob = new Date * 1
+// global.DATABASE._data.users[m.sender].lastrob = new Date * 1
 }
   } else m.reply('Solo puedes robar cada 1 horas:)')
 }
