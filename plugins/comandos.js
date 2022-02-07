@@ -20,7 +20,6 @@ _.creditos_
       📌🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
 _.attp_ Texto
 _.ttp_ Texto 
-_.ttpd_ Texto
 _.style_ texto
 _.sticker_ (seleccionando imagen)
 _.imagen_ texto
@@ -39,6 +38,8 @@ _.bot_ pregunta
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
 _.tateti_
+_.tutti_ (beta)
+_.luck_
 _proximo a salir preguntados..._
 *___________________________________*
   ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
