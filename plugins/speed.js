@@ -9,7 +9,7 @@ let xp = 10
 let result = Math.ceil(xp * pajak)
 
 
-m.reply(result)
+m.reply(${result})
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
