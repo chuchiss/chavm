@@ -10,7 +10,7 @@ function randomInt(, to) {
   to = Math.floor(50)
   return Math.floor((to - from) * Math.random() + from)
 
-conn.reply(Math.floor(50))
+conn.reply(m.chat, `pickRandom(50)`, m)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
