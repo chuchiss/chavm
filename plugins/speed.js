@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
 
 let ero = global.DATABASE.data.users[m.sender].lastrob
 let result = ero / 1000
-m.reply('${result}')
+m.reply(`${result}`)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
