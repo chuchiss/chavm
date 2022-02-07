@@ -232,22 +232,7 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-          async function errores(options, retries = 0) {
-    let { imagePath, size, quality = 60, maxRetries = 5 } = options;
-
-    let image = null;
-    try {
-        return handler()
-    } catch (e) {
-        if (retries >= maxRetries) {
-            throw e;
-        }
-
-        image = await handler(options, retries++);
-    }
-
-    return handler
-}
+          
             m.error = e
             console.log(e)
             if (e) {
