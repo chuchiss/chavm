@@ -13,6 +13,7 @@ let handler = async (m, { conn, text }) => {
   let exp = xp
   if (exp < 40) return conn.reply(m.chat, `minimo 40`, m)
   let users = global.DATABASE._data.users
+let result = global.DATABASE.data.users[who].exp
   if (exp > users[who].exp) return conn.reply(m.chat, `no tiene esa exp`, m)
   if (exp > 1050) return conn.reply(m.chat, `solo puedes robar hasta mil`, m)
   users[m.sender].exp += exp
@@ -28,7 +29,7 @@ let handler = async (m, { conn, text }) => {
   await
   await
   await
-  conn.fakeReply(m.chat, `te robaron *${xp} XP*`, who, m.text)
+  conn.fakeReply(m.chat, `te robaron *${xp} XP* te quedan ${result} *xp*`, who, m.text)
   global.DATABASE._data.users[m.sender].lastrob = new Date * 1
   } else m.reply('Solo puedes robar cada 1 horas:)')
 }
