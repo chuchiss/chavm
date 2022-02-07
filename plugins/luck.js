@@ -11,7 +11,7 @@ m.reply(`Ganaste ${result} ${chumchi}\n  _tenias un total de_ ${resulta} \n _Aho
 }
 handler.help = ['luck', 'suerte']
 handler.tags = ['game']
-handler
+handler.limit = true
 handler.group = true
 handler.command = /^(luck|suerte)$/i
 module.exports = handler
