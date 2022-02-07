@@ -1,7 +1,10 @@
 let handler = async (m, {user, conn}) => {
 let chencho = global.DATABASE._data.chats[m.chat]
- conn.reply(m.chat, `EsperNdo contrincante..`, m)
+let chenchu = global.DATABASE._data.users[m.sender]
+return conn.reply(m.chat, `EsperNdo contrincante..`, m)
 chencho.jog += 1
+chenchu.mismo += 1
+if (chenchu.mismo > 1) {return}
 if (chencho.tutti >= 0 && chencho.jog >= 2) {
 
 
