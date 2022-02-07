@@ -10,8 +10,8 @@ let chencho = global.DATABASE._data.chats[m.chat]
 //}
 
 function chelo(){
-return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .reglas
-cuando termines di basta!
+return conn.reply(m.chat,`Listo para jugar al tutti frutti?\nPara leer las reglas escribe .it
+cuando termines di Tutti-Frutti!
 empieza en 20 segundos..`, m)
 }
 
