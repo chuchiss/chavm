@@ -2,7 +2,7 @@ let { performance } = require('perf_hooks')
 let handler = async (m, { conn }) => {
   let old = performance.now()
   let neww = performance.now()
-  m.reply(neww - old + 'ms')
+  m.reply(old + 'ms')
 
 function randomInt(from, to) {
   if (from > to) [from, to] = [to, from]
@@ -10,7 +10,7 @@ function randomInt(from, to) {
   to = Math.floor(50)
   return Math.floor((to - from) * Math.random() + from)
 
-m.reply(randomInt())
+//m.reply()
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
