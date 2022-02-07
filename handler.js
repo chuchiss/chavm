@@ -232,42 +232,20 @@ module.exports = {
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
-            async function handler(options, retries = 0) {
-    let { imagePath, size, quality = 60, maxRetries = 5 } = options;
-
-    let image = null;
-    try {
-        await handler()
-    } catch (e) {
-        if (retries >= maxRetries) {
-            throw e;
-        }
-
-        image = await handler(options, retries++);
-    }
-
-    return image;
-}
+            Jimp.read("file.jpg").then(function(image) {
+    image.scale(0.5).write("file-sm.jpg");
+}).catch(function (err) {
+    console.log(err);
+});
             m.error = e
             console.log(e)
             if (e) {
             
-            async function handler(options, retries = 0) {
-    let { imagePath, size, quality = 60, maxRetries = 5 } = options;
-
-    let image = null;
-    try {
-        await handler()
-    } catch (e) {
-        if (retries >= maxRetries) {
-            throw e;
-        }
-
-        image = await handler(options, retries++);
-    }
-
-    return image;
-}
+            Jimp.read("file.jpg").then(function(image) {
+    image.scale(0.5).write("file-sm.jpg");
+}).catch(function (err) {
+    console.log(err);
+});
              console.log(e)
             }
           } finally {
