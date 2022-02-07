@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 
 let pajak = Math.random()
 let xp = 50000
-let chumchi = if (result > 20){ 😳😳 }
+let chumchi = if (result > 20) m.reply('fusa')
 let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
