@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   m.reply(neww - old + 'ms')
 
 
-m.reply(pickRandom(global.culo))
+conn.reply(m.chat, `pickRandom(global.culo)`, m)
 }
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
