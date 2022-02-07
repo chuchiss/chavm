@@ -37,6 +37,7 @@ setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
 setTimeout(deslok, 40000)
 return 0!
+}
 if (chencho.tutti <= 0) return m.reply('todavia estas en juego.. \espera unos segundos..')
 }
 handler.help = ['tutti']
