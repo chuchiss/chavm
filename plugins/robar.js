@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
 let result = global.DATABASE.data.users[who].exp
   if (exp > users[who].exp) return conn.reply(m.chat, `no tiene esa exp`, m)
   if (exp > 1050) return conn.reply(m.chat, `solo puedes robar hasta mil`, m)
-  users[m.sender].exp += exp
+ users[m.sender].exp += exp
   users[m.sender].robos += 1
   users[who].exp -= xp
   await m.reply('_*Robando....*_') 
@@ -30,7 +30,10 @@ let result = global.DATABASE.data.users[who].exp
   await
   await
   conn.fakeReply(m.chat, `te robaron *${xp} XP* \n _te quedan_ ${result} *xp*`, who, m.text)
-  global.DATABASE._data.users[m.sender].lastrob = new Date * 1
+ let ero = pickRandom(global.funi)
+if (ero > 3) { return conn.sendFile(m.chat, 'media/detenidou.jpg', 'jpg', null, m, true)
+ global.DATABASE._data.users[m.sender].lastrob = new Date * 1
+}
   } else m.reply('Solo puedes robar cada 1 horas:)')
 }
 handler.help = ['robar @user <cantidad>']
@@ -39,3 +42,12 @@ handler.command = /^robar$/
 handler.rowner = false
 
 module.exports = handler
+
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
+
+
+global.funi = [
+  '1','2','3','4','5','6']
