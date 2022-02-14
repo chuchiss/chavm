@@ -2,9 +2,7 @@ let PhoneNumber = require('awesome-phonenumber')
 let Rimage = require('../lib/image')
 let levelling = require('../lib/levelling')
 
-let handler = 
-function rr(){
-async (m, { conn }) => {
+let handler = async (m, { conn }) => {
   let pp = './src/images.png'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   try {
@@ -30,8 +28,7 @@ Baneado: ${banned ? 'si' : 'no'}
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }
-}}
-setInterval(rr, 1)
+}
 
 handler.help = []
 handler.tags = []
