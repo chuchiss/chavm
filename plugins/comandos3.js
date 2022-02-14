@@ -5,7 +5,7 @@ m.reply(`
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
 _.tateti_
-_.tutti._ (beta)
+_.tutti_ (beta)
 _.luck_
 _proximo a salir preguntados..._
 *___________________________________*
