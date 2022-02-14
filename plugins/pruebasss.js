@@ -1,8 +1,10 @@
 let PhoneNumber = require('awesome-phonenumber')
 let Rimage = require('../lib/image')
 let levelling = require('../lib/levelling')
+
+let handler = 
 function rr(){
-let handler = async (m, { conn }) => {
+async (m, { conn }) => {
   let pp = './src/images.png'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   try {
