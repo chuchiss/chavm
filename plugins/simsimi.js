@@ -17,7 +17,7 @@ if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 }
 handler.help = ['simi','s'].map(v => v + ' *text*')
 handler.tags = ['fun']
-handler.command = /^(simi|s)$/i
+handler.command = /^(simi|s)?$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
