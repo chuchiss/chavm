@@ -5,7 +5,7 @@ let handler  = async (m, { conn, text, args, usedPrefix, command, isLimit, isPre
 
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
         
-	let text = args.join` `
+	let text = m.text
 	fetch("https://api.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lc=es")
   .then(res => res.json())
   .then(batch => {
@@ -17,7 +17,7 @@ if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 }
 handler.help = ['simi','s'].map(v => v + ' *text*')
 handler.tags = ['fun']
-handler.command = /^(simi|s)?$/i
+handler.command = /^?(simi|s)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
