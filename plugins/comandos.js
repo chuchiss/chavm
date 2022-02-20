@@ -7,8 +7,8 @@ _.perfil_
 _.ranking_
 _.likes_
 _.comandos_
-_.Buy_ (comprar exp)
-_.buyall_ (comprar toda la exp)
+_.Buy_ (comprar limits)
+_.buyall_ (comprar toda la exp a limit)
 _.reclamar_
 _.pagar_ @mension <cantidad de exp>
 _.robar_ @mension <cantidad de exp>
@@ -20,19 +20,18 @@ _.creditos_
       📌🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
 _.attp_ Texto
 _.ttp_ Texto 
-_.style_ texto
-_.sticker_ (seleccionando imagen)
-_.imagen_ texto
-_.frases_
+_.style_ Texto
+_.sticker_ (Crea tu sticker)
+_.imagen_ (busqueda de imagen)
+_.frases_ 
 _.memes_
-_.play_ (nombre de la musica)
-_.play2_ (nombre del video)
+_.play_ (Descarga mmusic mp3)
+_.play2_ (Descarga videos)
 _.anime_
 _.google_ (busqueda de wikipedia)
 _.traducir_ idioma ( marca el texto ) 
-_.tts_ texto
-_.s_ 
-_.bot_ pregunta
+_.tts_ (crea letras de color)
+_.simi_ (habla con insane)
 *___________________________________*
         ➿🄹🅄🄴🄶🄾🅂
 _.mate_ medium (ganar exp)
@@ -42,7 +41,7 @@ _.tutti_ (beta)
 _.luck_
 _proximo a salir preguntados..._
 *___________________________________*
-  ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
+       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
