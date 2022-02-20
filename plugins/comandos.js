@@ -30,14 +30,14 @@ _.play2_ (Descarga videos)
 _.anime_
 _.google_ (busqueda de wikipedia)
 _.traducir_ idioma ( marca el texto ) 
-_.tts_ (crea letras de color)
+_.tts_ Texto 
 _.simi_ (habla con insane)
 *___________________________________*
         ➿🄹🅄🄴🄶🄾🅂
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
 _.tateti_
-_.tutti_ (beta)
+_.tutti_ 
 _.luck_
 _proximo a salir preguntados..._
 *___________________________________*
