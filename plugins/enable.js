@@ -50,7 +50,7 @@ ${usedPrefix}disable _welcome_
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group admin', 'group']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff))$/i
+handler.command = /^(((act)ivar|(des)activar)|(en|dis)able|(tru|fals)e|(turn)?o(n|ff))$/i
 handler.admin = true
 handler.group = true
 handler.botAdmin = true

@@ -15,9 +15,9 @@ let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, is
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 
 }
-handler.help = ['simi','s','bot'].map(v => v + ' *text*')
+handler.help = ['simi','s'].map(v => v + ' *text*')
 handler.tags = ['fun']
-handler.command = /^(simi|s|bot)$/i
+handler.command = /^(simi|s)?$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -28,6 +28,8 @@ handler.botAdmin = false
 handler.fail = null
 handler.limit = false
 module.exports = handler
+
+
 
 
 

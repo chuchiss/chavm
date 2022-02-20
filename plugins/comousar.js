@@ -1,12 +1,13 @@
 let handler = async m => m.reply(`
-Hola para usar el bot
-tenes que usar los comando poniendo un 
+Hola para usar este servicio
+tenes que escribir los comando poniendo un 
 puntito ante cada palabra
-ejemplo .hola
+ejemplo " .hola " sin las comillas es para usar simsimi
 para saber los comandos pone .comandos
+para saber todos los comandos pone .menu
 
 y listo fijate todos los comandos
-que puedas usar
+que puedas usar repetidamente
                                         
 `.trim()) 
 handler.help = ['comousar']

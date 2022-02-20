@@ -6,9 +6,9 @@ let handler = async (m, { conn, usedPrefix }) => {
    
 }
 
-handler.help = ['callense <cerrar grupo>']
+handler.help = ['callense <cerrar grupo>','cerrar']
 handler.tags = ['group']
-handler.command = /^callense$/i
+handler.command = /^(callense|cerrar)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

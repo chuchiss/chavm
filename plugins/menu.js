@@ -87,7 +87,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
     let before = conn.menu.before || `
 ╭─「🙂𝗛ola, %name!」
 │ Tienes *%limit Limit* *%exp XP* 
-│🆕 .recompensas (Gana mucha exp)
+│🆕 .recompensas (Invita a tus amigos)
 │Más novedades en .info
 ╰────
 %readmore
@@ -101,7 +101,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
     let body   = conn.menu.body   || '│ %cmd%islimit'
     let footer = conn.menu.footer || '╰────\n'
     let after  = conn.menu.after  || `
-     *Copyright © Insanebot* `
+     *Copyright © InsaneService* `
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
