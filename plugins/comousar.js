@@ -2,7 +2,10 @@ let handler = async m => m.reply(`
 Hola para usar este servicio
 tenes que escribir los comando poniendo un 
 puntito ante cada palabra
-ejemplo " .hola " sin las comillas es para usar simsimi
+
+ejemplo " .s texto "
+ sin las comillas es para usar simsimi
+
 para saber los comandos pone .comandos
 para saber todos los comandos pone .menu
 
