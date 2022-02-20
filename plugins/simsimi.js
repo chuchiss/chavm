@@ -1,7 +1,7 @@
 let { Presence } = require('@adiwajshing/baileys')
 let fetch = require('node-fetch')
 
-let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, isOwner}) => {
+let handler  = async (m, { conn, text, args, usedPrefix, command, isLimit, isPrems, isOwner}) => {
 
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
         
@@ -17,7 +17,7 @@ if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 }
 handler.help = ['simi','s'].map(v => v + ' *text*')
 handler.tags = ['fun']
-handler.command = /^(.(simi|s))$/i
+handler.command = /^(?(simi|s))$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
