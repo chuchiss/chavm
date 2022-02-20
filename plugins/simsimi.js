@@ -3,10 +3,10 @@ let fetch = require('node-fetch')
 
 let handler  = async (m, { conn, text, args, usedPrefix, command, isLimit, isPrems, isOwner}) => {
 
-	// if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
+	 if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
         
-	//let text = args.join ` `
-        let text = m.text
+	let text = args.join ` `
+ 
 	fetch("https://api.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lc=es")
   .then(res => res.json())
   .then(batch => {
