@@ -17,6 +17,8 @@ luego escribir " .sticker " sin las comillas
 para saber los comandos pone .comandos
 para saber todos los comandos pone .menu
 
+para saber que son los limites escribe .limites
+
 y listo fijate todos los comandos
 que puedas usar repetidamente
                                         
