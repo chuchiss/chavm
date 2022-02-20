@@ -36,9 +36,9 @@ _.simi_ (habla con insane)
         ➿🄹🅄🄴🄶🄾🅂
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
-_.tateti_
-_.tutti_ 
-_.luck_
+_.tateti_ (ganar exp)
+_.tutti_  
+_.luck_ (ganar exp)
 _proximo a salir preguntados..._
 *___________________________________*
        ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
