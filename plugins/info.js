@@ -4,9 +4,9 @@ o también puedes escribir .help
 
 para saber los comandos escribe .comandos
 
-@insanebot.oficial 
+@servicioinsane
 Entérate todos los números ONLINE en:
-instagram.com/insanebot.oficial
+instagram.com/servicioinsane
                                         
 `.trim()) 
 handler.help = ['info']

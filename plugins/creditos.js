@@ -1,6 +1,6 @@
 let handler = async m => m.reply(`
-segui a @insanebot.oficial en ig
-www.instagram.com/insanebot.oficial
+segui a @servicioinsane en ig
+www.instagram.com/servicioinsane
                                         
 `.trim()) 
 handler.help = ['creditos']
