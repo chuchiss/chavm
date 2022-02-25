@@ -81,7 +81,7 @@ global.lyte = ['Adele','EasyOnM
 ','Halsey','
 ','baddbunny
 ','ñengoflow
-','daddyyankee
+','daddyyankee','
 BillieEilishftJustinBieber','BadGuy','
 RosalíaftJBalvin','Conaltura','
 NeoPistéa','Tumbandoelclub(remix)','
