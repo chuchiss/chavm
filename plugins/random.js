@@ -43,52 +43,6 @@ function pickRandom(list) {
 }
 
 
-global.lyte = ['Adele','EasyOnM
-','RosalíayTheWeeknd','LaFama
-','AitanayNickiNicole','Formentera
-','Camilo','Pesadilla
-','PabloAlborán','SoyCapaz
-','SebastiánYatrayGuaynaa','ChicaIdeal
-','NathyPeluso','VivirAsíEsMorirdeAmor
-','Years&YearsyGalantis','SweetTalker
-','AitanayNickiNicole-Formentera
-','RauwAlejandro','Desesperados
-','Ptazeta','Caelanocheft
-','RigobertaBandini','AyMama
-','Leiva','NataliaLafourcade','Diazepam
-','NathyPeluso','VivirAsíEsMorirdeAmor
-','Zzoilo','Starsky&Hutch
-','Tini','Aquíestoy','
-','cTangana-Ingobernable','
-','RauwAlejandro-Tododeti
-','SilkSonic-LeavetheDoorOpen
-','Zahara-Merichane
-','RigobertaBandini-Perra
-','Tyler','TheCreator-Lumberjack
-','SnailMail-Valentine
-','Low-DaysLikeThese-
-','Tusa','KAROLG','NickiMinaj','
-','Hawái','Maluma','
-','Hola','Remix','Dalex','LennyTavárez','ChenchoCorleone','Juhn','
-','LaJeepeta','RemixNioGarcia','AnuelAA','MykeTowers','Brray','Juanka','
-','DanceMonkeyTonesAndI','
-','LaCuriosidadJayWheeler','DJNelson','MykeTowers','
-','SiguesConElArcangel','Sech','DímeloFlow','
-','BillieEilish','
-','TaylorSwift','
-','ArianaGrande','
-','DuaLipa','
-','Halsey','
-','baddbunny
-','ñengoflow
-','daddyyankee','
-BillieEilishftJustinBieber','BadGuy','
-RosalíaftJBalvin','Conaltura','
-NeoPistéa','Tumbandoelclub(remix)','
-LanaDelRey','TheGreatest','
-Wos','Canguro','
-TaylorSwift','Lover','
-DaddyYankee','ConCalma','
-LilNasX','OldTownRoad'] 
+global.lyte = ['Adele','EasyOnM','RosalíayTheWeeknd','LaFama','AitanayNickiNicole','Formentera','Camilo','Pesadilla','PabloAlborán','SoyCapaz','SebastiánYatrayGuaynaa','ChicaIdeal','NathyPeluso','VivirAsíEsMorirdeAmor','Years&YearsyGalantis','SweetTalker','AitanayNickiNicole-ormentera','RauwAlejandro','Desesperados','Ptazeta','Caelanocheft','RigobertaBandini','AyMama','Leiva','NataliaLafourcade','iazepam','NathyPeluso','VivirAsíEsMorirdeAmor','Zzoilo','Starsky&Hutch','Tini','Aquíestoy','cTangana-ngobernable','RauwAlejandro-Tododeti','SilkSonic-LeavetheDoorOpen','Zahara-Merichane','RigobertaBandini-erra','Tyler','TheCreator-Lumberjack','SnailMail-Valentine','Low-aysLikeThese-','Tusa','KAROLG','NickiMinaj','Hawái','Maluma','Hola','Remix','Dalex','LennyTavárez','ChenchoCorleone','Juhn'LaJeepeta','RemixNioGarcia','AnuelAA','MykeTowers','Brray','Juanka','DanceMonkeyTonesAndI','LaCuriosidadJayWheeler','DJNelson','MykeTowers','SiguesConElArcangel','Sech','DímeloFlow','BillieEilish','TaylorSwift','ArianaGrande','DuaLipa','Halsey','ñengoflow','daddyyankee','BillieEilishftJustinBieber','BadGuy','RosalíaftJBalvin','Conaltura','neoPistéa','Tumbandoelclub(remix)','LanaDelRey','TheGreatest','Wos','Canguro','TaylorSwift','Lover','DaddyYankee','ConCalma','LilNasX','OldTownRoad']
 
 
