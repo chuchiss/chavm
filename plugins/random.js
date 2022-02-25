@@ -4,7 +4,7 @@ let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
-  let textu = pickRandom(global.playrr)
+  let textu = pickRandom(global.lyte)
   let results = await yts(textu)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
@@ -43,6 +43,8 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
+
+global.lyte = ['loca khea']
 
 global.playrr = ['La rica boca - DJ Bulbo',' Esto Tilin - Novelpoppys
 
