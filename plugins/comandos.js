@@ -32,13 +32,13 @@ _.google_ (busqueda de wikipedia)
 _.traducir_ idioma ( marca el texto ) 
 _.tts_ texto
 _.s_ 
-_.bot_ pregunta
+_.simi_ pregunta
 *___________________________________*
         ➿🄹🅄🄴🄶🄾🅂
 _.mate_ medium (ganar exp)
 _.adiv_ start (ganar exp)
 _.tateti_
-_.tutti_ (beta)
+_.tutti_ 
 _.luck_
 _proximo a salir preguntados..._
 *___________________________________*
