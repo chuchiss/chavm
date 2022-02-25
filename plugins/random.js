@@ -2,7 +2,7 @@ let limit = 30
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
-let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
+let handler = async (m, { users, text, conn, command, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
   let textu = pickRandom(global.lyte)
   let results = await yts(textu)
