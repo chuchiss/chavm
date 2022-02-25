@@ -43,37 +43,52 @@ function pickRandom(list) {
 }
 
 
-global.lyte = ['La rica boca - DJ Bulbo',' Esto Tilin - Novelpoppys',' Con el pompi pa arriba - Mala fe',' 23 - Randy ft',' Ape Drums
-',' Sessions 5 - Kaleb di masi ft',' DJ Tao',' Menea tu chapa - Wilo D New
-
-7',' Love nwantiti - CKay- DJ YO- AX’EL',' Linda - Rosalía ft',' Tokischa
-
-9',' Pepas - Farruko
-
-10',' Miénteme - Tini ft',' Maria Becerra
-
-11',' Arremangala arrempújala - Los Karkik’s
-
-12',' París - Ingratax
-
-13',' Índigo - Camilo ft',' Evaluna Montaner
-
-14',' AM Remix - Nio Garcia- J Balvin y Bad Bunny
-
-15',' Una nota - J Balvin ft',' Sech
-
-16',' La mamá de la mamá - El Alfa- Chael Produciendo- CJ- El Cherry Scom
-
-17',' Fiel remix - Wisin- Jhay Cortez- Anuel AA- Los legendarios y Mike Towers
-
-18',' Pareja del año - Sebastián Yatra y Myke Towers
-
-19',' Un latigazo remix - Locura mix
-
-20',' Todo de ti - Rauw Alejandro
-
-21',' Chivirika - El Villanord y Yailin la más viral
-
-22',' Yonaguni - Bad bunny',' Sal y perrea - Sech',' Trakatá - Ptzeta- Farina y Juacko',' Ar rico rico - Dj pirata']
+global.lyte = ['Adele','EasyOnM
+','RosalíayTheWeeknd','LaFama
+','AitanayNickiNicole','Formentera
+','Camilo','Pesadilla
+','PabloAlborán','SoyCapaz
+','SebastiánYatrayGuaynaa','ChicaIdeal
+','NathyPeluso','VivirAsíEsMorirdeAmor
+','Years&YearsyGalantis','SweetTalker
+','AitanayNickiNicole-Formentera
+','RauwAlejandro','Desesperados
+','Ptazeta','Caelanocheft
+','RigobertaBandini','AyMama
+','Leiva','NataliaLafourcade','Diazepam
+','NathyPeluso','VivirAsíEsMorirdeAmor
+','Zzoilo','Starsky&Hutch
+','Tini','Aquíestoy','
+','cTangana-Ingobernable','
+','RauwAlejandro-Tododeti
+','SilkSonic-LeavetheDoorOpen
+','Zahara-Merichane
+','RigobertaBandini-Perra
+','Tyler','TheCreator-Lumberjack
+','SnailMail-Valentine
+','Low-DaysLikeThese-
+','Tusa','KAROLG','NickiMinaj','
+','Hawái','Maluma','
+','Hola','Remix','Dalex','LennyTavárez','ChenchoCorleone','Juhn','
+','LaJeepeta','RemixNioGarcia','AnuelAA','MykeTowers','Brray','Juanka','
+','DanceMonkeyTonesAndI','
+','LaCuriosidadJayWheeler','DJNelson','MykeTowers','
+','SiguesConElArcangel','Sech','DímeloFlow','
+','BillieEilish','
+','TaylorSwift','
+','ArianaGrande','
+','DuaLipa','
+','Halsey','
+','baddbunny
+','ñengoflow
+','daddyyankee
+BillieEilishftJustinBieber','BadGuy','
+RosalíaftJBalvin','Conaltura','
+NeoPistéa','Tumbandoelclub(remix)','
+LanaDelRey','TheGreatest','
+Wos','Canguro','
+TaylorSwift','Lover','
+DaddyYankee','ConCalma','
+LilNasX','OldTownRoad'] 
 
 
