@@ -5,7 +5,8 @@ const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
   let textu = pickRandom(global.lyte)
-  let results = await yts(textu)
+  let texti = pickRandom(global.lute)
+  let results = await yts(textu + texti)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
   let isVideo = /2$/.test(command)
@@ -27,7 +28,7 @@ global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
   } else m.reply('Cargando..')
 }
-handler.help = ['play', 'play2'].map(v => v + ' <canción >')
+handler.help = ['random'].map(v => v + ' <canción random>')
 handler.tags = ['downloader']
 handler.command = /^random2?$/i
 handler.group = true
@@ -42,7 +43,6 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
+global.lyte = ['ñengo flow','l gante','dillom','plan b','adele','session','khea','badd bunny','rauw alejandro','daddy yankee','duki','anuel','eminem','karol g ','nicki minaj','nicki jam','maluma','dalex']
 
-global.lyte = ['Adele','EasyOnM','RosalíayTheWeeknd','LaFama','AitanayNickiNicole','Formentera','Camilo','Pesadilla','PabloAlborán','SoyCapaz','SebastiánYatrayGuaynaa','ChicaIdeal','NathyPeluso','VivirAsíEsMorirdeAmor','Years&YearsyGalantis','SweetTalker','AitanayNickiNicole-ormentera','RauwAlejandro','Desesperados','Ptazeta','Caelanocheft','RigobertaBandini','AyMama','Leiva','NataliaLafourcade','iazepam','NathyPeluso','VivirAsíEsMorirdeAmor','Zzoilo','Starsky&Hutch','Tini','Aquíestoy','cTangana-ngobernable','RauwAlejandro-Tododeti','SilkSonic-LeavetheDoorOpen','Zahara-Merichane','RigobertaBandini-erra','Tyler','TheCreator-Lumberjack','SnailMail-Valentine','Low-aysLikeThese-','Tusa','KAROLG','NickiMinaj','Hawái','Maluma','Hola','Remix','Dalex','LennyTavárez','ChenchoCorleone','Juhn'LaJeepeta','RemixNioGarcia','AnuelAA','MykeTowers','Brray','Juanka','DanceMonkeyTonesAndI','LaCuriosidadJayWheeler','DJNelson','MykeTowers','SiguesConElArcangel','Sech','DímeloFlow','BillieEilish','TaylorSwift','ArianaGrande','DuaLipa','Halsey','ñengoflow','daddyyankee','BillieEilishftJustinBieber','BadGuy','RosalíaftJBalvin','Conaltura','neoPistéa','Tumbandoelclub(remix)','LanaDelRey','TheGreatest','Wos','Canguro','TaylorSwift','Lover','DaddyYankee','ConCalma','LilNasX','OldTownRoad']
-
-
+global.lute = [' comeme','acercate','podras','besame','rkt','tranquilo','suelto']
