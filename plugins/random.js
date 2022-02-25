@@ -44,9 +44,7 @@ function pickRandom(list) {
 }
 
 
-global.playrr = ['La rica boca - DJ Bulbo
-
-2',' Esto Tilin - Novelpoppys
+global.playrr = ['La rica boca - DJ Bulbo',' Esto Tilin - Novelpoppys
 
 3',' Con el pompi pa arriba - Mala fe
 
