@@ -6,14 +6,14 @@ if (global.conns instanceof Array) console.log()// for (let i of global.conns) g
 else global.conns = []
 
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
-  if (!global.db.data.settings[conn.user.jid].jadibot) return conn.sendButton(m.chat, 'Jadibot tidak aktif', '', isOwner ? `Aktifkan` : `Owner`, isOwner ? `${usedPrefix}1 jadibot` : `${usedPrefix}owner`, m)
+  if (!global.DATABASE.data.settings[conn.user.jid].jadibot) return conn.reply(m.chat, `Jadibot tidak aktif`, m)
   let parent = args[0] && args[0] == 'plz' ? conn : global.conn
   let auth = false
   if ((args[0] && args[0] == 'plz') || global.conn.user.jid == conn.user.jid) {
     let id = global.conns.length
     let conn = new global.conn.constructor()
     conn.version = global.conn.version
-    conn.browserDescription = ['wabot-aq', '', '5.0']
+    conn.browserDescription = ['bot-aq', '', '5.0']
     if (args[0] && args[0].length > 200) {
       let json = Buffer.from(args[0], 'base64').toString('utf-8')
       // global.conn.reply(m.isGroup ? m.sender : m.chat, json, m)
