@@ -27,6 +27,7 @@ _.frases_
 _.memes_
 _.play_ (nombre de la musica)
 _.play2_ (nombre del video)
+_.random_ (mp3 aleatorio)
 _.anime_
 _.google_ (busqueda de wikipedia)
 _.traducir_ idioma ( marca el texto ) 
@@ -43,7 +44,7 @@ _.luck_
 _.palabra_
 _proximo a salir preguntados..._
 *___________________________________*
-  ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
+          ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
