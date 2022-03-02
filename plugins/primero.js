@@ -42,7 +42,7 @@ return chencho.tutti += 1
 setTimeout(lok, 100)
 setTimeout(chelo, 1000)
 setTimeout(chelio, 10000)
-setTimeout(deslok, 40000)
+setTimeout(deslok, 20000)
 //}
 //asyncCall();
 //setTimeout(resolveadd, 2000);
