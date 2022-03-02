@@ -7,7 +7,7 @@ _.adiv_ start (ganar exp)
 _.tateti_
 _.tutti_ (beta)
 _.luck_
-_.primero_
+_.palabra_
 _proximo a salir preguntados..._
 *___________________________________*
   ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
