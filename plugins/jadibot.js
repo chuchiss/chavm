@@ -6,7 +6,6 @@ if (global.conns instanceof Array) console.log()// for (let i of global.conns) g
 else global.conns = []
 
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
-  if (!global.DATABASE.data.settings[conn.user.jid].jadibot) return conn.reply(m.chat, `Jadibot tidak aktif`, m)
   let parent = args[0] && args[0] == 'plz' ? conn : global.conn
   let auth = false
   if ((args[0] && args[0] == 'plz') || global.conn.user.jid == conn.user.jid) {
@@ -16,7 +15,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
     conn.browserDescription = ['bot-aq', '', '5.0']
     if (args[0] && args[0].length > 200) {
       let json = Buffer.from(args[0], 'base64').toString('utf-8')
-      // global.conn.reply(m.isGroup ? m.sender : m.chat, json, m)
+      global.conn.reply(m.isGroup ? m.sender : m.chat, json, m)
       let obj = JSON.parse(json)
       await conn.loadAuthInfo(obj)
       auth = true
@@ -41,7 +40,6 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
     conn.on('CB:action,,call', conn.onCall)
     conn.regenerateQRIntervalMs = null
     conn.connect().then(async ({ user }) => {
-      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2), m)
       if (auth) return
       await parent.sendMessage(user.jid, `Kamu bisa login tanpa qr dengan pesan dibawah ini. untuk mendapatkan kode lengkapnya, silahkan kirim *${usedPrefix}getcode* untuk mendapatkan kode yang akurat`, MessageType.extendedText)
       parent.sendMessage(user.jid, `${usedPrefix + command} ${Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')}`, MessageType.extendedText)
@@ -64,7 +62,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
           if (i < 0) return
           delete global.conns[i]
           global.conns.splice(i, 1)
-        } catch (e) { conn.logger.error(e) }
+        } catch (e) { console.log(e) }
       }, 30000)
     })
     global.conns.push(conn)
