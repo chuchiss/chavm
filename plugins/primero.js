@@ -49,9 +49,9 @@ setTimeout(deslok, 20000)
 
  } else return m.reply('todavia estas en juego.. \n espera unos segundos..')
 }
-handler.help = ['primero']
+handler.help = ['palabra']
 handler.tags = ['game']
-handler.command = /^(primero)$/i
+handler.command = /^(palabra)$/i
 
 module.exports = handler
 
