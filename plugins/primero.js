@@ -17,7 +17,7 @@ empieza en 20 segundos..`, m)
 
 function chelio(){
 return conn.reply(m.chat,`
-La palabra:   “${picktRandom(global.tuttis)}” \n
+La palabra:   “${picktRandom(global.primero)}” \n
 `, m)
 }
 
@@ -64,5 +64,5 @@ function picktRandom(list) {
 }
 
 
-global.tuttis = [
+global.primero = [
 'gorra','pescado','mandarina','licuado','anonimo','confianza','transiccion','conexion','cohete','jujuy','vivienda','tecnologia','caminata','helicoptero','oso','puerta','quincho','rucula','sopa','tigre','uva','vampiro','washington','politica']
