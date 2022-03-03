@@ -22,7 +22,7 @@ _.online_ (quien está online en el grupo)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
-handler.help = ['admin]
+handler.help = ['admin']
 handler.admin = true
 handler.tags = ['info']
 handler.command = /^(admin|adm)$/i
