@@ -2,17 +2,18 @@ let handler = async (m, {conn}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 m.reply(`
         ➿ADMIN
-_.chau_  (seleccionando o etiquetando)
-_.kick_ (quitea usuario)
-_.hablen_ (abre grupo)
-_.callense_ (cerrar grupo)
+_.chau_  (seleccionando o etiquetando)\n
+_.kick_ (quitea usuario)\n
+_.adv_ (alerta de advertencia a usuario)\n
+_.hablen_ (abre grupo)\n
+_.callense_ (cerrar grupo)\n
 _.grupo_ (cambia de nombre el grupo)
 _.descripcion_  (cambia descripción del grupo)
 _.enable_ (activar opciones de grupo)
-_.disable_ (desactivar opciones de grupo)
-_.tagall_ (premium)
-_.sider_ (ausentes en el grupo)
-_.online_ (quien está online en el grupo)
+_.disable_ (desactivar opciones de grupo)\n
+_.tagall_ (premium)\n
+_.sider_ (ausentes en el grupo)\n
+_.online_ (quien está online en el grupo)\n
 
 
 *___________________________________*
