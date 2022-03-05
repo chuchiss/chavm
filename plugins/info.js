@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-Para saber como usar escribe .comousar
+*Para saber como usar escribe .comousar
 o también puedes escribir .help
 
 para saber los comandos escribe .comandos
