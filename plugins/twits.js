@@ -1,18 +1,18 @@
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.all
-    conn.vote = conn.vote ? conn.vote : {}
+    conn.twit = conn.twit ? conn.twit : {}
     
 
-    let [reason, si, no] = conn.vote[id]
+    let [reason, si, no] = conn.twit[id]
     let mentionedJid = [...si, ...no]
     m.reply(`
       *「 twits 」* \n\n
-*Razon:* ${reason} \n
-*SI*
+*TWIT* ${reason} \n
+*Megusta*
 _Total: ${si.length}_
 ${si.map(u => '@' + u.split('@')[0]).join('\n')}
 \n
-*NO*
+*NOmegusta*
 _Total: ${no.length}_
 ${no.map(u => '@' + u.split('@')[0]).join('\n')}
 `.trim(), false, { contextInfo: { mentionedJid } })
