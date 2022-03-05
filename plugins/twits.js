@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.vote = conn.vote ? conn.vote : {}
-    if (!(id in conn.vote)) return conn.reply(m.chat, `no hay votaciones! para crear una votacion pone .votar`, m)
+    
 
     let [reason, si, no] = conn.vote[id]
     let mentionedJid = [...si, ...no]
