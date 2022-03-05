@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix }) => {
-    let id = m.chat
+    
     conn.vote = conn.vote ? conn.vote : {}
     
 
