@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 }
 handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
-handler.command = /^(twit|twi)tear$/i
+handler.command = /^(tw|(twit|twi)tear)$/i
 handler.limit = true
 handler.group = false
 handler.admin = false
