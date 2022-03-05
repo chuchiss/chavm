@@ -6,12 +6,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     let [reason, si, no] = conn.twit[id]
     let mentionedJid = [...si, ...no]
     m.reply(`
-      *「 twits 」* \n\n
-*TWIT* ${reason} \n
+      *「 TWITEADO AHORA 」* \n\n
+ ${reason.length}_
+${reason.map(u => '@' + u.split('@')[0]).join('\n')} \n
+
 *Megusta*
 _Total: ${si.length}_
 ${si.map(u => '@' + u.split('@')[0]).join('\n')}
-\n
 *NOmegusta*
 _Total: ${no.length}_
 ${no.map(u => '@' + u.split('@')[0]).join('\n')}
