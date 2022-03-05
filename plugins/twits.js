@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     m.reply(`
       *「 TWITEADO AHORA 」* \n\n
  ${reason.length}_
-${reason.map(u => '@' + u.split('@')[0]).join('\n')} \n
+${reason.join('\n')} \n
 
 *Megusta*
 _Total: ${si.length}_
