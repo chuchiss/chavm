@@ -7,6 +7,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     conn.twit[id] = [
         text,
         [],
+        [],
         []
     ]
 }
