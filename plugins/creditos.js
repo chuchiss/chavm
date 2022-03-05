@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-segui a @servicioinsane en ig
+segui a @servicioinsane en igg
 www.instagram.com/servicioinsane
                                         
 `.trim()) 
