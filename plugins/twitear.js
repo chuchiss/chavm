@@ -1,8 +1,8 @@
 let handler = async (m, { conn, text, usedPrefix }) => {
-    conn.vote = conn.vote ? conn.vote : {}
+    conn.twit = conn.twit ? conn.twit : {}
     let id = m.all
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
-    conn.vote[id] = [
+    conn.twit[id] = [
         text,
         [],
         []
