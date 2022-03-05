@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
     conn.twit[id] = [
-        text.join,
+        text,
         [],
         []
     ]
