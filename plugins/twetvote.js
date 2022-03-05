@@ -9,6 +9,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         conn.twit[id][1].push(m.sender)
     } else if (/fav/i.test(command)) {
         conn.twit[id][2].push(m.sender)
+    } else if (/eliminar/i.test(command)) {
+        conn.twit[id][3].push(m.sender)
+        if (conn.twit[id][3] > 2) delete conn.twit[id]
     }
 }
 handler.help = ['retwit', 'fav']
