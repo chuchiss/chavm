@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix }) => {
  ${reason}
 \n
 
-✔️ *.megusta* 
+🔄 *.retwit* 
 _Total: ${si.length}_
 
 ♥️ *.fav* 
