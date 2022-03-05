@@ -12,10 +12,10 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 *.Megusta*
 _Total: ${si.length}_
-${si.map(u => '@' + u.split('@')[0]).join('\n')}
+
 *.NOmegusta*
 _Total: ${no.length}_
-${no.map(u => '@' + u.split('@')[0]).join('\n')}
+
 `.trim(), false, { contextInfo: { mentionedJid } })
 }
 handler.help = ['twitear']
