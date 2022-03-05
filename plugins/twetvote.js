@@ -15,5 +15,5 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['megusta', 'nomegusta']
 handler.tags = ['vote']
 handler.command = /^(megusta|nomegusta)$/i
-handler.group = true
+handler.group = false
 module.exports = handler
