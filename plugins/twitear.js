@@ -4,7 +4,10 @@ let handler = async (m, { conn, text, usedPrefix }) => {
      if (/chat.whatsapp.com\/([0-9A-Za-z]{20,24})/.exec(m.text)) return
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
-    conn.twit[id] = [
+    setTimeout(()=> {
+return delete conn.twit[id]
+}, 60000)
+conn.twit[id] = [
         text,
         [],
         []
