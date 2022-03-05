@@ -7,12 +7,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     if (wasVote) return conn.reply(m.chat, `ya haz votado `, m)
     if (/megusta/i.test(command)) {
         conn.twit[id][1].push(m.sender)
-    } else if (/nomegusta/i.test(command)) {
+    } else if (/fav/i.test(command)) {
         conn.twit[id][2].push(m.sender)
     }
 }
-handler.help = ['megusta', 'nomegusta']
+handler.help = ['megusta', 'fav']
 handler.tags = ['vote']
-handler.command = /^(megusta|nomegusta)$/i
+handler.command = /^(megusta|fav)$/i
 handler.group = true
 module.exports = handler
