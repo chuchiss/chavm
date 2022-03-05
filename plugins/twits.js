@@ -16,6 +16,8 @@ _Total: ${si.length}_
 ♥️ *.fav* 
 _Total: ${no.length}_
 
+🔁 *.eliminar*
+
 `.trim(), false, { contextInfo: { mentionedJid } })
 }
 handler.help = ['twitear']
