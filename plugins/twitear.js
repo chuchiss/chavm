@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
      if (/chat.whatsapp.com\/([0-9A-Za-z]{20,24})/.exec(m.text)) return
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
-    if conn.vote += conn.twit[id] = [
+    if conn.twit[id] += conn.twit[id+] = [
         text,
         [],
         []
