@@ -21,6 +21,6 @@ _Total: ${no.length}_
 }
 handler.help = ['twitear']
 handler.tags = ['vote']
-handler.command = /^(twit(s)|(list|ver)twits)$/i
+handler.command = /^(twit|twits|(list|ver)twits)$/i
 handler.group = false
 module.exports = handler
