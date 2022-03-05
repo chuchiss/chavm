@@ -90,7 +90,7 @@ http://blog.simsimi.com/2017/04/simsimi-terms-and-conditions.html
 https://www.youtube.com/intl/es-419/about/policies/#community-guidelines
 
 este servicio es gratis y sin publicidad.
-Gracias por leerme
+Gracias por leerme.
 @servicioinsane
                                         
 `.trim()) 
