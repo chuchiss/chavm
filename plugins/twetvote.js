@@ -11,8 +11,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         conn.twit[id][2].push(m.sender)
     }
 }
-handler.help = ['megusta', 'fav']
+handler.help = ['retwit', 'fav']
 handler.tags = ['vote']
-handler.command = /^(megusta|fav)$/i
+handler.command = /^(retwit|fav)$/i
 handler.group = true
 module.exports = handler
