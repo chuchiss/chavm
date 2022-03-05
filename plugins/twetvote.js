@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let isVote = conn.twit[id][1].concat(conn.twit[id][2])
     const wasVote = isVote.includes(m.sender)
     if (wasVote) return conn.reply(m.chat, `ya haz votado `, m)
-    if (/megusta/i.test(command)) {
+    if (/retwit/i.test(command)) {
         conn.twit[id][1].push(m.sender)
     } else if (/fav/i.test(command)) {
         conn.twit[id][2].push(m.sender)
