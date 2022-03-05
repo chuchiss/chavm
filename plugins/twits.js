@@ -20,5 +20,5 @@ ${no.map(u => '@' + u.split('@')[0]).join('\n')}
 handler.help = ['twitear']
 handler.tags = ['vote']
 handler.command = /^(twits|(list|ver)twits)$/i
-handler.group = true
+handler.group = false
 module.exports = handler
