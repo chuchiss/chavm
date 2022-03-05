@@ -16,6 +16,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['retwit', 'fav']
 handler.tags = ['vote']
-handler.command = /^(retwit|fav)$/i
+handler.command = /^(retwit|fav|eliminar)$/i
 handler.group = true
 module.exports = handler
