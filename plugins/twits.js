@@ -7,8 +7,8 @@ let handler = async (m, { conn, usedPrefix }) => {
     let mentionedJid = [...si, ...no]
     m.reply(`
       *「 TWITEADO AHORA 」* \n\n
- ${reason.length}_
-${reason.join('\n')} \n
+
+ ${reason}
 
 *Megusta*
 _Total: ${si.length}_
