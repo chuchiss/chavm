@@ -10,10 +10,10 @@ let handler = async (m, { conn, usedPrefix }) => {
  ${reason}
 \n
 
-*.megusta*
+✔️ *.megusta* 
 _Total: ${si.length}_
 
-*.fav*
+♥️ *.fav* 
 _Total: ${no.length}_
 
 `.trim(), false, { contextInfo: { mentionedJid } })
