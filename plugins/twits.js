@@ -1,4 +1,4 @@
-lolet handler = async (m, { conn, usedPrefix }) => {
+let handler = async (m, { conn, usedPrefix }) => {
     let id = m.all
     conn.twit = conn.twit ? conn.twit : {}
     
