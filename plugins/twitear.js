@@ -11,7 +11,7 @@ let handler = async (m, { conn, isPrems, isOwner, text, user, usedPrefix }) => {
         [],
         []
     ]
-global.DATABASE._data.users[m.sender].limit -= 10
+if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 30
 }
 handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
