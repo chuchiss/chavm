@@ -5,13 +5,12 @@ let handler = async (m, { conn, isPrems, isOwner, text, user, usedPrefix }) => {
      if (text in conn.twit[id]) (/chat.whatsapp.com\/([0-9A-Za-z]{20,24})/.exec(m.text)) return
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
-    setTimeout(()=> {
-conn.twit[id] = [
+    conn.twit[id] = [
         text,
         [],
         [],
         []
-    ]}, 2000)
+    ]
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 7
     
 
