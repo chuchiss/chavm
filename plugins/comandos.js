@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 5400) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 m.reply(`
     📍🄻🄾🅂 🄲🄾🄼🄰🄽🄳🄾🅂 🅂🄾🄽 
 _.menu_
