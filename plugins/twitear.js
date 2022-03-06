@@ -1,7 +1,7 @@
-let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
+let handler = async (m, { conn, isPrems, isOwner, text, user, usedPrefix }) => {
     conn.twit = conn.twit ? conn.twit : {}
     let id = m.all
-   if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 10
+    global.DATABASE._data.users[m.sender].limit -= 10
      if (/chat.whatsapp.com\/([0-9A-Za-z]{20,24})/.exec(m.text)) return
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
     m.reply(`¡twuiteado !\n*${usedPrefix}twits  para ver los twits`)
@@ -11,6 +11,7 @@ let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
         [],
         []
     ]
+global.DATABASE._data.users[m.sender].limit -= 10
 }
 handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
