@@ -31,3 +31,4 @@ handler.help = ['perfil [@user]']
 handler.tags = ['tools']
 handler.command = /^(perfil|perfíl|profile)$/i
 module.exports = handler
+handler.fail = null
