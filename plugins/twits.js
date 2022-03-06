@@ -12,7 +12,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 🔄 *.retwit* 
 _Total: ${si.length}_
-${si.map(u => '@' + u.split('@')[0]).join('\n')}
 
 ♥️ *.fav* 
 _Total: ${no.length}_
