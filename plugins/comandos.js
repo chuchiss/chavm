@@ -45,7 +45,7 @@ _proximo a salir preguntados..._
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
-global.DATABASE._data.users[m.sender].lastmp = new Date * 1
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
 handler.help = ['comandos']
