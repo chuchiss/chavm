@@ -4,10 +4,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     
 
     let [reason, si, no] = conn.twit[id]
-    let mentionedJid = [...si, ...no]
+    let mentionedJid = [...reason, ...si, ...no]
     m.reply(`
       *「 TWITEADO AHORA 」* \n\n
  ${reason}
+${reason.map(u => '@' + u.split('@')[0]).join('\n')}
 \n
 
 🔄 *.retwit* 
