@@ -42,7 +42,7 @@ _.tutti_
 _.luck_
 _proximo a salir preguntados..._
 *___________________________________*
-  ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
+      ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
