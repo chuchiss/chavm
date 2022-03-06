@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix }) => {
+lolet handler = async (m, { conn, usedPrefix }) => {
     let id = m.all
     conn.twit = conn.twit ? conn.twit : {}
     
@@ -23,4 +23,5 @@ handler.help = ['twitear']
 handler.tags = ['vote']
 handler.command = /^(twit|twits|(list|ver)twits)$/i
 handler.group = false
+habdler.owner = true
 module.exports = handler
