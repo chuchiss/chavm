@@ -23,5 +23,5 @@ handler.help = ['twitear']
 handler.tags = ['vote']
 handler.command = /^(twit|twits|(list|ver)twits)$/i
 handler.group = false
-habdler.owner = true
+handler.owner = true
 module.exports = handler
