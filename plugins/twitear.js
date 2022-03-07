@@ -1,7 +1,8 @@
-let handler = async (m, { conn, isPrems, isOwner, text, user, usedPrefix }) => {
+let handler = async (m, { args, conn, isPrems, isOwner, text, user, usedPrefix }) => {
     conn.twit = conn.twit ? conn.twit : {}
     let id = m.all
-    if(conn.twit[id][0].length > 20) {
+    let text = args.join ` `
+    if(args[0].length > 20) {
 	return conn.reply(m.chat, `twit max. 20 carácteres!`, m)
     if ( global.DATABASE._data.users[m.sender].limit < 30) return m.reply('minimo 30 limits disponibles para tw - cada tw cuesta 6 + iva')
     if (!text) return m.reply('twit vacío!  .twittear esto es un ejemplo')
