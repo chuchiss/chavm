@@ -1,4 +1,4 @@
-let handler = async (m, { args, conn, isPrems, isOwner, text, user, usedPrefix }) => {
+let handler = async (m, { conn, isPrems, isOwner, text, user, usedPrefix }) => {
     conn.twit = conn.twit ? conn.twit : {}
     let id = m.all
     if ( global.DATABASE._data.users[m.sender].limit < 30) return m.reply('minimo 30 limits disponibles para tw - cada tw cuesta 6 + iva')
