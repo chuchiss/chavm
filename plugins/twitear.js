@@ -20,6 +20,6 @@ handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
 handler.command = /^(tw|(twit|twi)tear)$/i
 handler.limit = true
-handler.group = false
+handler.group = true
 handler.admin = false
 module.exports = handler
