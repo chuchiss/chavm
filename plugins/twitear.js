@@ -1,5 +1,5 @@
 let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
-if (text.lenght > 18) return conn.reply(m.chat, 'Lo siento, texto demasiado largo, máximo 80 caracteres!', m)
+if (text > 18) return conn.reply(m.chat, 'Lo siento, texto demasiado largo, máximo 80 caracteres!', m)
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 10400) {
     
     conn.twit = conn.twit ? conn.twit : {}
@@ -15,7 +15,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 10400) {
         []
     ]
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 7
- global.DATABASE._data.users[m.sender].lastmp = new Date * 1
+ global.DATABASE._data.users[m.sender].lastme = new Date * 1
 
 } else m.reply('Cargando..')
 }
