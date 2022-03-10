@@ -1,7 +1,7 @@
 
 conn.twit = conn.twit ? conn.twit : {}
 let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
-let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
+let linkRegex = /https?:\/\/(www\.)?\/([0-9A-Za-z]{20,24})/i
 let isLink = linkRegex.exec(m.text)
 if (!isLink) {
     
