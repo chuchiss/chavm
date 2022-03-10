@@ -1,4 +1,4 @@
-let handler = async (m, { conn, isPrems, isOwner, args, text, usedPrefix }) => {
+let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
 if (text > 18) return conn.reply(m.chat, 'Lo siento, texto demasiado largo, máximo 80 caracteres!', m)
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 10400) {
     
