@@ -40,6 +40,8 @@ _.adiv_ start (ganar exp)
 _.tateti_
 _.tutti_ 
 _.luck_
+_.twittear_ (quue esta pasando?)
+_.twit_ (ver twits)
 _proximo a salir preguntados..._
 *___________________________________*
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
