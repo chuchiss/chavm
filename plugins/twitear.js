@@ -26,7 +26,6 @@ let users = global.DATABASE._data.users
 let users = global.DATABASE._data.users
 users[m.sender].banned = false
 console.log('desbloqueado al usuario') 
-return
 }, 10000)
 }
 handler.help = ['twitear (que esta pasando)']
