@@ -8,12 +8,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     if (/retwit/i.test(command)) {
         conn.twit[id][1].push(m.sender)
        global.DATABASE._data.users[m.sender].exp += 1000
-        m.reply ('Retwiteado +1000 exp')
+        m.reply ('Retwiteado +200 exp')
        return
     } else if (/fav/i.test(command)) {
         conn.twit[id][2].push(m.sender)
         global.DATABASE._data.users[m.sender].exp += 1000
-        m.reply ('Faveado +1000 exp')
+        m.reply ('Faveado +200 exp')
        return
     } else if (/eliminar/i.test(command)) {
         conn.twit[id][3].push(m.sender)
