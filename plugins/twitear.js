@@ -1,8 +1,9 @@
 
 conn.twit = conn.twit ? conn.twit : {}
 let handler = async (m, { conn, isPrems, isOwner, text, usedPrefix }) => {
-if (text > 18) return conn.reply(m.chat, 'Lo siento, texto demasiado largo, máximo 80 caracteres!', m)
-if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
+let isLink = linkRegex.exec(m.text)
+if (!isLink) {
     
     
     let id = m.all
@@ -18,8 +19,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
     ]
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 7
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
-
-} else m.reply('Cargando..')
+} else return
 }
 handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
