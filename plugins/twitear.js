@@ -19,14 +19,7 @@ if (!isLink) {
     ]
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 7
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
-} else
-let users = global.DATABASE._data.users
-               users[m.sender].banned = true
-               setTimeout(()=> {
-let users = global.DATABASE._data.users
-users[m.sender].banned = false
-console.log('desbloqueado al usuario') 
-}, 10000)
+} else return
 }
 handler.help = ['twitear (que esta pasando)']
 handler.tags = ['vote']
