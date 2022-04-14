@@ -30,7 +30,7 @@ if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
 }
 handler.help = ['random'].map(v => v + ' <canción random>')
 handler.tags = ['downloader']
-handler.command = /^estados2?$/i
+handler.command = /^random2?$/i
 handler.group = true
 handler.limit = true
 
