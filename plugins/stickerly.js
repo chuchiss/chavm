@@ -7,7 +7,7 @@ let handler  = async (m, { conn, args }) => {
   let text = `${pickkRandom(global.bucinaa)}`
   let results = await gis('sticker' + 'webp' + text) || []
   let { url, width, height } = pickRandom(results) || {}
-  if (!url) return conn.reply(m.chat, `sticker no encontrado`, m)
+  if (!url) pickRandom(results) || {}
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
