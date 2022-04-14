@@ -10,7 +10,7 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
   let isVideo = /s$/.test(command)
-  let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
+  let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? yta : ytv)(vid.url, 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 *🔥Titulo:* ${title}
