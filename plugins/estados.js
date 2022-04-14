@@ -6,7 +6,7 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
   let textu = pickRandom(global.lyte)
   let texti = pickRandom(global.lute)
-  let results = await yts(textu + texti)
+  let results = await yts('estado para Whatsapp'+ textu + texti)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
   let isVideo = /s$/.test(command)
