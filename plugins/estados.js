@@ -12,18 +12,11 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   let isVideo = /ados$/.test(command)
   let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*🔥Titulo:* ${title}
-*📂Peso:* ${filesizeF}
-${isLimit ? ' ': ''} 
-`.trim(), m)
+  
   let _thumb = {}
   try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { return }
-  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /ados$/.test(command)), `
-*🔥Title:* ${title}
-*📂Filesize:* ${filesizeF}
-`.trim(), m, false, _thumb || {})
+  
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
   } else m.reply('Cargando..')
