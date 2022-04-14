@@ -7,19 +7,19 @@ let handler  = async (m, { conn, args }) => {
   let text = `${pickkRandom(global.bucinaa)}`
   let results = await gis('sticker' + 'webp' + text) || []
   let { url, width, height, size } = pickRandom(results) || {}
-  if (gimage = '.bin') return m.reply('ok') 
+  if (conn.sendFile = '.bin') return m.reply('ok') 
   let { url2 } = pickRandom(results) || {}
   let { url3 } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
-\* conn.sendFile(m.chat, url2, 'gimage', `
+conn.sendFile(m.chat, url2, 'gimage', `
 sticker random
 `.trim(), m)
 conn.sendFile(m.chat, url3, 'gimage', `
 sticker random
-`.trim(), m) */
+`.trim(), m) 
 conn.reply(m.chat, text, m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
