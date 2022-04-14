@@ -19,8 +19,9 @@ handler.tags = ['internet', 'tools']
 
 
 handler.command = /^(stic?kerly)$/i
-handler.group = true
+handler.group = false
 handler.exp = 750
+
 
 module.exports = handler
 
