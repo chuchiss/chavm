@@ -11,7 +11,6 @@ let handler  = async (m, { conn, args }) => {
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
-conn.reply(m.chat, text, m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 }
