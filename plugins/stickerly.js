@@ -6,7 +6,8 @@ let handler  = async (m, { conn, args }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `${pickkRandom(global.bucinaa)}`
   let results = await gis('sticker' + 'webp' + text) || []
-  let { url, width, height } = pickRandom(results) || {}
+  let { url, width, height, size } = pickRandom(results) || {}
+  if (size > 1) m.reply('ok')
   let { url2 } = pickRandom(results) || {}
   let { url3 } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
