@@ -10,7 +10,7 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
   let isVideo = /2$/.test(command)
-  let { dl_link, thumb, title, filesize, filesizeF} = await (ytv)(vid.url, 'id4')
+  let { dl_link, thumb, title, filesize, filesizeF} = await ytv(vid.url, 'id4')
  conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
 *🔥Title:* ${title}
 *📂Filesize:* ${filesizeF}
@@ -21,7 +21,7 @@ if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
 }
 handler.help = ['random'].map(v => v + ' <canción random>')
 handler.tags = ['downloader']
-handler.command = /^estados2?$/i
+handler.command = /^estados?$/i
 handler.group = true
 handler.limit = true
 
