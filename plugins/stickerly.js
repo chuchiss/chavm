@@ -7,7 +7,7 @@ let handler  = async (m, { conn, args }) => {
   let text = `${pickkRandom(global.bucinaa)}`
   let results = await gis('sticker' + 'webp' + text) || []
   let { url, width, height, size } = pickRandom(results) || {}
-  if (gimage = '.bin') m.reply('ok') return
+  if (gimage = '.bin') reply m.reply('ok') 
   let { url2 } = pickRandom(results) || {}
   let { url3 } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
