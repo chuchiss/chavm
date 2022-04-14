@@ -14,12 +14,12 @@ sticker random
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 }
-handler.help = ['sticker random']
+handler.help = ['stickerly (sticker random)']
 handler.tags = ['internet', 'tools']
 
 
 handler.command = /^(stic?kerly)$/i
-handler.group = false
+handler.priv = true
 handler.exp = 750
 
 
