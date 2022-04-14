@@ -9,9 +9,18 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   let results = await yts(textu + texti)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
-  let isVideo = /2$/.test(command)
-  let { dl_link, thumb, title, filesize, filesizeF} = await ytv(vid.url, 'id4')
- conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
+  let isVideo = /s$/.test(command)
+  let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
+  let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
+  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
+*🔥Titulo:* ${title}
+*📂Peso:* ${filesizeF}
+${isLimit ? ' ': ''} 
+`.trim(), m)
+  let _thumb = {}
+  try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
+  catch (e) { return }
+  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /s$/.test(command)), `
 *🔥Title:* ${title}
 *📂Filesize:* ${filesizeF}
 `.trim(), m, false, _thumb || {})
