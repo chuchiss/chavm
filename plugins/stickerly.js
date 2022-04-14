@@ -35,7 +35,7 @@ function pickkRandom(list) {
 }
 
 global.bucinaa = [
-  'bob esponja','curioso','webp WhatsApp','sticker de moda','nuevo sticker','webp','de risa','tristes','contento','chistosos'
+  'bob esponja','curioso','enojado','webp WhatsApp','sticker de moda','nuevo sticker','webp','de risa','tristes','contento','chistosos'
 
 ]
 
