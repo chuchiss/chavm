@@ -6,11 +6,12 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
   let textu = pickRandom(global.lyte)
   let texti = pickRandom(global.lute)
-  let results = await ytv('estados para whatsapp' + textu + texti)
+  
+  let results = await ytv(textu + texti)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
   let isVideo = /2$/.test(command)
-  let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? yta : ytv)(vid.url, 'id4')
+  let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 ${isLimit ? ' ': ''} 
