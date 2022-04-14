@@ -9,7 +9,7 @@ let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
   let results = await yts('estado para Whatsapp'+ textu + texti)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) return conn.reply(m.chat, `video o audio no encontrado`, m)
-  let isVideo = /sq$/.test(command)
+  let isVideo = /s$/.test(command)
   if (!isVideo) return m.reply('utilize .estados para descargar estados para whatsapp')
   let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
