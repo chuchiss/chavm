@@ -27,7 +27,7 @@ global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 2
   } else m.reply('Cargando..')
 }
-handler.help = ['random'].map(v => v + ' <estados random>')
+handler.help = ['estados (estados random)']
 handler.tags = ['downloader']
 handler.command = /^estados?$/i
 handler.group = true
