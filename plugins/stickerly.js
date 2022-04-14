@@ -8,10 +8,11 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis('sticker para watsapp' + text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (!gis)  console.error(e)
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
+ 
 `.trim(), m)
+conn.reply(m.chat, text, m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 }
