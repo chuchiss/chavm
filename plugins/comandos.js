@@ -27,12 +27,17 @@ _.frases_
 _.memes_
 _.play_ (nombre de la musica)
 _.play2_ (nombre del video)
+_.random_ (canción random)
+_.stickerly_ 
+_.estados_
 _.anime_
 _.google_ (busqueda de wikipedia)
 _.traducir_ idioma ( marca el texto ) 
 _.tts_ texto
 _.s_ 
 _.simi_ pregunta
+_.twittear_ (quue esta pasando?)
+_.twit_ (ver twits)
 *___________________________________*
         ➿🄹🅄🄴🄶🄾🅂
 _.mate_ medium (ganar exp)
@@ -40,8 +45,6 @@ _.adiv_ start (ganar exp)
 _.tateti_
 _.tutti_ 
 _.luck_
-_.twittear_ (quue esta pasando?)
-_.twit_ (ver twits)
 _proximo a salir preguntados..._
 *___________________________________*
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
