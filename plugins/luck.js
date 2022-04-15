@@ -9,6 +9,8 @@ let result = Math.ceil(xp * pajak)
 global.DATABASE._data.users[m.sender].exp += result
 global.DATABASE._data.users[m.sender].limit -= 10
 let chelo = (resulta + result)
+let chenchy = (result / 5000)
+if (result < 5000) return conn.reply(m.chat, `*Perdiste* *${result}*\n ${chenchy} - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
 conn.reply(m.chat, `*Ganaste* *${result}*\n  - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
 }
 function prueba(){
