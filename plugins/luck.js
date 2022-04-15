@@ -15,7 +15,7 @@ if (result < 5000) return conn.reply(m.chat, `*Perdiste* ${-chenchy} xp\n - _Ten
 conn.reply(m.chat, `*Ganaste* *${chenchy}* xp \n - _Tenias un total de_ ${resulta}xp\n -- _Ahora tienes_ ${chelo} xp \n --- _Limite totales_ ${tocno}`, m)
 }
 function prueba(){
-conn.reply(m.chat, `*Prueba tu suerte check*🤙 \n ▫️Gana hasta el doble de exp \n \n \n Cargando....`, m)
+conn.reply(m.chat, `*Prueba tu suerte check*🤙 \n ▫️Gana hasta el doble de exp \n  ▫️ Costo 10 limites \n \n Cargando....`, m)
 }
 setTimeout(prueba, 1000)
 setTimeout(chuqui, 12000)
