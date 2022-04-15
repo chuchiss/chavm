@@ -33,7 +33,7 @@ function pickkRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.bucinaa = [ 'sponge bob','pocoyo','tom and jerry','shreck'
+global.bucinaa = [ 'sponge bob','pocoyo','tom and jerry','shreck','cars'
 ]
 
 global.bucinaas = [
