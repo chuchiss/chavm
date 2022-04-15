@@ -13,6 +13,7 @@ _.reclamar_
 _.pagar_ @mension <cantidad de exp>
 _.robar_ @mension <cantidad de exp>
 _.robos_
+_.link_
 _.ping_
 _.politica_
 _.creditos_
