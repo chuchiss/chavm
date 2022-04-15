@@ -11,7 +11,7 @@ global.DATABASE._data.users[m.sender].limit -= 10
 let chelo = (resulta + result)
 let chenchy = (result - 5000)
 if (result < 5000) return conn.reply(m.chat, `*Perdiste* ${-chenchy} \n - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
-conn.reply(m.chat, `*Ganaste* *${-chenchy}*\n  - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
+conn.reply(m.chat, `*Ganaste* *${chenchy}*\n  - _Tenias un total de_ ${resulta} \n -- _Ahora tienes_ ${chelo}`, m)
 }
 function prueba(){
 conn.reply(m.chat, `*Prueba tu suerte check*🤙 \n ▫️Gana hasta el doble de exp \n ▫️Costo 10 limites\n \n Cargando....`, m)
