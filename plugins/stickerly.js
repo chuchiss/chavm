@@ -19,7 +19,7 @@ handler.tags = ['internet', 'tools']
 
 
 handler.command = /^(stic?kerly)$/i
-handler.private = true
+handler.private = false
 handler.exp = 750
 
 
