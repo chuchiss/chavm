@@ -24,7 +24,7 @@ global.pozo -= veces
 return
 }
  global.pozo += 1
-  let cilu = global.DATABASE._data.users[user]
+  let cilu = global.DATABASE.data.users[m.sender]
  cilu.exp -= costo
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
 }
