@@ -3,7 +3,7 @@ function mmero() {
   let costo = 5000
   let veces = global.DATABASE.data.chats[m.chat].pozo
   let lukia = (costo * veces)
-  conn.reply(m.chat, `pozo acumulado total del pozo ${lukia}  total de veces ${veces}`, m)
+  conn.reply(m.chat, `pozo acumulado \ntotal del pozo ${lukia}  \ntotal de veces ${veces}`, m)
 }
 setTimeout(mmero, 3000)
 function ttero() {
@@ -15,7 +15,7 @@ function ttero() {
   return list[Math.floor(list.length * Math.random())]
 }
  global.DATABASE.data.chats[m.chat].pozo += 1
-  if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! Haz ganado el pozo de ${lukia} xp!!!`, m)
+  if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
  global.DATABASE.data.chats[m.chat].pozo -= veces
 return
 }
