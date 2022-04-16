@@ -1,6 +1,7 @@
 let handler = async (m, { conn }) => {
 function mmero() {
-  conn.reply(m.chat, `hola`, m)
+  let costo = 5000
+  conn.reply(m.chat, `pozo acumulado costo ${costo}`, m)
 }
 setTimeout(mmero, 3000)
 function ttero() {
