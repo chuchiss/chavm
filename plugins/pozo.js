@@ -1,14 +1,14 @@
 let handler = async (m, { conn }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 12000) {
-function chuqui(){
+function chuquii(){
 
 conn.reply(m.chat, `perdiste` m)
 }
-function prueba(){
+function pruebaa(){
 conn.reply(m.chat, `*Pozo acumulado \n ▫️pozo minimo ${costo} \n total de veces intentado ${veces} \n \n Cargando....`, m)
 }
-setTimeout(prueba, 1000)
-setTimeout(chuqui, 12000)
+setTimeout(pruebaa, 1000)
+setTimeout(chuquii, 12000)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
 }
