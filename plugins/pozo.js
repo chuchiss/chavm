@@ -3,7 +3,8 @@ function mmero() {
   conn.reply(m.chat, `hola`, m)
 }
 setTimeout(mmero, 3000)
-
+function ttero() {
+ conn.reply(m.chat, `ll`, m)
 
 
 }
