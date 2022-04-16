@@ -5,6 +5,7 @@ function mmero() {
 setTimeout(mmero, 3000)
 function ttero() {
  conn.reply(m.chat, `ll`, m)
+}
 
 
 }
