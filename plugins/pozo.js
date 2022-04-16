@@ -18,9 +18,9 @@ function ttero() {
  function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
- global.DATABASE.data.chats[m.chat].pozo += 1
+ global.pozo += 1
   if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
- global.DATABASE.data.chats[m.chat].pozo -= veces
+ global.pozo -= veces
 return
 }
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
