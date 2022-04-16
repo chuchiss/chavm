@@ -1,5 +1,5 @@
 let handler = async (m, { conn, user }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastmp > 12000) {
+if (new Date - global.DATABASE._data.users[m.sender].lastmp > 9500) {
 function mmero() {
   let costo = 5000
   let veces = global.pozo
@@ -29,7 +29,7 @@ return
  cilu.exp -= costo
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
 }
-setTimeout(ttero, 8500)
+setTimeout(ttero, 9500)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
 }
