@@ -17,13 +17,13 @@ function ttero() {
  function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
- global.pozo += 1
- global.DATABASE.data.users[user].exp -= costo
- if (global.DATABASE.data.users[user].exp < costo) return conn.reply(m.chat, `Lo siento! no tienes exp`, m)
- if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
- global.pozo -= veces
+if (global.DATABASE.data.users[user].exp < costo) return conn.reply(m.chat, `Lo siento! no tienes exp`, m)
+if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+global.pozo -= veces
 return
 }
+ global.pozo += 1
+ global.DATABASE.data.users[user].exp -= costo
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
 }
 setTimeout(ttero, 8500)
