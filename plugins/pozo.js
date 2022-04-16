@@ -15,12 +15,12 @@ function ttero() {
   let veces = global.pozo
   let lukia = (costo * veces)
 let pajak = Math.random()
-let xp = (cilu.limit * 100)
+let xp = (cilu.limit * 10)
 let elo = Math.ceil(xp * pajak)
 let cilu = global.DATABASE._data.users[m.sender]
 if (cilu.limit < 2) return conn.reply(m.chat, `*Lo* *siento* , _Minimo 1 limit!!_ `, m)
 if (cilu.exp < costo) return conn.reply(m.chat, `*Lo* *siento* , _No tienes suficiente Exp!!_ `, m)
-if (elo == 80) { conn.reply(m.chat, `🤑*∆FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+if (elo == 4) { conn.reply(m.chat, `🤑*∆FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
 cilu.exp += lukia
 global.pozo -= veces
 return
