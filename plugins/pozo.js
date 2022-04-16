@@ -18,7 +18,7 @@ let costo = 5000
 let veces = global.DATABASE.data.users[m.sender].pozo
 let ero = pickRandom(global.funi)
 let total = (veces * 10000 / 2)
-if (ero > 5) return conn.reply(m.chat, `ganaste` m)
+conn.reply(m.chat, `perdiste` m)
 }
 function prueba(){
 conn.reply(m.chat, `*Pozo acumulado \n ▫️pozo minimo ${costo} \n total de veces intentado ${veces} \n \n Cargando....`, m)
