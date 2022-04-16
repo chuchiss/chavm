@@ -5,8 +5,8 @@ m.reply(` ${text}
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
-handler.help = ['juegos']
-handler.tags = ['info']
-handler.command = /^(juegos|game)$/i
+handler.help = ['']
+handler.tags = ['']
+handler.command = /^(pru)$/i
 
 module.exports = handler
