@@ -1,8 +1,8 @@
 let handler = async (m, { conn }) => {
-functions primero(){
+function primero(){
   conn.reply(m.chat, `hola`, m)
 }
-functions segundo(){
+function segundo(){
 conn.reply(m.chat `que pinta` m)
 }
 setTimeout(primero, 3000)
