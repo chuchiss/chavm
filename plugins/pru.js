@@ -1,12 +1,11 @@
 let handler = async (m, {conn, text}) => {
  global.lolo = {
-text1 = ''
+text1 = 'coso'
 text2 = ''
 }
-if (!text) global.lolo.text2 = text
-if (isNaN) global.lolo.text1 = text
-m.reply(` 
-${global.lolo.text1.push(m.text)}                            
+
+m.reply(`              
+      ${global.lolo.text1}         
 `.trim()) 
 
 }
