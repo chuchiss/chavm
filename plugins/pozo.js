@@ -10,9 +10,11 @@ function ttero() {
  let costo = 5000
   let veces = global.DATABASE.data.chats[m.chat].pozo
   let lukia = (costo * veces)
- global.DATABASE.data.chats[m.chat].pozo -= veces
+ let ero = pickRandom(global.funi)
+ 
+ global.DATABASE.data.chats[m.chat].pozo += 1
   
- conn.reply(m.chat, `ll`, m)
+ conn.reply(m.chat, `perdiste ${ero}`, m)
 }
 setTimeout(ttero, 3500)
 
