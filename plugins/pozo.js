@@ -15,7 +15,9 @@ function ttero() {
   return list[Math.floor(list.length * Math.random())]
 }
  global.DATABASE.data.chats[m.chat].pozo += 1
-  if (ero > 4) return conn.reply(m.chat, `ganaste`, m)
+  if (ero > 4) { conn.reply(m.chat, `ganaste`, m)
+ global.DATABASE.data.chats[m.chat].pozo -= veces
+}
  conn.reply(m.chat, `perdiste ${ero}`, m)
 }
 setTimeout(ttero, 3500)
