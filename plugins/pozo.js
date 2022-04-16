@@ -1,11 +1,7 @@
 let handler = async (m, { conn }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 12000) {
 function chuqui(){
-if (global.DATABASE._data.users[m.sender].limit < 10) return m.reply('No tienes mas limites para comprar pon .buy')
-let costo = 5000
-let veces = global.DATABASE.data.chat[m.all].pozo
-let ero = pickRandom(global.funi)
-let total = (veces * 10000 / 2)
+
 conn.reply(m.chat, `perdiste` m)
 }
 function prueba(){
