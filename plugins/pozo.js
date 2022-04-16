@@ -33,7 +33,7 @@ setTimeout(ttero, 8500)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
 }
-handler.help = ['pru']
+handler.help = ['pozo']
 handler.tags = ['game']
 handler.limits = true
 handler.group = true
