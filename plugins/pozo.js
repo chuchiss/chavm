@@ -19,12 +19,13 @@ function ttero() {
 }
 
 if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
-global.DATABASE._data.users[user].exp += veces
+cilu.exp += lukia
 global.pozo -= veces
 return
 }
  global.pozo += 1
- global.DATABASE._data.users[user].exp -= costo
+  let cilu = global.DATABASE._data.users[user]
+ cilu.exp -= costo
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
 }
 setTimeout(ttero, 8500)
