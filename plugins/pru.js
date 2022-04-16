@@ -5,8 +5,8 @@ text2 = ''
 }
 if (!text) global.lolo.text2 = text
 if (isNaN) global.lolo.text1 = text
-m.reply(` ${global.lolo.text1}
-${global.lolo.text2}                            
+m.reply(` 
+${global.lolo.text1.push(m.text)}                            
 `.trim()) 
 
 }
