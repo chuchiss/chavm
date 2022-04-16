@@ -6,7 +6,7 @@ function mmero() {
   global.pozo = 0
   }
   let lukia = (costo * veces)
-  conn.reply(m.chat, `pozo acumulado \ntotal del pozo ${lukia}  \ntotal de intentos ${veces}`, m)
+  conn.reply(m.chat, `pozo acumulado🤞🤞\n \n 📍costo del pozo ${costo} \n📍total del pozo ${lukia}  \n📍total de intentos ${veces} \n \n *Cargando...*`, m)
 }
 setTimeout(mmero, 3000)
 function ttero() {
@@ -18,7 +18,7 @@ function ttero() {
   return list[Math.floor(list.length * Math.random())]
 }
 
-if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+if (ero > 5) { conn.reply(m.chat, `🤑FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
 cilu.exp += lukia
 global.pozo -= veces
 return
