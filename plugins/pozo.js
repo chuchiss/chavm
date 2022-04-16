@@ -17,6 +17,7 @@ function ttero() {
  global.DATABASE.data.chats[m.chat].pozo += 1
   if (ero > 4) { conn.reply(m.chat, `ganaste`, m)
  global.DATABASE.data.chats[m.chat].pozo -= veces
+return
 }
  conn.reply(m.chat, `perdiste ${ero}`, m)
 }
