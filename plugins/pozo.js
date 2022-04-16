@@ -7,7 +7,11 @@ function mmero() {
 }
 setTimeout(mmero, 3000)
 function ttero() {
- global.DATABASE.data.chats[m.chat].pozo += 1
+ let costo = 5000
+  let veces = global.DATABASE.data.chats[m.chat].pozo
+  let lukia = (costo * veces)
+ global.DATABASE.data.chats[m.chat].pozo -= veces
+  
  conn.reply(m.chat, `ll`, m)
 }
 setTimeout(ttero, 3500)
