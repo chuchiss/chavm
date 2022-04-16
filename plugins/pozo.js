@@ -8,7 +8,7 @@ let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
 if (global.DATABASE._data.users[m.sender].limit < 10) return m.reply('No tienes mas limites para comprar pon .buy')
 let costo = 5000
-let veces = global.DATABASE.data.chat[m.all].pozo
+let veces = global.DATABASE.data.chat[m.chat].pozo
 let ero = pickRandom(global.funi)
 let total = (veces * 10000 / 2)
 global.DATABASE._data.users[m.sender].exp += result
