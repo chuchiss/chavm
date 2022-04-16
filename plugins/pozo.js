@@ -2,6 +2,7 @@ let handler = async (m, { conn }) => {
 function mmero() {
   let costo = 5000
   let veces = global.pozo
+ if (!isNumber) global.pozo = 0
   let lukia = (costo * veces)
   conn.reply(m.chat, `pozo acumulado \ntotal del pozo ${lukia}  \ntotal de intentos ${veces}`, m)
 }
