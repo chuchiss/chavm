@@ -27,7 +27,7 @@ return
 }
  global.pozo += 1
  cilu.exp -= costo
- conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
+ conn.reply(m.chat, `*∆perdiste* ${elo} , Intentalo de nuevo!`, m)
 }
 setTimeout(ttero, 9500)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
