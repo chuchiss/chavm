@@ -6,6 +6,11 @@ let pajak = Math.random()
 let xp = 10000
 let resulta = global.DATABASE.data.users[m.sender].exp
 let result = Math.ceil(xp * pajak)
+if (global.DATABASE._data.users[m.sender].limit < 10) return m.reply('No tienes mas limites para comprar pon .buy')
+let costo = 5000
+let veces = global.DATABASE.data.chat[m.all].pozo
+let ero = pickRandom(global.funi)
+let total = (veces * 10000 / 2)
 global.DATABASE._data.users[m.sender].exp += result
 global.DATABASE._data.users[m.sender].limit -= 10
 let chelo = (resulta + result)
@@ -15,7 +20,7 @@ if (result < 5000) return conn.reply(m.chat, `*Perdiste* ${-chenchy} xp\n - _Ten
 conn.reply(m.chat, `*Ganaste* *${chenchy}* xp \n - _Tenias un total de_ ${resulta}xp\n -- _Ahora tienes_ ${chelo} xp \n --- _Limite totales_ ${tocno}`, m)
 }
 function prueba(){
-conn.reply(m.chat, `*Prueba tu suerte check*🤙 \n ▫️Gana hasta el doble de exp \n  ▫️ Costo 10 limites \n \n Cargando....`, m)
+conn.reply(m.chat, `*Pozo acumulado🤙 \n ▫️ total del pozo \n  ▫️ Pozo minimo ${costo} \n \n Cargando....`, m)
 }
 setTimeout(prueba, 1000)
 setTimeout(chuqui, 12000)
