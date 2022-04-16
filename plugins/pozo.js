@@ -1,15 +1,10 @@
 let handler = async (m, { conn }) => {
-
-setTimeout(mmero, 3000)
-setTimeout(segus, 10000)
-
-
 function mmero() {
   conn.reply(m.chat, `hola`, m)
 }
-function segus() {
-conn.reply(m.chat `que pinta` m)
-}
+setTimeout(mmero, 3000)
+
+
 
 }
 handler.help = ['pru']
