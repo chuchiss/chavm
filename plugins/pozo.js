@@ -12,7 +12,6 @@ setTimeout(mmero, 3000)
 function ttero() {
  let costo = 5000
   let veces = global.pozo
-  
   let lukia = (costo * veces)
  let ero = pickRandom(global.funi)
  function pickRandom(list) {
@@ -21,7 +20,7 @@ function ttero() {
  global.pozo += 1
  global.DATABASE.data.users[user].exp -= costo
  if (global.DATABASE.data.users[user].exp < costo) return conn.reply(m.chat, `Lo siento! no tienes exp`, m)
-  if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+ if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
  global.pozo -= veces
 return
 }
