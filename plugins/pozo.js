@@ -1,4 +1,4 @@
-let handler = async (m, { conn, users }) => {
+let handler = async (m, { conn, user }) => {
 function mmero() {
   let costo = 5000
   let veces = global.pozo
