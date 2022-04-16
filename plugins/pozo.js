@@ -1,12 +1,12 @@
 let handler = async (m, { conn }) => {
-function primero() {
+function mmero() {
   conn.reply(m.chat, `hola`, m)
 }
-function segundo() {
+function segus() {
 conn.reply(m.chat `que pinta` m)
 }
-setTimeout(primero, 3000)
-setTimeout(segundo, 10000)
+setTimeout(mmero, 3000)
+setTimeout(segus, 10000)
 }
 handler.help = ['pru']
 handler.tags = ['game']
