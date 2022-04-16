@@ -14,13 +14,13 @@ function ttero() {
  let costo = 5000
   let veces = global.pozo
   let lukia = (costo * veces)
- let ero = pickRandom(global.funi)
+ let ero = pickRandom(global.funzi)
  function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 let cilu = global.DATABASE._data.users[m.sender]
 if (cilu.exp < costo) return conn.reply(m.chat, `*Lo* *siento* , _No tienes suficiente Exp!!_ `, m)
-if (ero > 5) { conn.reply(m.chat, `🤑FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+if (ero > 11) { conn.reply(m.chat, `🤑FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
 cilu.exp += lukia
 global.pozo -= veces
 return
@@ -39,3 +39,6 @@ handler.limits = true
 handler.group = true
 handler.command = /^(pozo)$/i
 module.exports = handler
+
+
+global.funzi ['1','2','3','4','5','6','7','8','9','10','11','12']
