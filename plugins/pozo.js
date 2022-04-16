@@ -1,7 +1,7 @@
 let handler = async (m, { conn, user }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastmp > 9500) {
 function mmero() {
-  let costo = 5000
+  let costo = 1000
   let veces = global.pozo
   if(typeof global.pozo == 'undefined') {
   global.pozo = 0
@@ -11,7 +11,7 @@ function mmero() {
 }
 setTimeout(mmero, 3000)
 function ttero() {
- let costo = 5000
+ let costo = 1000
   let veces = global.pozo
   let lukia = (costo * veces)
 let pajak = Math.random()
