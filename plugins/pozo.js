@@ -11,7 +11,9 @@ function ttero() {
   let veces = global.DATABASE.data.chats[m.chat].pozo
   let lukia = (costo * veces)
  let ero = pickRandom(global.funi)
- 
+ function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
  global.DATABASE.data.chats[m.chat].pozo += 1
   
  conn.reply(m.chat, `perdiste ${ero}`, m)
