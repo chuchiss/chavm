@@ -1,4 +1,4 @@
-let handler = async (m, { conn }) => {
+let handler = async (m, { conn, users }) => {
 function mmero() {
   let costo = 5000
   let veces = global.pozo
@@ -19,11 +19,12 @@ function ttero() {
 }
 
 if (ero > 5) { conn.reply(m.chat, `FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
+global.DATABASE._data.users[user].exp += veces
 global.pozo -= veces
 return
 }
  global.pozo += 1
- 
+ global.DATABASE._data.users[user].exp -= costo
  conn.reply(m.chat, `*∆perdiste* , Intentalo de nuevo!`, m)
 }
 setTimeout(ttero, 8500)
