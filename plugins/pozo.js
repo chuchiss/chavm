@@ -18,7 +18,7 @@ function ttero() {
   return list[Math.floor(list.length * Math.random())]
 }
 let cilu = global.DATABASE._data.users[m.sender]
-if (cilu.exp < costo) return conn.reply(m.chat, `Lo siento, No tienes suficiente Exp!!`, m)
+if (cilu.exp < costo) return conn.reply(m.chat, `*Lo* *siento* , _No tienes suficiente Exp!!_ `, m)
 if (ero > 5) { conn.reply(m.chat, `🤑FELICIDADES!! \nHaz ganado el pozo de ${lukia} xp!!!`, m)
 cilu.exp += lukia
 global.pozo -= veces
