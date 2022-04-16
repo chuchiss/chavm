@@ -7,7 +7,7 @@ function mmero() {
   global.pozo = 0
   }
   let lukia = (costo * veces)
-  conn.reply(m.chat, `*Pozo acumulado check*🤞🤞\n \n 📍costo del pozo ${costo} \n📍valor del pozo ${lukia}  \n📍total de intentos ${veces} \n \n *Cargando...*`, m)
+  conn.reply(m.chat, `*Pozo acumulado check*🤞🤞\n \n📍costo del pozo ${costo} xp\n📍valor del pozo ${lukia} xp \n📍total de intentos ${veces} \n \n *Cargando...*`, m)
 }
 setTimeout(mmero, 3000)
 function ttero() {
