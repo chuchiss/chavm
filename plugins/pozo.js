@@ -19,7 +19,7 @@ function ttero() {
  global.DATABASE.data.chats[m.chat].pozo -= veces
 return
 }
- conn.reply(m.chat, `perdiste ${ero}`, m)
+ conn.reply(m.chat, `perdiste, Intentalo de nuevo!`, m)
 }
 setTimeout(ttero, 3500)
 
