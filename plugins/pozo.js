@@ -15,7 +15,7 @@ function ttero() {
   let veces = global.pozo
   let lukia = (costo * veces)
 let pajak = Math.random()
-let xp = 10000
+let xp = (cilu.limit * 1000)
 let elo = Math.ceil(xp * pajak)
 let cilu = global.DATABASE._data.users[m.sender]
 if (cilu.exp < costo) return conn.reply(m.chat, `*Lo* *siento* , _No tienes suficiente Exp!!_ `, m)
