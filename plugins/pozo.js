@@ -1,4 +1,4 @@
-let handler = async (m, { conn }) => {
+let handler = async (m, { conn, users }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 12000) {
 function chuquii(){
 
