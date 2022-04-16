@@ -6,7 +6,7 @@ setTimeout(mmero, 3000)
 function ttero() {
  conn.reply(m.chat, `ll`, m)
 }
-
+setTimeout(ttero, 3500)
 
 }
 handler.help = ['pru']
