@@ -15,7 +15,7 @@ let chenchy = (result - 5000)
 
 
 let costo = 5000
-let veces = global.DATABASE.data.users[m.sender].pozo
+let veces = global.DATABASE.data.chat[m.all].pozo
 let ero = pickRandom(global.funi)
 let total = (veces * 10000 / 2)
 conn.reply(m.chat, `perdiste` m)
