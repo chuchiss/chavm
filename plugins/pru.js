@@ -6,7 +6,7 @@ global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
 
-if (typeof in global.leco == 'undefined'){
+if (typeof global.leco == 'undefined'){
 global.leco = 0
 }
 Minumero += 1
