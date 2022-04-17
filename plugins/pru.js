@@ -8,8 +8,9 @@ let Numero = Math.random(0, 1)
 
 
 m.reply(`
-${global.yeca[Numero]}   
-Respuesta : ${global.logi[Numero]}                         
+${global.yeca[0]}   
+Respuesta : ${global.logi[0]}
+${Numero}                       
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
