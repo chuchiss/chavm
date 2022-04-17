@@ -5,7 +5,7 @@ let costo = 500
 let veces = global.pozo
 let lukia = (costo * veces)
 let pajak = Math.random()
-let xp = (cilu.limit * 10)
+let xp = 2000
 let elo = Math.ceil(xp * pajak)
 let cilu = global.DATABASE._data.users[m.sender]
 if (cilu.limit < 2) return conn.reply(m.chat, `*Lo* *siento* , _Minimo 1 limit!!_ `, m)
