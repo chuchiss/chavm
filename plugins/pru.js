@@ -4,12 +4,12 @@ global.yeca = [ 'hola','numero'
 ]
 global.logi = [ 'funda','cepillo'
 ]
-let Numero = Math.random(0, 1)
+let Numero = 0
 
 
 m.reply(`
-${global.yeca[0]}   
-Respuesta : ${global.logi[0]}
+${global.yeca[Numero]}   
+Respuesta : ${global.logi[Numero]}
 ${Numero}                       
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
