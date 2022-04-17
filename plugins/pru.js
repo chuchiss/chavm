@@ -3,6 +3,7 @@ let handler = async (m, {conn}) => {
 global.yeca = [ 'hola','numero'
 ]
 global.logi = [ 'funda','cepillo'
+]
 let Numero = Math.random(0, 1)
 
 
