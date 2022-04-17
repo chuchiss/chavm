@@ -4,7 +4,8 @@ global.yeca = [ 'hola','numero','castilll'
 ]
 global.logi = [ 'funda','cepillo','coron'
 ]
-let Numero = Math.ceil(2)
+let Numero = Math.ceil(2 * Math.random())
+
 
 
 m.reply(`
