@@ -1,10 +1,10 @@
 let handler = async (m, {conn}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-global.yeca = [ 'hola','numero'
+global.yeca = [ 'hola','numero','castilll'
 ]
-global.logi = [ 'funda','cepillo'
+global.logi = [ 'funda','cepillo','coron'
 ]
-let Numero = Math.ceil(1 * 1)
+let Numero = Math.ceil(2)
 
 
 m.reply(`
