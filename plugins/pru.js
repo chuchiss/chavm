@@ -4,7 +4,7 @@ global.yeca = [ 'hola','numero'
 ]
 global.logi = [ 'funda','cepillo'
 ]
-let Numero = 0
+let Numero = Math.ceil(1 * 1)
 
 
 m.reply(`
