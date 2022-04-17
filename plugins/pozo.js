@@ -22,6 +22,11 @@ return
 } 
 setTimeout(ttero, 9500)
 
+function teta(){
+m.reply('hola') }
+setTimeout(teta, 3000)
+
+
   let costo = 500
   let veces = global.pozo
   if(typeof global.pozo == 'undefined') {
