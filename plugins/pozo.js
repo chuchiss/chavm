@@ -24,11 +24,11 @@ if (elo == 4) { conn.reply(m.chat, `🤑*∆FELICIDADES!! \nHaz ganado el pozo d
 cilu.exp += lukia
 global.pozo -= veces
 return
-} else
+} else{
  global.pozo += 1
  cilu.exp -= costo
  conn.reply(m.chat, `*∆perdiste* ${elo} , Intentalo de nuevo!`, m)
-}
+} }
 setTimeout(ttero, 9500)
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
