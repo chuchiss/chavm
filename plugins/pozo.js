@@ -18,7 +18,7 @@ return
 } 
  global.pozo += 1
  cilu.exp -= costo
- conn.reply(m.chat, `*∆perdiste* ${elo} , Intentalo de nuevo!`, m)
+ conn.reply(m.chat, `*∆perdiste* ${elo} Intentalo de nuevo!`, m)
 } 
 setTimeout(ttero, 9500)
 function mmero() {
