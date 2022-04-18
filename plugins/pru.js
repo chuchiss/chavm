@@ -1,20 +1,22 @@
 
 
-let handler = async (m, {conn, text}) => {
+let handler = async (m, {conn, args}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll'
 ]
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-let loco = text
-if ('loco' === 'turro') return m.reply('error')
-let turro = global.logi[Numero]
+if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
+        
+	let text = args.join` `
+
 
 m.reply(`
 ${global.yeca[Numero]}   
 Respuesta : ${turro}
-${Numero}     
+${Numero}    
+${text}
 
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
