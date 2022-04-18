@@ -23,6 +23,8 @@ return
 }
 if (/paso/i.test(command)) {
         global.lll -= veces
+m.reply(`Siguiente pregunta!`)
+return
     }
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
