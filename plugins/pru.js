@@ -9,7 +9,7 @@ global.logi = [
 'cantante',
 'muchos'
 ]
-let handler = async (m, {conn, args}) => {
+let handler = async (m, {conn, usedPrefix, args}) => {
 let veces = global.lll
 if (global.lll > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste `, m)
@@ -21,7 +21,7 @@ pregunta: ${global.yeca[veces]}
 Respuesta : ${global.logi[veces]}
 
 ${global.lll}
-
+para contestar utiliza ${usedPrefix}respuesta ejemplo
 
 `.trim()) 
 
