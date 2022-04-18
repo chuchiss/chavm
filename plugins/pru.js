@@ -1,3 +1,6 @@
+if(typeof global.lll == 'undefined') {
+  global.lll = 0
+  }
 global.yeca = [
 'hola',
 'a que se dedica bad bunny',
@@ -27,9 +30,7 @@ ${global.lll}
 
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-if(typeof global.lll == 'isNaN') {
-  global.lll = 0
-  }
+
 let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0]) {
 conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
