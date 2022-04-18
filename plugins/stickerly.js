@@ -8,14 +8,14 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis('sticker ' + ' webp ' + text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
-   let linkRegex = //([0-9A-Za-z]{20,24})\/webp/i
-  let isLink = linkRegex.exec(url)
-if (!isLink) m.reply(`hola`)
+//   let linkRegex = //([0-9A-Za-z]{20,24})\/webp/i
+ // let isLink = linkRegex.exec(url)
+//if (!isLink) m.reply(`hola`)
 
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
-conn.reply(m.chat, `${url}`, m)
+//conn.reply(m.chat, `${url}`, m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 }
