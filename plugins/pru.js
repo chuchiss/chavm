@@ -17,10 +17,11 @@ global.lll -= veces
 return
 }
   m.reply(`
+
 *pregunta:* ${global.yeca[veces]}   
 Respuesta : ${global.logi[veces]}
 
-${global.lll}
+
 _para_ _contestar_ _utiliza_ 
 _${usedPrefix}respuesta_ _ejemplo_
 
@@ -45,9 +46,8 @@ let veca = global.lll
 m.reply(`
 Pregunta: ${global.yeca[Numero]}   
 Respuesta: ${global.logi[Numero]}
-${Numero}    
-${text}
-${global.lll}
+ 
+
 
 
 `.trim()) 
