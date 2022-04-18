@@ -6,7 +6,7 @@ if (veces === 0) {
   m.reply(` estas en juego`)
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-global.yeca = [ 'hola','numero','castilll'
+global.yeca = [ 'hola','numero','castilll',
 ]
 global.logi = [ 'funda','cepillo','coron'
 ]
@@ -18,7 +18,7 @@ return
 let text = args.join` `
 
 let id = m.chat
-global.lll += Numero
+global.lll -= veca
 let veca = global.lll
 
 if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
