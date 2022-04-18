@@ -3,7 +3,7 @@ let handler = m => m
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.before = function (m, { user }) {
 let veces = global.lll
-if (m.text === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m) }
+if (m.text === global.logi[veces]) { return conn.reply(m.chat, `Ganaste +100 exp`, m) }
   if (m.isBaileys && m.fromMe) return true
   let chat = global.DATABASE.data.chats[m.chat]
   let isLink = linkRegex.exec(m.text)
