@@ -6,6 +6,10 @@ global.logi = [ 'funda','cepillo','coron'
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
 if (veces > 1) {
+if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste `, m)
+global.lll -= veces
+return
+}
   m.reply(`
 ${global.yeca[veces]}   
 Respuesta : ${global.logi[veces]}
@@ -14,10 +18,7 @@ ${global.lll}
 
 
 `.trim()) 
-if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste `, m)
-global.lll -= veces
-return
-}
+
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
