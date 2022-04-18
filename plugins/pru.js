@@ -1,6 +1,4 @@
-if(typeof global.lll == 'undefined') {
-  global.lll = 0
-  }
+
 global.yeca = [
 'hola',
 'a que se dedica bad bunny',
@@ -54,12 +52,14 @@ ${global.lll}
 
 
 `.trim()) 
-
+if(typeof global.lll == 'undefined') {
+  global.lll = 0
+  }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
 } 
-}
+
 }
 handler.help = ['']
 handler.tags = ['']
