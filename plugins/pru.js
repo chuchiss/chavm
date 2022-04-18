@@ -10,6 +10,7 @@ let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0]) {
 delete global.lll[id]
 conn.reply(m.chat, `No es así!\n\n*tenes que po ${Numero}`, m)
+return
 }
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
