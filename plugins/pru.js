@@ -21,7 +21,7 @@ global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 100
 return
 }
-else if (/paso/i.test(command)) {
+if (/paso/i.test(command)) {
         global.lll -= veces
     }
 //Respuesta : ${global.logi[veces]}
@@ -73,6 +73,6 @@ global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(pre(guntados)?|res(puesta)?)$/i
+handler.command = /^(pre(guntados)?|paso|res(puesta)?)$/i
 
 module.exports = handler
