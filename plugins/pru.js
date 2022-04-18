@@ -41,8 +41,9 @@ return
 
 
 
-_para_ _contestar_ _utiliza_ 
-_${usedPrefix}respuesta_ _ejemplo_
+_para_ _contestar_ 
+_escribe la respuesta_
+_si es correcto Ganarás!_
 
 `.trim()) 
 
