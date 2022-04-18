@@ -24,7 +24,9 @@ ${global.lll}
 
 
 `.trim()) 
-
+if(typeof global.lll == 'undefined') {
+  global.lll = 0
+  }
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
@@ -51,12 +53,7 @@ ${global.lll}
 
 
 `.trim()) 
-if(typeof global.lll == 'undefined') {
-  global.lll = 0
-  }
-if(typeof global.lll == 'NaN') {
-  global.lll = 0
-  }
+
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
