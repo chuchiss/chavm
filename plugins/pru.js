@@ -27,7 +27,7 @@ ${global.lll}
 
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-if(typeof global.lll == 'undefined') {
+if(typeof global.lll == 'isNaN') {
   global.lll = 0
   }
 let Numero = Math.ceil(2 * Math.random())
