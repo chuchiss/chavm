@@ -78,6 +78,6 @@ global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(pre(guntados)?|paso|res(puesta)?)$/i
+handler.command = /^(pre(gunta?dos)?|paso|res(puesta)?)$/i
 
 module.exports = handler
