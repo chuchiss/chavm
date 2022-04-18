@@ -9,8 +9,9 @@ let handler  = async (m, { conn, args }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
    let linkRegex = /([0-9A-Za-z]{20,24})\/.webp/i
-  if (isLink) m.reply(`hola`)
-let isLink = linkRegex.exec(url)
+  let isLink = linkRegex.exec(url)
+if (isLink) m.reply(`hola`)
+
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
