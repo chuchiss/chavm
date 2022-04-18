@@ -8,7 +8,7 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis('sticker ' + ' webp ' + text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
- 
+   if ((!/^webp^/i.test(url)) m.reply(`erro`)
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
