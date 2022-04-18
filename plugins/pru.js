@@ -21,7 +21,7 @@ global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 100
 return
 }
-if (/paso/i.test(command)) {
+else if (/paso/i.test(command)) {
         global.lll -= veces
     }
 //Respuesta : ${global.logi[veces]}
