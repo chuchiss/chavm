@@ -20,7 +20,7 @@ return
   m.reply(`
 
 *pregunta:* ${global.yeca[veces]}   
-Respuesta : ${global.logi[veces]}
+//Respuesta : ${global.logi[veces]}
 
 
 _para_ _contestar_ _utiliza_ 
@@ -46,7 +46,7 @@ let veca = global.lll
 
 m.reply(`
 Pregunta: ${global.yeca[Numero]}   
-Respuesta: ${global.logi[Numero]}
+//Respuesta: ${global.logi[Numero]}
  
 
 
