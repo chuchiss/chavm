@@ -5,12 +5,11 @@ global.logi = [ 'funda','cepillo','coron'
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces > 1) {
+if (veces > 300) {
   m.reply(`
-${global.yeca[Numero]}   
-Respuesta : ${global.logi[Numero]}
-${Numero}    
-${text}
+${global.yeca[veces]}   
+Respuesta : ${global.logi[veces]}
+
 ${global.lll}
 
 
@@ -27,8 +26,9 @@ return
 let text = args.join` `
 
 let id = m.chat
-global.lll += Numero
+//global.lll += Numero
 let veca = global.lll
+global.lll -= global.lll
 
 if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
