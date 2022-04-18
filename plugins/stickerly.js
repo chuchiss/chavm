@@ -8,7 +8,8 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis('sticker ' + ' webp ' + text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
-   if ((!/^webp^/i.test(url)) m.reply(`erro`)
+   let linkRegex = /([0-9A-Za-z]{20,24})\/.webp/i
+  if (url === linkRegex) m.reply(`hola`)
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
