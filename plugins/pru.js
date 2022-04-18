@@ -40,9 +40,7 @@ global.lll += Numero
 let veca = global.lll
 //global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
-if(typeof global.lll == 'undefined' || 'NaN') {
-  global.lll = 0
-  }
+
 m.reply(`
 Pregunta: ${global.yeca[Numero]}   
 Respuesta: ${global.logi[Numero]}
@@ -52,7 +50,9 @@ ${global.lll}
 
 
 `.trim()) 
-
+if(typeof global.lll == 'undefined' || 'NaN') {
+  global.lll = 0
+  }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
