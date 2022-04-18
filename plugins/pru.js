@@ -1,4 +1,4 @@
-
+conn.fufu = conn.fufu ? conn.fufu : {}
 
 let handler = async (m, {conn, args}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
@@ -12,7 +12,7 @@ let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
 
-conn.fufu = conn.fufu ? conn.fufu : {}
+
 conn.fufu = [ text ]
     let id = m.all
     if (id in conn.fufu) {
