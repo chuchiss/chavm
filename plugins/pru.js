@@ -1,4 +1,4 @@
-global.yuni = global.yuni ? global.yuni : {}
+
 
 let handler = async (m, {conn, text}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
