@@ -40,7 +40,7 @@ global.lll += Numero
 let veca = global.lll
 //global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
-if(typeof global.lll == 'undefined') {
+if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
 m.reply(`
