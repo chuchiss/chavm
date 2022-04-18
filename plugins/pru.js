@@ -26,9 +26,9 @@ return
 let text = args.join` `
 
 let id = m.chat
-//global.lll += Numero
+global.lll += Numero
 let veca = global.lll
-global.lll -= global.lll
+//global.lll -= global.lll
 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
@@ -48,7 +48,7 @@ global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
 } else if (args[0] === global.logi[veces]) return conn.reply(m.chat, `Ganaste `, m) 
-}
+
 }
 handler.help = ['']
 handler.tags = ['']
