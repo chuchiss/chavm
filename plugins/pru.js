@@ -2,18 +2,16 @@
 
 let handler = async (m, {conn, args}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-global.yeca = [ 'hola','numero','castilll'
+global.yeca = [ 'nada','numero','castilll'
 ]
-global.logi = [ 'funda','cepillo','coron'
+global.logi = [ 'nada','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que po`, m)
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
-if (typeof global.chucc = 'undefined') {
-global.chucc = 'false'
-}
+if (global.logi[Numero] > 0) return m.reply('sigue en juego')
 
 
 m.reply(`
