@@ -18,7 +18,9 @@ global.logi = [
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if (global.lll > 0) {
+if (/respuesta/i.test(command)) {
 if (args[0] !== global.logi[veces]) conn.reply(m.chat, `incorrecto`, m)
+}
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
 global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 100
