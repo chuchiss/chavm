@@ -5,7 +5,7 @@ global.logi = [ 'funda','cepillo','coron'
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces > 300) {
+if (veces > 1) {
   m.reply(`
 ${global.yeca[veces]}   
 Respuesta : ${global.logi[veces]}
