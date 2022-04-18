@@ -15,10 +15,7 @@ return
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
-if (typeof global.lll == 'undefined'){
- global.lll = {
-  cl: 0
-}
+if (!isNumber(global.lll)) global.lll = 0
 
 m.reply(`
 ${global.yeca[Numero]}   
