@@ -35,7 +35,7 @@ if(typeof global.lll == 'undefined') {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
-} else { return m.reply(` estas en juego`)
+} else return m.reply(` estas en juego`)
 }else if (args[0] === global.logi[(global.lll)]) return conn.reply(m.chat, `Ganaste `, m)
 }
 handler.help = ['']
