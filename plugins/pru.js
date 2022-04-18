@@ -9,9 +9,8 @@ global.yeca = [
 global.logi = [
 'funda',
 'cantante',
-'muchos'
-'la antártida'
-'homero'
+'muchos',
+'la antártida',
 '1969'
 ]
 let handler = async (m, {conn, usedPrefix, args}) => {
