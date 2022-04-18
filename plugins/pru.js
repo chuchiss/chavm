@@ -30,10 +30,10 @@ _${usedPrefix}respuesta_ _ejemplo_
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
 let Numero = Math.ceil(2 * Math.random())
-if (!args || !args[0]) {
-conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
-return
-}
+//if (!args || !args[0]) {
+//conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
+//return
+//}
 let text = args.join` `
 
 let id = m.chat
