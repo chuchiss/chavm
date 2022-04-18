@@ -2,10 +2,10 @@
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces > 0) {
+if (veces > 1) {
   m.reply(`
-${global.yeca[global.lll]}   
-Respuesta : ${global.logi[global.lll]}
+${global.yeca[veces]}   
+Respuesta : ${global.logi[veces]}
 ${Numero}    
 ${text}
 ${global.lll}
