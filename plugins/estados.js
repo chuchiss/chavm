@@ -3,7 +3,7 @@ let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { users, conn, command, isPrems, isOwner }) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 10400) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 5400) {
   let textu = pickRandom(global.lyte)
   let texti = pickRandom(global.lute)
   let results = await yts('estado para Whatsapp'+ textu + texti)
