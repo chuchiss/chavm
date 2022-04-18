@@ -15,7 +15,7 @@ return
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
-if (typeof !isNumber(global.lll)) global.lll = 0
+
 
 m.reply(`
 ${global.yeca[Numero]}   
@@ -26,6 +26,9 @@ ${global.lll}
 
 
 `.trim()) 
+if(typeof global.pozo == 'undefined') {
+  global.pozo = 0
+  }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
