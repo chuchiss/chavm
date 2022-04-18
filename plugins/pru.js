@@ -14,6 +14,7 @@ let veces = global.lll
 if (global.lll > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
 global.lll -= veces
+global.DATABASE._data.users[m.sender].exp += 100
 return
 }
   m.reply(`
