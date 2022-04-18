@@ -24,10 +24,12 @@ global.DATABASE._data.users[m.sender].exp += 100
 return
 }
 if (/paso/i.test(command)) {
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 15400) {
         global.lll -= veces
 m.reply(`Siguiente pregunta!`)
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
 return
-    }
+    } else return }
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
   m.reply(`
