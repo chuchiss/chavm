@@ -50,7 +50,7 @@ ${global.lll}
 
 
 `.trim()) 
-if(typeof global.lll == 'undefined' || 'NaN') {
+if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
   global.lll = 0
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
