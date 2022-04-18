@@ -1,6 +1,17 @@
-global.yeca = [ 'hola','numero','castilll',
+global.yeca = [
+\\0
+'hola',
+\\1
+'a que se dedica bad bunny',
+\\2
+'cuantos años tiene mirta legrand',
 ]
-global.logi = [ 'funda','cepillo','coron'
+global.logi = [
+'funda',
+\\1
+'cantante',
+\\2
+'muchos'
 ]
 
 let handler = async (m, {conn, args}) => {
@@ -11,7 +22,7 @@ global.lll -= veces
 return
 }
   m.reply(`
-${global.yeca[veces]}   
+pregunta: ${global.yeca[veces]}   
 Respuesta : ${global.logi[veces]}
 
 ${global.lll}
@@ -37,8 +48,8 @@ let veca = global.lll
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
-${global.yeca[Numero]}   
-Respuesta : ${global.logi[Numero]}
+Pregunta: ${global.yeca[Numero]}   
+Respuesta: ${global.logi[Numero]}
 ${Numero}    
 ${text}
 ${global.lll}
