@@ -12,8 +12,9 @@ let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
 if (typeof global.chucc = 'undefined') {
-global.chucc = 0
+global.chucc = 'false'
 }
+
 
 m.reply(`
 ${global.yeca[Numero]}   
