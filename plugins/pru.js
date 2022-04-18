@@ -7,9 +7,8 @@ global.yeca = [ 'hola','numero','castilll'
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
-        
-	let text = args.join` `
+if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que po`, m)
+let text = args.join` `
 
 
 m.reply(`
