@@ -7,7 +7,7 @@ global.yeca = [ 'hola','numero','castilll'
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-if (!args || !args[0] && !global.lll === 0) {
+if (!args || !args[0] && !global.lll === ) {
 delete global.lll
 conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 return
@@ -24,6 +24,7 @@ ${global.yeca[Numero]}
 Respuesta : ${global.logi[Numero]}
 ${Numero}    
 ${text}
+${global.lll}
 
 
 `.trim()) 
