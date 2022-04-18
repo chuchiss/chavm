@@ -17,6 +17,7 @@ ${global.lll}
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste `, m)
 global.lll -= veces
 return
+}
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
