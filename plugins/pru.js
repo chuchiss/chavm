@@ -1,6 +1,7 @@
 
 
 let handler = async (m, {conn, args}) => {
+if (global.DATABASE._data.chats[m.chat].pozo === 0) {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll'
 ]
@@ -15,10 +16,7 @@ let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
 
-global.cone {
- cone: 0
-}
-global.cone.cone +=1
+
 m.reply(`
 ${global.yeca[Numero]}   
 Respuesta : ${global.logi[Numero]}
@@ -29,7 +27,9 @@ ${global.lll}
 
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else return
+ 
+ } else return
+} 
 }
 handler.help = ['']
 handler.tags = ['']
