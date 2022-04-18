@@ -61,6 +61,7 @@ let veca = global.lll
 m.reply(`
 Pregunta: ¿ ${global.yeca[Numero]}   ?
 
+Tiempo: 5 minutos
  
 Si quieres cambiar de pregunta
 escribe ${usedPrefix}paso
@@ -70,7 +71,7 @@ escribe ${usedPrefix}paso
 setTimeout(()=> {
   global.lll -= global.lll
 return 
-}, 5000)
+}, 300000)
 if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
   global.lll = 0
   }
