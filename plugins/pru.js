@@ -14,7 +14,7 @@ conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 return
 }
 let text = args.join` `
-if (args[0] === global.logi[global.lll]) return conn.reply(m.chat, `Ganaste `, m)
+if (args[0] === global.logi[(global.lll)]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
 global.lll += Numero
 
