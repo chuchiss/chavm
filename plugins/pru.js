@@ -11,9 +11,9 @@ if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que po $
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
-global.lll =[ '`${Numero}`']
+global.lll =[ '0']
 
-
+global.lll += 1
 m.reply(`
 ${global.yeca[Numero]}   
 Respuesta : ${global.logi[Numero]}
