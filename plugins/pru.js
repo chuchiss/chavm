@@ -9,7 +9,6 @@ global.logi = [
 'cantante',
 'muchos'
 ]
-let global.lll = isNumber
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
 if (veces > 0) {
@@ -40,7 +39,7 @@ let id = m.chat
 global.lll += Numero
 let veca = global.lll
 //global.lll -= global.lll
-
+let global.lll = 0
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
