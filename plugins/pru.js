@@ -1,15 +1,24 @@
-
-
-let handler = async (m, {conn, args}) => {
-let veces = global.lll
-if (veces > 1) {
-  return m.reply(`hola`)
-} else {
-  if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll',
 ]
 global.logi = [ 'funda','cepillo','coron'
 ]
+
+let handler = async (m, {conn, args}) => {
+let veces = global.lll
+if (veces > 1) {
+  m.reply(`
+${global.yeca[Numero]}   
+Respuesta : ${global.logi[Numero]}
+${Numero}    
+${text}
+${global.lll}
+
+
+`.trim()) 
+return
+} else {
+  if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
+
 let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0]) {
 conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
