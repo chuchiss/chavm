@@ -9,10 +9,11 @@ global.logi = [ 'funda','cepillo','coron'
 let Numero = Math.ceil(2 * Math.random())
 let loco = m.text
 if (loco === global.logi[Numero]) return m.reply('error')
+let turro = global.logi[Numero]
 
 m.reply(`
 ${global.yeca[Numero]}   
-Respuesta : ${global.logi[Numero]}
+Respuesta : ${turro}
 ${Numero}     
 
 `.trim()) 
