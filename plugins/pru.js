@@ -8,7 +8,7 @@ global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0] && !global.lll === 0) {
-delete global.lll[id]
+delete global.lll
 conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 return
 }
@@ -16,7 +16,7 @@ let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
 
-
+global.lll = ['1']
 
 
 m.reply(`
