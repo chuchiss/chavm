@@ -2,8 +2,13 @@
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces === 6) {
-  m.reply(` estas en juego`)
+if (veces > 0) {
+  m.reply(`
+${global.yeca[global.lll]}   
+Respuesta : ${global.logi[global.lll]}
+${Numero}    
+${text}
+${global.lll}
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll',
