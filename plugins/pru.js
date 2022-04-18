@@ -1,17 +1,19 @@
 const TicTacToe = require("../lib/tictactoe")
 global.yeca = [
 'hola',
-'a que se dedica bad bunny',
+'a que se dedica Bad Bunny',
 'cuantos años tiene mirta legrand',
 'Cuál es el lugar más frío de la tierra',
-'en que año el hombre piso la luna'
+'en que año el hombre piso la luna',
+'a que se dedica Jackie Chan'
 ]
 global.logi = [
 'funda',
 'cantante',
 'muchos',
 'la antartida',
-'1969'
+'1969',
+'actor'
 ]
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
