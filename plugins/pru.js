@@ -1,7 +1,7 @@
 
 
 let handler = async (m, {conn, args}) => {
-if (global.DATABASE._data.chats[m.chat].pozo === '0') {
+if (global.DATABASE.data.chats[m.chat].pozo === '0') {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll'
 ]
