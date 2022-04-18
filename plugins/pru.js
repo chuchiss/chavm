@@ -7,8 +7,8 @@ global.yeca = [ 'hola','numero','castilll'
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-
-
+let loco = text
+if (loco !== global.yogi[Numero]) return m.reply('error')
 
 m.reply(`
 ${global.yeca[Numero]}   
