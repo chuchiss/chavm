@@ -6,7 +6,7 @@ global.yeca = [
 'Cuál es el lugar más frío de la tierra',
 'en que año el hombre piso la luna',
 'a que se dedica Jackie Chan'
-]
+] 
 global.logi = [
 'funda',
 'cantante',
@@ -67,6 +67,10 @@ escribe ${usedPrefix}paso
 
 
 `.trim()) 
+setTimeout(()=> {
+  global.lll -= veces
+return 
+}, 5000)
 if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
   global.lll = 0
   }
