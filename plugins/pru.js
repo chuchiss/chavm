@@ -7,7 +7,7 @@ global.yeca = [ 'hola','numero','castilll'
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-let loco = m.text
+let loco = text
 if (loco === 'global.logi[Numero]') return m.reply('error')
 let turro = global.logi[Numero]
 
