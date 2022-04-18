@@ -14,12 +14,6 @@ global.logi = [
 '1969'
 ]
 let handler = async (m, {conn, usedPrefix, args, command}) => {
-conn.game = conn.game ? conn.game : {}
-    if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return conn.reply(m.chat, `Aun estas en juego o esperando contrincante dile qe escriba .ttt para continuar`, m)
-    let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
-    // m.reply('[WIP Feature]')
-    if (room) {
-return{
 let veces = global.lll
 if (global.lll > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
@@ -77,8 +71,8 @@ if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
-} }
-}
+} 
+
 }
 handler.help = ['']
 handler.tags = ['']
