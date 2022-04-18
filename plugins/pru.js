@@ -8,7 +8,7 @@ global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
 let loco = text
-if (loco === turro) return m.reply('error')
+if ('loco' === 'turro') return m.reply('error')
 let turro = global.logi[Numero]
 
 m.reply(`
