@@ -9,6 +9,7 @@ Respuesta : ${global.logi[veces]}
 ${Numero}    
 ${text}
 ${global.lll}
+`.trim())
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll',
