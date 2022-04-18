@@ -47,7 +47,7 @@ if(typeof global.lll == 'undefined') {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
-} else if (args[0] === global.logi[veces]) return conn.reply(m.chat, `Ganaste `, m) 
+} 
 
 }
 handler.help = ['']
