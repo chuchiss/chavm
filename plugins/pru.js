@@ -24,7 +24,7 @@ ${global.yeca[Numero]}
 Respuesta : ${global.logi[Numero]}
 ${Numero}    
 ${text}
-${global.lll}
+${global.lll[0]}
 
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
