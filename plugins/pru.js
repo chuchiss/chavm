@@ -1,7 +1,8 @@
 
 
 let handler = async (m, {conn, args}) => {
-if (global.DATABASE.data.users[m.sender].exp > 30) {
+if (veces === 0) {
+ let veces = global.lll
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll'
 ]
@@ -15,6 +16,8 @@ return
 let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 let id = m.chat
+
+
 
 
 m.reply(`
