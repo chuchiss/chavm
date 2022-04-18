@@ -9,7 +9,7 @@ global.logi = [
 'cantante',
 'muchos'
 ]
-
+let global.lll = isNumber
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
 if (veces > 0) {
