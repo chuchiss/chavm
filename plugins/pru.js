@@ -17,10 +17,12 @@ global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 100
 return
 }
+//Respuesta : ${global.logi[veces]}
+//Respuesta: ${global.logi[Numero]}
   m.reply(`
 
 *pregunta:* ${global.yeca[veces]}   
-//Respuesta : ${global.logi[veces]}
+
 
 
 _para_ _contestar_ _utiliza_ 
@@ -46,7 +48,7 @@ let veca = global.lll
 
 m.reply(`
 Pregunta: ${global.yeca[Numero]}   
-//Respuesta: ${global.logi[Numero]}
+
  
 
 
