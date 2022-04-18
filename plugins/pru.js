@@ -1,16 +1,11 @@
 global.yeca = [
-\\0
 'hola',
-\\1
 'a que se dedica bad bunny',
-\\2
 'cuantos años tiene mirta legrand',
 ]
 global.logi = [
 'funda',
-\\1
 'cantante',
-\\2
 'muchos'
 ]
 
