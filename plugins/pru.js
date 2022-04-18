@@ -68,7 +68,7 @@ escribe ${usedPrefix}paso
 
 `.trim()) 
 setTimeout(()=> {
-  global.lll -= veces
+  global.lll -= global.lll
 return 
 }, 5000)
 if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
