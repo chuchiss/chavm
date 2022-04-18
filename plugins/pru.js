@@ -12,10 +12,9 @@ let text = args.join` `
 if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
 
-
-conn.fufu[id] = [[]]
-    let id = m.all
-    if (id in conn.fufu) {
+global.fufu[id] = [
+    await conn.reply(m.chat, `Cuanto es `, m)
+  ]
 
 m.reply(`
 ${global.yeca[Numero]}   
