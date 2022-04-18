@@ -10,7 +10,7 @@ global.logi = [
 'funda',
 'cantante',
 'muchos',
-'la antártida',
+'la antartida',
 '1969'
 ]
 let handler = async (m, {conn, usedPrefix, args}) => {
