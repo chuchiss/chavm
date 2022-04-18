@@ -3,11 +3,16 @@ global.yeca = [
 'hola',
 'a que se dedica bad bunny',
 'cuantos años tiene mirta legrand',
+'Cuál es el lugar más frío de la tierra',
+'en que año el hombre piso la luna'
 ]
 global.logi = [
 'funda',
 'cantante',
 'muchos'
+'la antártida'
+'homero'
+'1969'
 ]
 let handler = async (m, {conn, usedPrefix, args}) => {
 let veces = global.lll
