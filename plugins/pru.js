@@ -30,7 +30,7 @@ return
 //Respuesta: ${global.logi[Numero]}
   m.reply(`
 
-*pregunta:* ${global.yeca[veces]}   
+*pregunta:* ¿ ${global.yeca[veces]} ?
 
 
 
@@ -57,10 +57,11 @@ let veca = global.lll
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
-Pregunta: ${global.yeca[Numero]}   
+Pregunta: ¿ ${global.yeca[Numero]}   ?
 
  
-
+Si quieres cambiar de pregunta
+escribe ${usedPrefix}paso
 
 
 `.trim()) 
