@@ -42,7 +42,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.lyte = ['ñengo flow','l gante','dillom','plan b','adele','session','khea','badd bunny','rauw alejandro','daddy yankee','duki','anuel','eminem','karol g ','nicki minaj','nicki jam','maluma','dalex']
+global.lyte = ['system of a down','linkin park','ñengo flow','l gante','dillom','plan b','adele','session','khea','badd bunny','rauw alejandro','daddy yankee','duki','anuel','eminem','karol g ','nicki minaj','nicki jam','maluma','dalex']
 
 global.lute = [' comeme','acercate','podras','besame','rkt','tranquilo','suelto']
 
