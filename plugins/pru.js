@@ -13,7 +13,7 @@ if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
 
 
 
-conn.fufu = [ text ]
+conn.fufu[id] = []
     let id = m.all
     if (id in conn.fufu) {
 
