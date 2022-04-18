@@ -3,6 +3,8 @@
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
 if (veces === 0) {
+  m.reply(` estas en juego`)
+} else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 global.yeca = [ 'hola','numero','castilll'
 ]
@@ -17,8 +19,9 @@ let text = args.join` `
 
 let id = m.chat
 global.lll += Numero
+veca = global.lll
 
-
+if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
 ${global.yeca[Numero]}   
@@ -35,8 +38,7 @@ if(typeof global.lll == 'undefined') {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
-} else return m.reply(` estas en juego`)
-}else if (args[0] === global.logi[(global.lll)]) return conn.reply(m.chat, `Ganaste `, m)
+} 
 }
 handler.help = ['']
 handler.tags = ['']
