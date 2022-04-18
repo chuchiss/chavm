@@ -6,12 +6,6 @@ global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
 
-if (typeof global.leco == 'undefined'){
-global.leco = 0
-}
-Minumero += 1
-let Minumero = global.leco
-if (Minumero == 1) return m.reply(' ya tienes una pregunta ')
 
 
 m.reply(`
