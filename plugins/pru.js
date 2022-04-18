@@ -2,7 +2,7 @@
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces === 0) {
+if (veces === 6) {
   m.reply(` estas en juego`)
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
@@ -18,7 +18,7 @@ return
 let text = args.join` `
 
 let id = m.chat
-global.lll -= global.lll
+global.lll += Numero
 let veca = global.lll
 
 if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
