@@ -9,13 +9,18 @@ global.logi = [ 'funda','cepillo','coron'
 let Numero = Math.ceil(2 * Math.random())
 if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que po`, m)
 let text = args.join` `
-if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `No es así!\n\n*tenes que po`, m)
+if (args[0] === global.logi[Numero]) return conn.reply(m.chat, `Ganaste `, m)
+
+if (typeof global.chucc = 'undefined') {
+global.chucc = 0
+}
 
 m.reply(`
 ${global.yeca[Numero]}   
 Respuesta : ${global.logi[Numero]}
 ${Numero}    
 ${text}
+${global.chucc}
 
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
