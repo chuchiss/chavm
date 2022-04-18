@@ -1,4 +1,4 @@
-conn.fufu = conn.fufu ? conn.fufu : {}
+global.fufu = global.fufu ? global.fufu : {}
 
 let handler = async (m, {conn, args}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
