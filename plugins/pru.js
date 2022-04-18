@@ -13,7 +13,7 @@ global.logi = [
 'la antartida',
 '1969'
 ]
-let handler = async (m, {conn, usedPrefix, args}) => {
+let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if (global.lll > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
@@ -21,6 +21,9 @@ global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 100
 return
 }
+if (/paso/i.test(command)) {
+        global.lll -= veces
+    }
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
   m.reply(`
