@@ -38,8 +38,7 @@ let text = args.join` `
 let id = m.chat
 global.lll += Numero
 let veca = global.lll
-//global.lll -= global.lll
-global.lll = { 0 } 
+//global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
