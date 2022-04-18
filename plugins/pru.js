@@ -5,7 +5,7 @@ global.logi = [ 'funda','cepillo','coron'
 
 let handler = async (m, {conn, args}) => {
 let veces = global.lll
-if (veces > 1) {
+if (veces > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste `, m)
 global.lll -= veces
 return
