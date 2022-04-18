@@ -39,7 +39,7 @@ return
 
 *pregunta:* ¿ ${global.yeca[veces]} ?
 
-
+_Solo minusculas_
 
 _para_ _contestar_ 
 _escribe la respuesta_
