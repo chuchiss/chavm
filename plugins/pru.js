@@ -7,8 +7,7 @@ global.yeca = [ 'hola','numero','castilll'
 global.logi = [ 'funda','cepillo','coron'
 ]
 let Numero = Math.ceil(2 * Math.random())
-let res = global.yogi[Numero]
-if (text == res) return m.reply('bien')
+
 
 
 m.reply(`
