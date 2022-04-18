@@ -17,11 +17,12 @@ global.lll -= veces
 return
 }
   m.reply(`
-pregunta: ${global.yeca[veces]}   
+*pregunta:* ${global.yeca[veces]}   
 Respuesta : ${global.logi[veces]}
 
 ${global.lll}
-para contestar utiliza ${usedPrefix}respuesta ejemplo
+_para_ _contestar_ _utiliza_ 
+_${usedPrefix}respuesta_ _ejemplo_
 
 `.trim()) 
 
