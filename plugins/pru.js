@@ -19,6 +19,7 @@ conn.game = conn.game ? conn.game : {}
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
+return{
 let veces = global.lll
 if (global.lll > 0) {
 if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
@@ -76,7 +77,7 @@ if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
-} 
+} }
 }
 }
 handler.help = ['']
