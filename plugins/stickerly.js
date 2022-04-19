@@ -9,7 +9,7 @@ let handler  = async (m, { conn, args }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
   let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
-if !(churro === webp) return
+  // return
 //   let linkRegex = //([0-9A-Za-z]{20,24})\/webp/i
  // let isLink = linkRegex.exec(url)
 //if (!isLink) m.reply(`hola`)
