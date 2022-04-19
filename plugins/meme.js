@@ -10,7 +10,7 @@ let handler  = async (m, { conn, args }) => {
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   if (!gis)  console.error(e)
 let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
-  if ((churro) !== 'jpg') return
+  if ((churro) !== 'jpeg') return
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
