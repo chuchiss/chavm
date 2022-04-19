@@ -22,7 +22,7 @@ global.DATABASE._data.users[m.sender].lastmp = new Date * 1
 }
 handler.help = ['likes', 'robos']
 handler.tags = ['xp']
-handler.command = /^(likes|robos)$/i
+handler.command = /^(top2)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
