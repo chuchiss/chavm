@@ -11,7 +11,7 @@ let handler  = async (m, { conn, args }) => {
   let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
   if ((churro) !== 'webp') {
 let results = await gis('sticker ' + ' webp ' + text) || []
-  let { url, width, height } = pickRandom(results) || {}conn.sendFile(m.chat, url, 'gimage', `
+let { url, width, height } = pickRandom(results) || {}
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
