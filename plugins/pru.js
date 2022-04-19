@@ -222,8 +222,8 @@ Si es correcto *Ganarás*!
 } 
 
 }
-handler.help = ['']
-handler.tags = ['']
+handler.help = ['preguntados']
+handler.tags = ['game']
 handler.command = /^(pre(guntados)?)$/i
 
 module.exports = handler
