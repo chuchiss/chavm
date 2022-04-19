@@ -1,7 +1,4 @@
-if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
-global.lll = 0
-if (!isNumber(global.lll)) global.lll = 0 
-  }
+
 const TicTacToe = require("../lib/tictactoe")
 global.yeca = [
 'hola',
@@ -82,7 +79,12 @@ setTimeout(()=> {
   global.lll -= global.lll
 return 
 }, 300000)
+if (!isNaN(global.lll)) global.lll = 0
+if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
+global.lll = 0
+if (!isNumber(global.lll)) global.lll = 0 
 
+  }
 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
