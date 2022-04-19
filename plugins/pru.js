@@ -87,7 +87,8 @@ let Numero = Math.ceil(lui * Math.random())
 global.lll += 1
 //Numero
 
-
+if (global.lll > lui) { m.reply(`listo`)
+}
 let veca = global.lll
 //global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
@@ -130,8 +131,7 @@ _si es correcto Ganarás!_
 `.trim()) 
 
 
-} else if (global.lll > lui) { m.reply(`listo`)
-}
+} 
 
 }
 handler.help = ['']
