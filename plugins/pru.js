@@ -19,7 +19,7 @@ global.logi = [
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if(typeof global.lll == 'undefined') {
-  global.pozo = 0
+  global.lll = 0
   }
 if (global.lll > 0) {
 if (/respuesta/i.test(command)) {
