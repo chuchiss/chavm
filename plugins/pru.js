@@ -29,7 +29,7 @@ let Numero = Math.ceil(5 * Math.random())
 //}
 //let text = args.join` `
 
-let id = m.chat
+
 global.lll += Numero
 let veca = global.lll
 //global.lll -= global.lll 
@@ -45,10 +45,10 @@ escribe ${usedPrefix}paso
 ${global.lll}
 
 `.trim()) 
-setTimeout(()=> {
- if(global.lll > 1) { global.lll -= global.lll}
-return 
-}, 3000)
+//setTimeout(()=> {
+// if(global.lll > 1) { global.lll -= global.lll}
+//return 
+//}, 3000)
 
 if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
