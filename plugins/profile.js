@@ -22,7 +22,6 @@ await conn.getProfilePicture(who)
 │Nombre: *${username}* ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n│Estado: ' + about : ''}
 │${exp} Exp
 │Limit: ${limit}
-│Mg: ${like}
 │Advertencias: ${warning} / 5
 │Robos: ${robos}
 │Ban: ${banned ? 'si' : 'no'}
