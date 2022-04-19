@@ -15,7 +15,7 @@ global.logi = [
 '1969',
 'actor'
 ]
-let handler = async (m, {conn, usedPrefix, args}) => {
+let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll > 0) {
 
@@ -40,7 +40,7 @@ let Numero = Math.ceil(5 * Math.random())
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 //return
 //}
-let text = args.join` `
+//let text = args.join` `
 
 let id = m.chat
 global.lll += Numero
