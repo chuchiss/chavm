@@ -3,6 +3,9 @@ let handler = m => m
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.before = function (m, { user }) {
 let veces = global.lll
+if(typeof global.lll == 'undefined' || 'NaN') {
+  global.lll = 0
+  }
 if (m.text === global.logi[veces]) { 
 global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 400
