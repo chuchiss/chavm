@@ -16,7 +16,7 @@ global.logi = [
 '1969',
 'actor'
 ]
-let handler = async (m, {conn, usedPrefix, args, command}) => {
+let handler = async (m, {conn, usedPrefix, args}) => {
 let veces = global.lll
 if (veces !== 0) {
 
