@@ -58,7 +58,7 @@ global.logi = [
 '81',
 'el volga',
 'las branquias',
-'el amazonas',
+'rio amazonas',
 'agua',
 'paris',
 'de la madera de los arboles',
