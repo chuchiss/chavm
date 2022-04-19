@@ -27,7 +27,6 @@ await conn.getProfilePicture(who)
 │Robos: ${robos}
 │Ban: ${banned ? 'si' : 'no'}
 ╰────
-%readmore
 ╭─Preguntas • ${preg}
 │ganancias totales: ${pregun}
 
