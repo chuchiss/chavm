@@ -19,27 +19,6 @@ global.lll = 0
 
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
-if (global.lll > 1) {
-
-//Respuesta : ${global.logi[veces]}
-//Respuesta: ${global.logi[Numero]}
-  m.reply(`
-
-*pregunta:* ¿ ${global.yeca[veces]} ?
-
-_Solo minusculas_
-
-_para_ _contestar_ 
-_escribe la respuesta_
-_si es correcto Ganarás!_
-
-`.trim()) 
-
-} 
-else{
-
-
-let veces = global.lll
 let Numero = Math.ceil(5 * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
@@ -74,6 +53,27 @@ if(typeof global.lll == 'undefined' || 'NaN') {
   }
 }
 
+else{
+
+let veces = global.lll
+if (global.lll === 0) {
+
+//Respuesta : ${global.logi[veces]}
+//Respuesta: ${global.logi[Numero]}
+  m.reply(`
+
+*pregunta:* ¿ ${global.yeca[veces]} ?
+
+_Solo minusculas_
+
+_para_ _contestar_ 
+_escribe la respuesta_
+_si es correcto Ganarás!_
+
+`.trim()) 
+
+
+}
 
 }
 handler.help = ['']
