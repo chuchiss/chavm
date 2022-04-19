@@ -56,7 +56,7 @@ global.logi = [
 'pulmones',
 'tilde',
 '81',
-'el volga',
+'rio volga',
 'las branquias',
 'rio amazonas',
 'agua',
