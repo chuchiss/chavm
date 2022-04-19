@@ -1,3 +1,4 @@
+lo
 
 global.yeca = [
 'hola',
@@ -67,7 +68,7 @@ if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
 
-} 
+
 
 }
 handler.help = ['']
