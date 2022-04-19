@@ -6,8 +6,8 @@ let veces = global.lll
 
 if (m.text === global.logi[veces]) { 
 global.lll -= global.lll
-global.DATABASE._data.users[m.sender].exp += 400
- conn.reply(m.chat, `*Preguntados* - Ganaste +400 exp`, m) 
+global.DATABASE._data.users[m.sender].exp += 200
+ conn.reply(m.chat, `*Preguntados* - Ganaste +200 exp`, m) 
 return }
   if (m.isBaileys && m.fromMe) return true
   let chat = global.DATABASE.data.chats[m.chat]
