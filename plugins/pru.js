@@ -19,13 +19,7 @@ global.logi = [
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if (global.lll > 0) {
-if (/paso/i.test(command)) {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 20400) {
-        global.lll -= veces
-m.reply(`Siguiente pregunta!`)
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
-return
-    } else return }
+
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
   m.reply(`
@@ -82,6 +76,6 @@ if(typeof global.lll == 'undefined' || 'NaN') {
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(pre(guntados)?|paso)$/i
+handler.command = /^(preguntados)$/i
 
 module.exports = handler
