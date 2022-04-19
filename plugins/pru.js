@@ -46,7 +46,7 @@ let Numero = Math.ceil(5 * Math.random())
 //return
 //}
 //let text = args.join` `
-
+global.lll += Numero
 
 
 let veca = global.lll
@@ -63,7 +63,7 @@ escribe ${usedPrefix}paso
 ${global.lll}
 
 `.trim()) 
-global.lll += Numero
+
 //setTimeout(()=> {
 // if(global.lll > 1) { global.lll -= global.lll}
 //return 
