@@ -86,11 +86,14 @@ global.yeca = [
 'La es una nota musical - si o no',
 'Ca es una nota musical - si o no',
 'Sa es una nota musical - si o no',
-'Gu es una nota musical - si o no'
-
-
-
-
+'Gu es una nota musical - si o no',
+'cuantos cuartos de kilo hay en dos kilos',
+'cuantos cuartos de kilo hay en tres kilos',
+'cuantos cuartos de kilo hay en cuatro kilos',
+'cuantos cuartos de kilo hay en cinco kilos',
+'cuantos cuartos de kilo hay en seis kilos',
+'cuantos cuartos de kilo hay en siete kilos',
+'cuantos cuartos de kilo hay en ocho kilos'
 ] 
 global.logi = [
 'funda',
@@ -180,9 +183,15 @@ global.logi = [
 'si',
 'no',
 'no',
-'no'
-
-
+'no',
+'8',
+'12',
+'16',
+'20',
+'24',
+'28',
+'32',
+'36'
 ]
 
 global.lll = 0
