@@ -1,22 +1,6 @@
 
-global.yeca = [
-'hola',
-'a que se dedica Bad Bunny',
-'cuantos años tiene mirta legrand',
-'Cuál es el lugar más frío de la tierra',
-'en que año el hombre piso la luna',
-'a que se dedica Jackie Chan'
-] 
-global.logi = [
-'funda',
-'cantante',
-'muchos',
-'la antartida',
-'1969',
-'actor'
-]
 let handler = async (m, {conn, usedPrefix}) => {
-let veces = global.lll
+
 if (global.lll > 0) {
 
 //Respuesta : ${global.logi[veces]}
@@ -35,6 +19,9 @@ _si es correcto Ganarás!_
 return
 } 
 
+
+
+let veces = global.lll
 let Numero = Math.ceil(5 * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
@@ -75,3 +62,23 @@ handler.tags = ['']
 handler.command = /^(preguntados)$/i
 
 module.exports = handler
+
+
+
+
+global.yeca = [
+'hola',
+'a que se dedica Bad Bunny',
+'cuantos años tiene mirta legrand',
+'Cuál es el lugar más frío de la tierra',
+'en que año el hombre piso la luna',
+'a que se dedica Jackie Chan'
+] 
+global.logi = [
+'funda',
+'cantante',
+'muchos',
+'la antartida',
+'1969',
+'actor'
+]
