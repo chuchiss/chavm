@@ -8,6 +8,7 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis('sticker ' + ' webp ' + text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('sticker no encontrado')
+  let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
 //   let linkRegex = //([0-9A-Za-z]{20,24})\/webp/i
  // let isLink = linkRegex.exec(url)
 //if (!isLink) m.reply(`hola`)
@@ -15,7 +16,7 @@ let handler  = async (m, { conn, args }) => {
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
-//conn.reply(m.chat, `${url}`, m)
+conn.reply(m.chat, `${url} \n ${churro}`, m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 }
@@ -26,7 +27,7 @@ handler.tags = ['internet', 'tools']
 handler.command = /^(stic?kerly)$/i
 handler.private = false
 handler.exp = 750
-handler.owner = false
+handler.owner = true
 
 
 module.exports = handler
