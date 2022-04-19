@@ -9,6 +9,8 @@ let handler  = async (m, { conn, args }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   if (!gis)  console.error(e)
+let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
+  if ((churro) !== 'jpg') return
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
