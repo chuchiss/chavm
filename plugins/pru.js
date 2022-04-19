@@ -1,4 +1,4 @@
-if(typeof !global.lll == 'undefined' || !global.lll == 'NaN') {
+if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
 global.lll = 0
 if (!isNumber(global.lll)) global.lll = 0 
   }
