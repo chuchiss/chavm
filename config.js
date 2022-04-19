@@ -14,7 +14,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.packname = ' Insane BOT '
 global.author = 'segui a @insanebot.oficial '
-global.lll = 0
+
 global.multiplier = 69 // The higher, The harder levelup
 
 let fs = require('fs')
