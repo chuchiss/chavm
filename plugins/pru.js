@@ -19,6 +19,9 @@ global.logi = [
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if (global.lll > 0) {
+if(typeof global.lll == 'undefined' || 'NaN') {
+  global.lll = 0
+  }
 if (/paso/i.test(command)) {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 20400) {
         global.lll -= veces
@@ -71,9 +74,7 @@ setTimeout(()=> {
   global.lll -= global.lll
 return 
 }, 300000)
-if(typeof global.lll == 'undefined' || 'NaN') {
-  global.lll = 0
-  }
+
 
 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
