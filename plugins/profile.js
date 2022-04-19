@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
   try {
     pp = await conn.getProfilePicture(who)
   } catch (e) {
-
+await conn.getProfilePicture(who)
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
 
   } finally {
