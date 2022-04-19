@@ -5,14 +5,13 @@ m.reply(`
 _.menu_
 _.perfil_
 _.ranking_
-_.likes_
+_.top2_
 _.comandos_
 _.Buy_ (comprar exp)
 _.buyall_ (comprar toda la exp)
 _.reclamar_
 _.pagar_ @mension <cantidad de exp>
 _.robar_ @mension <cantidad de exp>
-_.robos_
 _.link_
 _.ping_
 _.politica_
