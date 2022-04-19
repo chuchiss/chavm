@@ -9,6 +9,13 @@ let handler  = async (m, { conn, args, text }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
   if (!gis) console.error(e)
+  if ((churro) !== 'jpg') {
+let results = await gis(text) || []
+  let { url, width, height } = pickRandom(results) || {}
+conn.sendFile(m.chat, url, 'gimage', `
+${text}
+`.trim(), m)
+return}
   conn.sendFile(m.chat, url, 'gimage', `
 ${text}
 `.trim(), m)
