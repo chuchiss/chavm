@@ -34,7 +34,7 @@ _si es correcto Ganarás!_
 `.trim()) 
 return
 } 
-else {
+
 let Numero = Math.ceil(5 * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
@@ -67,7 +67,7 @@ if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
 
-}
+
 
 }
 handler.help = ['']
