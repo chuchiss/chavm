@@ -1,7 +1,7 @@
 
 let handler = async (m, {conn, usedPrefix}) => {
 
-if (global.lll > 0) {
+if (global.lll < 5) {
 
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
