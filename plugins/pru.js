@@ -102,10 +102,10 @@ Tiempo: 5 minutos
 
 `.trim()) 
 
-//setTimeout(()=> {
-// if(global.lll > 1) { global.lll -= global.lll}
-//return 
-//}, 3000)
+setTimeout(()=> {
+ if(global.lll > 1) { global.lll -= global.lll}
+return 
+}, 300000)
 
 //if(typeof global.lll == 'undefined' || 'NaN') {
  // global.lll = 0
