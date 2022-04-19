@@ -1,4 +1,3 @@
-lo
 
 global.yeca = [
 'hola',
