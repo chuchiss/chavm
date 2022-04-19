@@ -50,7 +50,7 @@ _si es correcto Ganarás!_
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
-if(typeof global.lll == 'undefined' && global.lll == 'NaN') {
+if(typeof !global.lll == 'undefined' || !global.lll == 'isNaN') {
   global.lll = 0
 if (!isNumber(global.lll)) global.lll = 0 
   }
