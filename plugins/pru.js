@@ -18,7 +18,7 @@ global.logi = [
 ]
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
-if(typeof global.lll == 'undefined' || ' NaN) {
+if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
 if (global.lll > 0) {
