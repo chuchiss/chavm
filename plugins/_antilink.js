@@ -4,11 +4,11 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.before = function (m, { user }) {
 let veces = global.lll
 
-if (m.text !== global.logi[veces]) {
-if ((!/^pregunta/i.test(m.quoted.text)))
-m.reply(`eme`)
-return
-}
+//if (m.text !== global.logi[veces]) {
+//if ((!/^pregunta/i.test(m.quoted.text)))
+//m.reply(`eme`)
+//return
+//}
 if (m.text === global.logi[veces]) { 
  
 global.lll -= global.lll
