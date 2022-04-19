@@ -6,7 +6,8 @@ let veces = global.lll
 if (m.text === global.logi[veces]) { 
 global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 400
- conn.reply(m.chat, `*Preguntados* - Ganaste +400 exp`, m) return }
+ conn.reply(m.chat, `*Preguntados* - Ganaste +400 exp`, m) 
+return }
   if (m.isBaileys && m.fromMe) return true
   let chat = global.DATABASE.data.chats[m.chat]
   let isLink = linkRegex.exec(m.text)
