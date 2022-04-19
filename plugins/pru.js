@@ -95,17 +95,11 @@ let veca = global.lll
 
 m.reply(`
 *Preguntados:*
-*pregunta:* ¿ ${global.yeca[veces]} ?
+*pregunta:* ¿ ${global.yeca[Numero]} ?
 
 Tiempo: 5 minutos
  
-Todo minusculas y sin acento
-las respuestas tienen que ser exactas
 
-Si es correcto *Ganarás*!
-
-_escribe .pre_
-_o .preguntados para continuar_
 
 `.trim()) 
 
@@ -130,6 +124,11 @@ let veces = global.lll
 *pregunta:* ¿ ${global.yeca[veces]} ?
 
 tiempo: 5 minutos
+
+Todo minusculas y sin acento
+las respuestas tienen que ser exactas
+
+Si es correcto *Ganarás*!
 
 `.trim()) 
 
