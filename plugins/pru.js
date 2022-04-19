@@ -43,7 +43,7 @@ _si es correcto Ganarás!_
 
 `.trim()) 
 
-} else if {
+} else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 
 
