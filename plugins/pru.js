@@ -48,7 +48,7 @@ let Numero = Math.ceil(5 * Math.random())
 //let text = args.join` `
 
 
-global.lll += Numero
+
 let veca = global.lll
 //global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
@@ -63,6 +63,7 @@ escribe ${usedPrefix}paso
 ${global.lll}
 
 `.trim()) 
+global.lll += Numero
 //setTimeout(()=> {
 // if(global.lll > 1) { global.lll -= global.lll}
 //return 
