@@ -62,7 +62,7 @@ ${global.lll}
 
 `.trim()) 
 setTimeout(()=> {
-  global.lll -= global.lll
+ if(global.lll > 1) { global.lll -= global.lll}
 return 
 }, 300000)
 
