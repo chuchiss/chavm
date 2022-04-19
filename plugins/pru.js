@@ -49,9 +49,9 @@ ${global.lll}
 //return 
 //}, 3000)
 
-if(typeof global.lll == 'undefined' || 'NaN') {
-  global.lll = 0
-  }
+//if(typeof global.lll == 'undefined' || 'NaN') {
+ // global.lll = 0
+ // }
 }
 
 else{
