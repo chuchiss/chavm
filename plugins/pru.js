@@ -49,7 +49,9 @@ _si es correcto Ganarás!_
 
 } else {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-
+if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
+  global.lll = 0
+  }
 
 let Numero = Math.ceil(5 * Math.random())
 //if (!args || !args[0]) {
@@ -78,9 +80,7 @@ setTimeout(()=> {
   global.lll -= global.lll
 return 
 }, 300000)
-if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
-  global.lll = 0
-  }
+
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
  
  } else return
