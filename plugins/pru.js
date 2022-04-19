@@ -79,9 +79,11 @@ setTimeout(()=> {
   global.lll -= global.lll
 return 
 }, 300000)
-if (!isNaN(global.lll)) global.lll = 0
+
+if (!NaN(global.lll)) global.lll = 0
 if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
 global.lll = 0
+let global.lll = 0
 if (!isNumber(global.lll)) global.lll = 0 
 
   }
