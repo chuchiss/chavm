@@ -1,6 +1,6 @@
 
 let handler = async (m, {conn, usedPrefix}) => {
-
+let veces = global.lll
 if (global.lll < 5) {
 
 //Respuesta : ${global.logi[veces]}
