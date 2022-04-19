@@ -18,9 +18,6 @@ global.logi = [
 ]
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
-if(typeof global.lll == 'undefined' || 'NaN') {
-  global.lll = 0
-  }
 if (global.lll > 0) {
 if (/respuesta/i.test(command)) {
 if (args[0] !== global.logi[veces]) return conn.reply(m.chat, `incorrecto Intentalo de nuevo!`, m)
@@ -82,7 +79,9 @@ setTimeout(()=> {
   global.lll -= global.lll
 return 
 }, 300000)
-
+if(typeof global.lll == 'undefined' || 'NaN') {
+  global.lll = 0
+  }
 
 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
