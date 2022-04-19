@@ -18,7 +18,7 @@ global.logi = [
 ]
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
-if (global.lll > 1) {
+if (global.lll === 0) {
 
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
@@ -34,10 +34,8 @@ _si es correcto Ganarás!_
 
 `.trim()) 
 return
-} else {
-
-
-
+} 
+else {
 let Numero = Math.ceil(5 * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
@@ -69,7 +67,6 @@ return
 if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
-
 
 } 
 
