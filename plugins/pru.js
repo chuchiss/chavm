@@ -80,12 +80,9 @@ setTimeout(()=> {
 return 
 }, 300000)
 
-if (!NaN(global.lll)) global.lll = 0
+
 if(typeof global.lll == 'undefined' || global.lll == 'NaN') {
 global.lll = 0
-let global.lll = 0
-if (!isNumber(global.lll)) global.lll = 0 
-
   }
 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
