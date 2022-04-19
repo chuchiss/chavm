@@ -47,7 +47,7 @@ _.tateti_
 _.tutti_ 
 _.luck_
 _.pozo_ 
-_proximo a salir preguntados..._
+_.preguntados_
 *___________________________________*
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
