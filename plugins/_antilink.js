@@ -5,7 +5,6 @@ handler.before = function (m, { user }) {
 let veces = global.lll
 
 if (m.text === global.logi[veces]) { 
-global.lll -= veces
 global.DATABASE._data.users[m.sender].exp += 400
  conn.reply(m.chat, `*Preguntados* - Ganaste +400 exp`, m) 
 return }
