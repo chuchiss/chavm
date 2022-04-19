@@ -36,7 +36,7 @@ _si es correcto Ganarás!_
 `.trim()) 
 return
 } 
-
+else{
 
 
 let veces = global.lll
@@ -71,7 +71,7 @@ ${global.lll}
 if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
   }
-
+}
 
 
 }
