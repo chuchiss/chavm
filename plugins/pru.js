@@ -94,7 +94,7 @@ let veca = global.lll
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
-Pregunta: ¿ ${global.yeca[Numero]}   ?
+Pregunta: ¿ ${global.yeca[veces]}   ?
 
 Tiempo: 5 minutos
  
@@ -117,7 +117,7 @@ else{
 let veces = global.lll
 
 //Respuesta : ${global.logi[veces]}
-//Respuesta: ${global.logi[Numero]}
+//Respuesta: ${global.logi[veces]}
   m.reply(`
 
 *pregunta:* ¿ ${global.yeca[veces]} ?
