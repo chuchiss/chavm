@@ -95,10 +95,13 @@ let veca = global.lll
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
 
 m.reply(`
-Pregunta: ¿ ${global.yeca[veces]}   ?
+Pregunta: ¿ estas listo para jugar  ?
 
 Tiempo: 5 minutos
  
+Solo minusculas y sin acento
+las respuestas tienen que ser exactas
+
 
 
 `.trim()) 
