@@ -80,7 +80,7 @@ global.lll = 0
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
-let Numero = Math.ceil(5 * Math.random())
+let Numero = Math.ceil(35 * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 //return
