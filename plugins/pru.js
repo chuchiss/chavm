@@ -76,7 +76,7 @@ _si es correcto Ganarás!_
 }
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(preguntados)$/i
+handler.command = /^(pre(guntados)?)$/i
 
 module.exports = handler
 
