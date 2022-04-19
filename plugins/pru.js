@@ -74,6 +74,19 @@ global.yeca = [
 'quien es el protagonista de la pelicula - Rocky ',
 'que come el animal que es Carnívoro',
 'cual es el pais con mayor porcentaje de budistas'
+'cuanto es 5+4-3+6-3+4'
+'Justin Bieber es cantante- si o no'
+'en ingles como se dice hola'
+'Justin Bieber se dedica a pilotear aviones- si o no'
+'Do es una nota musical - si o no'
+'Re es una nota musical - si o no'
+'Fa es una nota musical - si o no'
+'Mi es una nota musical - si o no'
+'Sol es una nota musical - si o no'
+'La es una nota musical - si o no'
+'Ca es una nota musical - si o no'
+'Sa es una nota musical - si o no'
+'Gu es una nota musical - si o no'
 
 
 
@@ -155,6 +168,19 @@ global.logi = [
 'sylvester stallone',
 'carne',
 'camboya'
+'13'
+'si'
+'hello'
+'no'
+'si'
+'si'
+'si'
+'si'
+'si'
+'si'
+'no'
+'no'
+'no'
 
 
 ]
