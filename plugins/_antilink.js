@@ -4,8 +4,13 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.before = function (m, { user }) {
 let veces = global.lll
 
+if (m.text !== global.logi[veces]) {
+if ((!/^pregunta/i.test(m.quoted.text)))
+m.reply(`eme`)
+return
+}
 if (m.text === global.logi[veces]) { 
-if ((!/^pregunta/i.test(m.quoted.text))) 
+ 
 global.lll -= global.lll
 global.DATABASE._data.users[m.sender].exp += 200
  conn.reply(m.chat, `*Preguntados* - Ganaste +200 exp`, m) 
