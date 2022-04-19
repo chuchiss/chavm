@@ -33,7 +33,7 @@ _escribe la respuesta_
 _si es correcto Ganarás!_
 
 `.trim()) 
-
+return
 } else {
 
 
