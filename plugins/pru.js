@@ -1,5 +1,5 @@
 global.yeca = [
-'hola',
+'estas listo',
 'a que se dedica Bad Bunny',
 'Cuál es el lugar más frío de la tierra',
 'en que año el hombre piso la luna',
