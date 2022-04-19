@@ -74,12 +74,12 @@ global.logi = [
 ]
 
 global.lll = 0
-let lui = 4
+let lui = 35
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
 let Numero = Math.ceil(lui * Math.random())
-global.lll += 1
+global.lll += Numero
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 //return
@@ -88,8 +88,7 @@ global.lll += 1
 
 //Numero
 
-if (global.lll > lui) { m.reply(`listo`)
-}
+
 let veca = global.lll
 //global.lll -= global.lll 
 //if (args[0] === global.logi[veca]) return conn.reply(m.chat, `Ganaste `, m)
