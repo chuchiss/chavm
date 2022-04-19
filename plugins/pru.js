@@ -61,7 +61,7 @@ global.logi = [
 'rio amazonas',
 'agua',
 'paris',
-'de la madera de los arboles',
+'de la madera',
 'america',
 'en paris',
 'miguel de cervantes',
