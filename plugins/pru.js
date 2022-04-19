@@ -79,12 +79,13 @@ let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
 let Numero = Math.ceil(lui * Math.random())
+global.lll += 1
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 //return
 //}
 //let text = args.join` `
-global.lll += 1
+
 //Numero
 
 if (global.lll > lui) { m.reply(`listo`)
