@@ -1,7 +1,6 @@
 global.yeca = [
 'hola',
 'a que se dedica Bad Bunny',
-'cuantos años tiene mirta legrand',
 'Cuál es el lugar más frío de la tierra',
 'en que año el hombre piso la luna',
 'a que se dedica Jackie Chan',
@@ -39,7 +38,6 @@ global.yeca = [
 global.logi = [
 'funda',
 'cantante',
-'muchos',
 'antartida',
 '1969',
 'actor',
@@ -76,17 +74,18 @@ global.logi = [
 ]
 
 global.lll = 0
-
+let lui = 4
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
-let Numero = Math.ceil(35 * Math.random())
+let Numero = Math.ceil(lui * Math.random())
 //if (!args || !args[0]) {
 //conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
 //return
 //}
 //let text = args.join` `
-global.lll += Numero
+global.lll += 1
+//Numero
 
 
 let veca = global.lll
@@ -131,6 +130,7 @@ _si es correcto Ganarás!_
 `.trim()) 
 
 
+} else if (global.lll > lui) { m.reply(`listo`)
 }
 
 }
