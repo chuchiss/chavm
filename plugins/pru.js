@@ -73,7 +73,7 @@ Tiempo: 5 minutos
  
 Si quieres cambiar de pregunta
 escribe ${usedPrefix}paso
-
+${global.lll}
 
 `.trim()) 
 setTimeout(()=> {
