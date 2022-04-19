@@ -62,7 +62,7 @@ ${global.lll}
 setTimeout(()=> {
  if(global.lll > 1) { global.lll -= global.lll}
 return 
-}, 300000)
+}, 3000)
 
 if(typeof global.lll == 'undefined' || 'NaN') {
   global.lll = 0
