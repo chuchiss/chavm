@@ -1,5 +1,4 @@
 
-const TicTacToe = require("../lib/tictactoe")
 global.yeca = [
 'hola',
 'a que se dedica Bad Bunny',
@@ -18,7 +17,7 @@ global.logi = [
 ]
 let handler = async (m, {conn, usedPrefix, args}) => {
 let veces = global.lll
-if (veces !== 0) {
+if (global.lll > 0) {
 
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[Numero]}
