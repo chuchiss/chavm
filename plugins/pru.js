@@ -19,14 +19,6 @@ global.logi = [
 let handler = async (m, {conn, usedPrefix, args, command}) => {
 let veces = global.lll
 if (global.lll > 0) {
-if (/respuesta/i.test(command)) {
-if (args[0] !== global.logi[veces]) return conn.reply(m.chat, `incorrecto Intentalo de nuevo!`, m)
-}
-if (args[0] === global.logi[veces]) { conn.reply(m.chat, `Ganaste +100 exp`, m)
-global.lll -= veces
-global.DATABASE._data.users[m.sender].exp += 100
-return
-}
 if (/paso/i.test(command)) {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 20400) {
         global.lll -= veces
