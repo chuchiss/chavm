@@ -7,33 +7,33 @@ global.yeca = [
 'a que se dedica Jackie Chan',
 'cuantos minutos tiene una hora',
 'cuantos cuartos de kilo hay en un kilo',
-'cuantas horas tiene un dia'
-'cual es el antonimo de rico'
-'como se llama el lugar donde se escriben las notas musicales'
-'es lo mismo multiplicar 3x4 que 4x3 - si o no'
-'como se llama el triángulo que tiene tres lados iguales'
-'que no puede faltar en una oración para que sea completa'
+'cuantas horas tiene un dia',
+'cual es el antonimo de rico',
+'como se llama el lugar donde se escriben las notas musicales',
+'es lo mismo multiplicar 3x4 que 4x3 - si o no',
+'como se llama el triángulo que tiene tres lados iguales',
+'que no puede faltar en una oración para que sea completa',
 'como se llama quien cuenta la historia de un cuento',
-'como se dice en ingles buenas tardes'
-'que órgano usamos para respirar'
-'como se llama la rayita que ponen encima de la sílaba tónica'
-'cuanto es el resultado de 9x9'
-'cual es el rio mas largo de Europa'
-'a través de que órgano respiran los peces'
-'cual es el rio mas largo del mundo'
-'por que esta formado el planeta principalmente'
-'cual es la capital de Francia'
-'de donde se extrae el papel'
-'en que continente esta Brasil'
-'en que ciudad se encuentra la torre Eiffel'
-'quien es el autor de El Quijote'
-'cual es el pais mas grande del mundo'
-'como se llama el resultado de la multiplicación'
-'cual es el animal más rápido del mundo'
-'cuantas patas tiene una araña'
-'cual es el tercer planeta del sistema solar - en cuanto a distancia del sol'
-'que somos los humanos: omnívoros - herbivoros o carnívoros'
-'en que año colón descubrió America'
+'como se dice en ingles buenas tardes',
+'que órgano usamos para respirar',
+'como se llama la rayita que ponen encima de la sílaba tónica',
+'cuanto es el resultado de 9x9',
+'cual es el rio mas largo de Europa',
+'a través de que órgano respiran los peces',
+'cual es el rio mas largo del mundo',
+'por que esta formado el planeta principalmente',
+'cual es la capital de Francia',
+'de donde se extrae el papel',
+'en que continente esta Brasil',
+'en que ciudad se encuentra la torre Eiffel',
+'quien es el autor de El Quijote',
+'cual es el pais mas grande del mundo',
+'como se llama el resultado de la multiplicación',
+'cual es el animal más rápido del mundo',
+'cuantas patas tiene una araña',
+'cual es el tercer planeta del sistema solar - en cuanto a distancia del sol',
+'que somos los humanos: omnívoros - herbivoros o carnívoros',
+'en que año colón descubrió America',
 'como se llama la linea imaginaria que divide la tierra por la mitad'
 ] 
 global.logi = [
@@ -42,36 +42,36 @@ global.logi = [
 'muchos',
 'la antartida',
 '1969',
-'actor'
-'60'
-'4'
-'24'
-'pobre'
-'pentagrama'
-'si'
-'equilatero'
-'un verbo'
-'narrador'
-'good afternoon'
-'pulmones'
-'tilde'
-'81'
-'el volga'
-'las branquias'
-'el amazonas'
-'agua'
-'paris'
-'de la madera de los arboles'
-'america'
-'en paris'
-'miguel de cervantes'
-'rusia'
-'producto'
-'el guepardo'
-'8'
-'la tierra'
-'omnivoros'
-'1492'
+'actor',
+'60',
+'4',
+'24',
+'pobre',
+'pentagrama',
+'si',
+'equilatero',
+'un verbo',
+'narrador',
+'good afternoon',
+'pulmones',
+'tilde',
+'81',
+'el volga',
+'las branquias',
+'el amazonas',
+'agua',
+'paris',
+'de la madera de los arboles',
+'america',
+'en paris',
+'miguel de cervantes',
+'rusia',
+'producto',
+'el guepardo',
+'8',
+'la tierra',
+'omnivoros',
+'1492',
 'ecuador'
 ]
 
