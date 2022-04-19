@@ -15,7 +15,7 @@ global.logi = [
 'actor'
 ]
 
-
+global.lll = 0
 
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
