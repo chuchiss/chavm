@@ -24,6 +24,7 @@ module.exports = {
           if (!isNumber(user.lastmp)) user.lastmp = 0
           if (!isNumber(user.lastme)) user.lastme = 0
           if (!isNumber(user.robos)) user.robos = 0
+          if (!isNumber(user.preg)) user.preg = 0
           if (!isNumber(user.like)) user.like = 0
           if (!isNumber(user.point)) user.point = 0
           if (!isNumber(user.mismo)) user.mismo = 0
@@ -46,6 +47,7 @@ module.exports = {
           lastrob: 0,
           like: 0,
           robos: 0,
+          preg: 0,
           lastmp: 0,
           lastme: 0,
           mismo: 0,
