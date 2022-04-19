@@ -103,8 +103,8 @@ Tiempo: 5 minutos
 Solo minusculas y sin acento
 las respuestas tienen que ser exactas
 
-_escribe .pre
-o .preguntados para continuar_
+_escribe .pre_
+_o .preguntados para continuar_
 
 `.trim()) 
 
