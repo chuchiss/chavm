@@ -21,7 +21,14 @@ return
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
-
+if catch (e) {
+let results = await gis(text) || []
+  let { url, width, height } = pickRandom(results) || {}
+conn.sendFile(m.chat, url, 'gimage', `
+MEME
+`.trim(), m)
+return
+}
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
