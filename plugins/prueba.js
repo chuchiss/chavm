@@ -53,11 +53,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 400) {
     return _3 + string + _3
 }
     let groups = {}
-    for (let tag in tags) {
-      groups[tag] = []
-      for (let menu of help)
-        if (menu.tags && menu.tags.includes(tag))
-          if (menu.help) groups[tag].push(menu)
+  
     }
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
