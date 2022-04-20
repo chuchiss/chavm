@@ -7,20 +7,14 @@ let veces = global.lll
 //m.reply(`eme`)
 //return
 //}
-if (m.text === (global.reee[global.reeu])) { 
+if (m.text === global.reee[global.reeu]) { 
 global.DATABASE._data.users[m.sender].exp += 10
-
-  if(typeof global.DATABASE.data.users[user] == 'undefined' || 'NaN') {
-  global.reeu = 0,
-   }
  conn.reply(m.chat, `*Palabra* - Ganaste +10 exp`, m)
 }
 
 
-if (m.text === (global.logi[veces])) { 
- if(typeof global.DATABASE.data.users[user] == 'undefined' || 'NaN') {
-  global.lll = 0,
-   }
+if (m.text === global.logi[veces]) { 
+
 global.lll -= global.lll
 global.DATABASE._data.users[m.sender].exp += 200
 global.DATABASE._data.users[m.sender].preg += 1
