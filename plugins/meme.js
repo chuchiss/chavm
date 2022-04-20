@@ -36,6 +36,7 @@ conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
 }
+}
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
 handler.command = /^(me(me)|memes)$/i
