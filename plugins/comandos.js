@@ -54,8 +54,8 @@ _.preguntados_
 
   
 }
-handler.help = ['']
-handler.tags = ['']
-handler.command = /^prueba$/
+handler.help = ['comandos']
+handler.tags = ['info']
+handler.command = /^(cmd|comandos|commandos|com|hola|list|comando|ayuda)$/i
 
 module.exports = handler
