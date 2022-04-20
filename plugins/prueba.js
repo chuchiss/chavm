@@ -137,9 +137,9 @@ _.preguntados_
 %readmore
 
 %readmore`
-    let header = conn.menu.header || '╭─「  」 '
-    let body   = conn.menu.body   || '│Tienes *%limit Limit* *%exp XP*'
-    let footer = conn.menu.footer || '╰────\n'
+    let header = conn.menu.header || ' '
+    let body   = conn.menu.body   || ''
+    let footer = conn.menu.footer || ''
     let after  = conn.menu.after  || `
      *Copyright © InsaneService* `
     let _text  = before + '\n'
