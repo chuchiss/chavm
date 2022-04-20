@@ -65,7 +65,7 @@ handler.tags = ['internet', 'tools']
 handler.command = /^(me(me)|memes)$/i
 handler.group = true
 handler.exp = 750
-
+handler.owner= true
 module.exports = handler
 
 function pickRandom(arr) {
