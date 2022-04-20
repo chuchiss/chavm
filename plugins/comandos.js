@@ -45,8 +45,8 @@ _.tateti_
 _.tutti_ 
 _.luck_
 _.pozo_ 
-_.palabra_
-_.preguntados_
+_.palabra_ (mantenimiento)
+_.preguntados_ (mantenimiento)
 *_________________________________*
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
