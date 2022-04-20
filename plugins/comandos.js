@@ -46,6 +46,7 @@ _.tateti_
 _.tutti_ 
 _.luck_
 _.pozo_ 
+_.palabra_
 _.preguntados_
 *___________________________________*
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
