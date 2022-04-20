@@ -88,7 +88,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
 ╭─「🙂𝗛ola, %name!」
 │ Tienes *%limit Limit* *%exp XP* 
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
-│%prefix menu
+│.menu
 │_.perfil
 │_.ranking_
 │_.top2_
