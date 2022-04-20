@@ -19,15 +19,15 @@ await conn.getProfilePicture(who)
     let pregun = (preg * 200)
     let str = `
 ╭──────────────────
-│Nombre: *${username}* ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n│Estado: ' + about : ''}
-│${exp} Exp
-│Limit: ${limit}
-│Advertencias: ${warning} / 5
-│Robos: ${robos}
-│Ban: ${banned ? 'si' : 'no'}
+│ℕ𝕠𝕞𝕓𝕣𝕖 *${username}* ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n│𝔼𝕤𝕥𝕒𝕕𝕠 ' + about : ''}
+│${exp} 𝔼𝕩𝕡
+│𝕝𝕚𝕞𝕚𝕥 ${limit}
+│𝔸𝕕𝕧𝕖𝕣𝕥𝕖𝕟𝕔𝕚𝕒𝕤 ${warning} / 5
+│ℝ𝕠𝕓𝕠𝕤 ${robos}
+│𝔹𝕒𝕟 ${banned ? 'si' : 'no'}
 ╰────
-╭─Preguntas • ${preg}
-│ganancias totales: ${pregun}
+╭─ℙ𝕣𝕖𝕘𝕦𝕟𝕥𝕒𝕤 • ${preg}
+│𝕘𝕒𝕟𝕒𝕟𝕔𝕚𝕒𝕤 𝕥𝕠𝕥𝕒𝕝𝕖𝕤 ${pregun}
 
 `.trim()
     let mentionedJid = [who]
