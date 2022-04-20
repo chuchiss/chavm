@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-m.reply(m.chat, `
+m.reply(`
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
 _.menu_
 _.perfil_
