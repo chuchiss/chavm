@@ -36,6 +36,8 @@ MEME
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
+let luki = gimage.slice((gimage.lastIndexOf(".") - 1 >>> 0) + 2)
+if ((luki) === 'bin') return m.reply(`error`)
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
