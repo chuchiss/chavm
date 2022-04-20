@@ -24,21 +24,40 @@ MEME
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 } catch(e){
+let text = `“${pickkRandom(global.bucina)}”`
+  let results = await gis(text) || []
+  let { url, width, height } = pickRandom(results) || {}
+  if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
+  if (!gis)  console.error(e)
 let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
   if ((churro) !== 'jpg') {
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
-`.trim(), m)}
+`.trim(), m)
+return}
+  conn.sendFile(m.chat, url, 'gimage', `
+MEME
+`.trim(), m)
 } finally{
+
+let text = `“${pickkRandom(global.bucina)}”`
+  let results = await gis(text) || []
+  let { url, width, height } = pickRandom(results) || {}
+  if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
+  if (!gis)  console.error(e)
 let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
   if ((churro) !== 'jpg') {
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
-`.trim(), m)}
+`.trim(), m)
+return}
+  conn.sendFile(m.chat, url, 'gimage', `
+MEME
+`.trim(), m)
 }
 }
 handler.help = ['meme', 'memes']
