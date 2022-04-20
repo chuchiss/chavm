@@ -51,7 +51,9 @@ _.preguntados_
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
+}
 catch (e) {
+let handler = async (m, {conn}) => {
 conn.sendFile(m.chat, 'media/comandos.jpg', 'jpg',`
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
 _.menu_
