@@ -1,5 +1,7 @@
 let handler = m => m
-
+global.lll = 0
+global.reeu = 0
+global.reee = 0
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.before = function (m, { user }) {
 let veces = global.lll
