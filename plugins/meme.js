@@ -21,6 +21,7 @@ return}
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
+return
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 } catch(e){
