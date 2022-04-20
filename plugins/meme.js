@@ -3,7 +3,6 @@ let _gis = require('g-i-s')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
- try{
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
@@ -23,16 +22,6 @@ MEME
 `.trim(), m)
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
-} catch(e){
-
-} finally{
-let results = await gis(text) || []
-  let { url, width, height } = pickRandom(results) || {}
-conn.sendFile(m.chat, url, 'gimage', `
-MEME
-`.trim(), m)
-return
-}
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
