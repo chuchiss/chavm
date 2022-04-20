@@ -105,7 +105,9 @@ _.creditos_
 ╰────
 %readmore
 %readmore`
-    
+    let header = conn.menu.header || '╭─「 %category 」 '
+    let body   = conn.menu.body   || '│ %cmd%islimit'
+    let footer = conn.menu.footer || '╰────\n'
     let after  = conn.menu.after  || `
      *Copyright © InsaneService* `
     let _text  = before + '\n'
