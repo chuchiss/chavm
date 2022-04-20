@@ -85,7 +85,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
     }
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
-╭─「🙂𝗛ola, %name!」
+╭╭─「🙂𝗛ola, %name!」
 │ Tienes *%limit Limit* *%exp XP* 
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
 │.menu
@@ -104,6 +104,9 @@ _.politica_
 _.creditos_
 ╰────
 %readmore
+%readmore
+%readmore
+
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」 '
     let body   = conn.menu.body   || '│ %cmd%islimit'
