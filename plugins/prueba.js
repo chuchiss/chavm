@@ -67,47 +67,48 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 400) {
 │.buy (comprar exp)
 │.buyall (comprar toda la exp)
 │.reclamar
-│.pagar @mension <cantidad de exp>
-│.robar @mension <cantidad de exp>
+│.pagar @mension <cantidad de │exp>
+│.robar @mension <cantidad de │exp>
 │.link
 │.ping
 │.politica
 │.creditos
 ╰────
 %readmore
-🔹🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
-_.attp_ Texto
-_.ttp_ Texto 
-_.style_ texto
-_.sticker_ (seleccionando imagen)
-_.imagen_ texto
-_.frases_
-_.memes_
-_.play_ (nombre de la musica)
-_.play2_ (nombre del video)
-_.random_ (canción random)
-_.stickerly_ 
-_.estados_
-_.anime_
-_.google_ (busqueda de wikipedia)
-_.traducir_ idioma ( marca el texto ) 
-_.tts_ texto
-_.s_ 
-_.simi_ pregunta
-_.twittear_ (quue esta pasando?)
-_.twit_ (ver twits)
+╭─「🔹🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
+│.attp Texto
+│.ttp Texto 
+│.style texto
+│.sticker (seleccionando imagen)
+│.imagen texto
+│.frases
+│.memes
+│.play (nombre de la musica)
+│.play2 (nombre del video)
+│.random (canción random)
+│.stickerly
+│.estados
+│.anime
+│.google (busqueda de wikipedia)
+│.traducir idioma ( marca el texto ) 
+│.tts texto
+│.s
+│.simi pregunta
+│.twittear (quue esta pasando?)
+│.twit (ver twits)
+╰────
 %readmore
-➿🄹🅄🄴🄶🄾🅂
-_.mate_ medium (ganar exp)
-_.adiv_ start (ganar exp)
-_.tateti_
-_.tutti_ 
-_.luck_
-_.pozo_ 
-_.palabra_
-_.preguntados_
+╭─「➿🄹🅄🄴🄶🄾🅂
+│.mate_ medium (ganar exp)
+│.adiv_ start (ganar exp)
+│.tateti
+│.tutti
+│.luck
+│.pozo
+│.palabra
+│.preguntados
+╰────
 %readmore
-
 %readmore`
     let header = conn.menu.header || ' '
     let body   = conn.menu.body   || ''
@@ -118,7 +119,6 @@ _.preguntados_
     }
 }}
     
-    _text += after
     text =  typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
     let replace = {
       '%': '%',
