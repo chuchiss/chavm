@@ -126,8 +126,8 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 ╰────
 %readmore
 ╭─「➿🄹🅄🄴🄶🄾🅂
-│.mate_ medium (ganar exp)
-│.adiv_ start (ganar exp)
+│.mate medium (ganar exp)
+│.adiv start (ganar exp)
 │.tateti
 │.tutti
 │.luck
