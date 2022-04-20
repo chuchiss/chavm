@@ -51,6 +51,6 @@ function pickkRandom(list) {
 }
 
 global.bucina = [
-  'los mejores memes jpg'
+  'los mejores memes'
   
 ]
