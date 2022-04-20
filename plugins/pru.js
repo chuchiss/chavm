@@ -94,6 +94,16 @@ global.yeca = [
 'cuantos cuartos de kilo hay en seis kilos',
 'cuantos cuartos de kilo hay en siete kilos',
 'cuantos cuartos de kilo hay en ocho kilos'
+'es lo mismo multiplicar 8x4 que 4x1 - si o no',
+'es lo mismo multiplicar 1x4 que 4x7 - si o no',
+'es lo mismo multiplicar 6x4 que 4x2 - si o no',
+'es lo mismo multiplicar 9x4 que 4x6 - si o no',
+'es lo mismo multiplicar 2x4 que 4x9 - si o no',
+'es lo mismo multiplicar 1x4 que 4x1 - si o no',
+'es lo mismo multiplicar 2x4 que 4x2 - si o no',
+'es lo mismo multiplicar 3x4 que 4x3 - si o no',
+'es lo mismo multiplicar 4x4 que 4x4 - si o no',
+'es lo mismo multiplicar 5x4 que 4x5 - si o no'
 ] 
 global.logi = [
 'funda',
@@ -191,7 +201,17 @@ global.logi = [
 '24',
 '28',
 '32',
-'36'
+'36',
+'no',
+'no',
+'no',
+'no',
+'no',
+'si',
+'si',
+'si',
+'si',
+'si'
 ]
 
 global.lll = 0
