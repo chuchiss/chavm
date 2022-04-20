@@ -1,4 +1,4 @@
-const TicTacToe = require("../lib/tictactoe")
+const TicTacToe = require("../lib/tictactoe2")
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 22200) {
