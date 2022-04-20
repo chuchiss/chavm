@@ -24,21 +24,20 @@ MEME
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
 } catch(e){
-if ((churro) !== 'jpg') {
 let text = `“${pickkRandom(global.bucina)}”`
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
-`.trim(), m)}
+`.trim(), m)
 }finally{
-if ((churro) !== 'jpg') {
+
 let text = `“${pickkRandom(global.bucina)}”`
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
-`.trim(), m)}
+`.trim(), m)
 return
 }
 }
