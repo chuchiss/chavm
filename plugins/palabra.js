@@ -8,7 +8,7 @@ let Numero = Math.ceil(lui * Math.random())
 } 
 setTimeout(gero, 1300)
 
-  conn.reply(m.chat, `*∆ di la palabra`, m)
+  conn.reply(m.chat, `*∆ di la palabra ${global.reeu}`, m)
 
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return
