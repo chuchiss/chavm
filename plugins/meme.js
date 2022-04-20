@@ -25,7 +25,7 @@ let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
-`.trim(), m)}
+`.trim(), m)
 }
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
