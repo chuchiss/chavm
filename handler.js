@@ -244,7 +244,7 @@ module.exports = {
             console.log(e)
             if (e) {
           //  require('./lib/image')(m, this)
-         return handler 0!
+         return handler 1!
              console.log(e)
             }
           } finally {
