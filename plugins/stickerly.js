@@ -3,7 +3,6 @@ let _gis = require('g-i-s')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `${pickkRandom(global.bucinaa)}`
   let results = await gis('sticker ' + ' webp ' + text) || []
   let { url, width, height } = pickRandom(results) || {}
@@ -24,8 +23,7 @@ return}
   conn.sendFile(m.chat, url, 'gimage', `
 sticker random
 `.trim(), m)
- global.DATABASE._data.users[m.sender].lastmp = new Date * 1
- } else return
+
 }
 handler.help = ['stickerly (sticker random)']
 handler.tags = ['internet', 'tools']
