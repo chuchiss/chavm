@@ -8,6 +8,11 @@ let veces = global.lll
 //m.reply(`eme`)
 //return
 //}
+if (m.text === global.reeu[global.reee]) { 
+global.DATABASE._data.users[m.sender].exp += 10
+
+ conn.reply(m.chat, `*Palabra* - Ganaste +10 exp`, m)
+}
 
 
 if (m.text === global.logi[veces]) { 
