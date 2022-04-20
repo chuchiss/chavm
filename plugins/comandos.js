@@ -1,5 +1,4 @@
 let handler = async (m, {conn}) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
 conn.sendFile(m.chat, 'media/comandos.jpg', 'jpg',`
     📍🄻🄾🅂 🄲🄾🄼🄰🄽🄳🄾🅂 🅂🄾🄽 
 _.menu_
@@ -52,8 +51,8 @@ _.preguntados_
       ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇ
                                         
 `.trim()) 
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else return
+
+  
 }
 handler.help = ['']
 handler.tags = ['']
