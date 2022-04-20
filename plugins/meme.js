@@ -37,7 +37,7 @@ let results = await gis(text) || []
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
-
+return
 }
 }
 handler.help = ['meme', 'memes']
