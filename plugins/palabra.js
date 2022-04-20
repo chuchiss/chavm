@@ -20,7 +20,7 @@ handler.limits = true
 handler.group = true
 handler.command = /^(pal(abra)?)$/i
 module.exports = handler
-handler.owner = true
+handler.owner = false
 
 global.reee = [ 'himNo','shampoo','pergamino','sArten', 'Equilatero','trapiTO','poLIcia','Cuartel','CaTeter','TRAMPOLIN','carTeRa','kilo','gorra','refriGeraDor']
 
