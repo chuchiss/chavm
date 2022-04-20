@@ -4,7 +4,7 @@ function gero() {
 let lui = 13
 
 let Numero = Math.ceil(lui * Math.random())
- conn.reply(m.chat, `*${global.reee[Numero]}* de nuevo!`, m)
+ conn.reply(m.chat, `La palabra es *${global.reee[Numero]}* `, m)
 global.reeu += Numero
 } 
 setTimeout(gero, 5300)
