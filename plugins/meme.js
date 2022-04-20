@@ -4,7 +4,6 @@ let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 
 let handler  = async (m, { conn, args }) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
@@ -22,7 +21,6 @@ MEME
 MEME
 `.trim(), m)
 
-}else return
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
