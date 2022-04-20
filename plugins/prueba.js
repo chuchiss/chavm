@@ -117,7 +117,7 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 400) {
      *Copyright © InsaneService* `
     let _text  = before + ''
     }
-}}
+}
     _text += after
     text =  typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
     let replace = {
