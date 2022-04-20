@@ -41,13 +41,9 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
       'main': '𝗠𝗘𝗡𝗨',
     }
     for (let plugin of Object.values(global.plugins))
-      if (plugin && 'tags' in plugin)
-        for (let tag of plugin.tags)
-          if (!tag in  tags) tags[tag] = tag
     let help = Object.values(global.plugins).map(plugin => {
       return {
         help: plugin.help,
-        tags: plugin.tags,
         prefix: 'customPrefix' in plugin,
         limit: plugin.limit
       }
@@ -123,13 +119,9 @@ _.preguntados_
     let after  = conn.menu.after  || `
      *Copyright © InsaneService* `
     let _text  = before + ''
-    for (let tag in groups) {
-      _text += header.replace(/%category/g, tags[tag]) + '\n'
-      for (let menu of groups[tag]) {
-        for (let help of menu.help)
-          _text += body.replace(/%cmd/g, menu.prefix ? help : '%p' + help).replace(/%islimit/g, menu.limit ? ' (Limit)' : '')  + '\n'
-      }
-      _text += footer + '\n'
+    
+      
+      _text += footer + ''
     }
     _text += after
     text =  typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
