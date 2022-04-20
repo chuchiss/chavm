@@ -1,6 +1,7 @@
 let handler = async (m, {conn}) => {
+let url = 
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 4400) {
-m.reply(`
+conn.sendFile(m.chat, 'media/comandos.jpg', 'jpg',`
     📍🄻🄾🅂 🄲🄾🄼🄰🄽🄳🄾🅂 🅂🄾🄽 
 _.menu_
 _.perfil_
@@ -55,8 +56,8 @@ _.preguntados_
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
-handler.help = ['comandos']
-handler.tags = ['info']
-handler.command = /^(cmd|comandos|commandos|com|hola|list|comando|ayuda)$/i
+handler.help = ['']
+handler.tags = ['']
+handler.command = /^prueba$/
 
 module.exports = handler
