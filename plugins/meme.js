@@ -39,6 +39,7 @@ MEME
 let luki = gimage.slice((gimage.lastIndexOf(".") - 1 >>> 0) + 2)
 if (!gimage) return m.reply(`error`)
 }
+}
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
 handler.command = /^(me(me)|memes)$/i
