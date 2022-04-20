@@ -2,7 +2,7 @@ let handler = async (m, { conn, user }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastmp > 9500) {
 function gero() {
 
- conn.reply(m.chat, `*∆perdiste*  Intentalo de nuevo!`, m)
+ conn.reply(m.chat, `*${global.bucin[Numero]}* de nuevo!`, m)
 } 
 setTimeout(gero, 9500)
 
@@ -17,3 +17,6 @@ handler.limits = true
 handler.group = true
 handler.command = /^(pal(abra)?)$/i
 module.exports = handler
+handler.owner = true
+
+global.reee = [ 'caca' ]
