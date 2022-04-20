@@ -8,8 +8,7 @@ let handler  = async (m, { conn, args }) => {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (e) return 0!
- catch (e) return 0!
+  if (m.error) return 0!
 let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
 
   conn.sendFile(m.chat, url, 'gimage', `
