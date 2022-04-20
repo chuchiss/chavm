@@ -16,7 +16,7 @@ global.lll -= global.lll
 global.DATABASE._data.users[m.sender].exp += 200
 global.DATABASE._data.users[m.sender].preg += 1
  conn.reply(m.chat, `*Preguntados* - Ganaste +200 exp`, m) 
-return }
+return } }
   if (m.isBaileys && m.fromMe) return true
   let chat = global.DATABASE.data.chats[m.chat]
   let isLink = linkRegex.exec(m.text)
