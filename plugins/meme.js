@@ -25,7 +25,7 @@ MEME
 return
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
-} catch(e){
+} catch (e){
 let handler  = async (m, { conn, args }) => {
 let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
