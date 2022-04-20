@@ -116,6 +116,7 @@ _.preguntados_
      *Copyright © InsaneService* `
     let _text  = before + ''
     }
+
     
     _text += after
     text =  typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
