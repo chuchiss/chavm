@@ -39,26 +39,6 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
     let totalreg = Object.keys(global.DATABASE._data.users).length
     let tags = {
       'main': '𝗠𝗘𝗡𝗨',
-      'xp': '𝗘𝘅𝗽 & 𝗟𝗶𝗺𝗶𝘁',
-      'sticker': '𝗦𝘁𝗶𝗰𝗸𝗲𝗿',
-      'kerang': '𝗝𝘂𝗲𝗴𝗼𝘀',
-      'game': 'Juegoss',
-      'images' : 'Imagenes',
-      'data' : 'Informacion',
-      'admin': '𝗔𝗱𝗺𝗶𝗻',
-      'group': 'Grupos',
-      'internet': '𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁',
-      'vote': 'Votacion',
-      'downloader': 'Descargas',
-      'tools': 'Herramientas',
-      'audio': 'personalizar audios(mantenimiento)',
-      'fun': 'Habla conmigo',
-      'anony': 'Chat anónimos',
-      'jadibot': 'Solo persona autorizada',
-      'owner': 'Owner 𝗺𝗲𝗻𝘂',
-      'host': '𝗛𝗼𝘀𝘁',
-      'advanced': 'Avanzado',
-      'info': '𝗜𝗻𝗳𝗼',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
@@ -137,10 +117,12 @@ _.preguntados_
 %readmore
 
 %readmore`
-    
+    let header = conn.menu.header || ' '
+    let body   = conn.menu.body   || ''
+    let footer = conn.menu.footer || ''
     let after  = conn.menu.after  || `
      *Copyright © InsaneService* `
-    let _text  = before + '\n'
+    let _text  = before + ''
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
       for (let menu of groups[tag]) {
