@@ -7,7 +7,7 @@ let Numero = Math.ceil(lui * Math.random())
  conn.reply(m.chat, `*${global.reee[Numero]}* de nuevo!`, m)
 } 
 setTimeout(gero, 9500)
-global.reeu = 0
+
   conn.reply(m.chat, `*∆ di la palabra`, m)
 
 global.DATABASE._data.users[m.sender].lastmp = new Date * 1
@@ -22,3 +22,5 @@ module.exports = handler
 handler.owner = true
 
 global.reee = [ 'caca','shampoo','pergamino' ]
+
+global.reeu = 0
