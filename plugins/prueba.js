@@ -88,11 +88,11 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
 ╭─「🙂𝗛ola, %name!」
 │ Tienes *%limit Limit* *%exp XP* 
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
-_.menu_
-_.perfil_
-_.ranking_
-_.top2_
-_.comandos_
+│${usedPrefix}menu
+│_.perfil
+│_.ranking_
+│_.top2_
+│_.comandos_
 _.Buy_ (comprar exp)
 _.buyall_ (comprar toda la exp)
 _.reclamar_
@@ -105,9 +105,7 @@ _.creditos_
 ╰────
 %readmore
 %readmore`
-    let header = conn.menu.header || '╭─「 %category 」 '
-    let body   = conn.menu.body   || '│ %cmd%islimit'
-    let footer = conn.menu.footer || '╰────\n'
+    
     let after  = conn.menu.after  || `
      *Copyright © InsaneService* `
     let _text  = before + '\n'
