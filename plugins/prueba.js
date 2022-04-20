@@ -134,7 +134,7 @@ _.preguntados_
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-    conn.sendFile(m.chat, 'media/comandos.jpg', '', text.trim(), m)
+    conn.sendFile(m.chat, 'https://www.linkpicture.com/q/IMG-20220420-WA0107.jpg', '', text.trim(), m)
   } catch (e) {
     conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
