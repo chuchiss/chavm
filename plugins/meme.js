@@ -13,7 +13,7 @@ try{
 return
  global.DATABASE._data.users[m.sender].lastmp = new Date * 1
  } else return
-} catch (e) {
+} 
 let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
@@ -36,8 +36,7 @@ MEME
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
-let luki = gimage.slice((gimage.lastIndexOf(".") - 1 >>> 0) + 2)
-if (!gimage) return m.reply(`error`)
+ 
 }
 }
 handler.help = ['meme', 'memes']
