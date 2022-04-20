@@ -19,7 +19,7 @@ await conn.getProfilePicture(who)
     let pregun = (preg * 200)
     let str = `
 ───────────────────
-ℕ𝕠𝕞𝕓𝕣𝕖 *${username}* ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n│𝔼𝕤𝕥𝕒𝕕𝕠 ' + about : ''}
+ℕ𝕠𝕞𝕓𝕣𝕖 *${username}* ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n𝔼𝕤𝕥𝕒𝕕𝕠 ' + about : ''}
 ${exp} 𝔼𝕩𝕡
 𝕝𝕚𝕞𝕚𝕥 ${limit}
 𝔸𝕕𝕧𝕖𝕣𝕥𝕖𝕟𝕔𝕚𝕒𝕤 ${warning} / 5
