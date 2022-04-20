@@ -3,7 +3,7 @@ let path = require('path')
 let os = require('os')
 let { performance } = require('perf_hooks')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 400) {
   try {
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let neww = performance.now()
