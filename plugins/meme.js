@@ -24,7 +24,7 @@ MEME
 `.trim(), m)
 
 m.reply(` ${text} `)
-if catch (e) {
+catch (e) {
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
 conn.sendFile(m.chat, url, 'gimage', `
