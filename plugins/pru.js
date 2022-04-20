@@ -93,7 +93,7 @@ global.yeca = [
 'cuantos cuartos de kilo hay en cinco kilos',
 'cuantos cuartos de kilo hay en seis kilos',
 'cuantos cuartos de kilo hay en siete kilos',
-'cuantos cuartos de kilo hay en ocho kilos'
+'cuantos cuartos de kilo hay en ocho kilos',
 'es lo mismo multiplicar 8x4 que 4x1 - si o no',
 'es lo mismo multiplicar 1x4 que 4x7 - si o no',
 'es lo mismo multiplicar 6x4 que 4x2 - si o no',
