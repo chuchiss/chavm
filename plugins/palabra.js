@@ -6,7 +6,7 @@ global.reeu += Numero
 let Numero = Math.ceil(lui * Math.random())
  conn.reply(m.chat, `*${global.reee[Numero]}* de nuevo!`, m)
 } 
-setTimeout(gero, 9500)
+setTimeout(gero, 1300)
 
   conn.reply(m.chat, `*∆ di la palabra`, m)
 
