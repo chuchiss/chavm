@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-conn.reply(m.chat, 'media/comandos.jpg', 'jpg',`
+m.reply(m.chat, `
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
 _.menu_
 _.perfil_
