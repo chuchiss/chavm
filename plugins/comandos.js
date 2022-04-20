@@ -3,7 +3,6 @@ let path = require('path')
 let os = require('os')
 let { performance } = require('perf_hooks')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
   try {
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let neww = performance.now()
@@ -172,7 +171,7 @@ Para ver todos los comandos.
     throw e
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
-  } else return
+  
 }
 handler.help = ['comandos']
 handler.tags = ['info']
