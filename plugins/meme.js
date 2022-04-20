@@ -16,11 +16,14 @@ let results = await gis(text) || []
 conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
+m.reply(` ${text} `)
 return
 }
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
+
+m.reply(` ${text} `)
 if catch (e) {
 let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
