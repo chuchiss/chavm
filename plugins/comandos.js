@@ -1,5 +1,5 @@
 let handler = async (m, {conn}) => {
-conn.sendFile(m.chat, 'media/comandos.jpg', 'jpg',`
+conn.reply(m.chat, 'media/comandos.jpg', 'jpg',`
 ⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻
 _.menu_
 _.perfil_
