@@ -1,15 +1,13 @@
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let readmore = readMore
+
 let handler  = async (m, { conn }) => {
-
+let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]]
+    
 conn.reply(m.chat, `
-
-
-
-
 ╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
-│ Tienes *%limit Limit* *%exp XP* 
+│ Tienes *${limit} Limit* *${exp} XP* 
 │.menu
 │.perfil
 │.ranking
@@ -48,7 +46,7 @@ ${readmore}
 │.twittear (quue esta pasando?)
 │.twit (ver twits)
 ╰────
-%readmore
+${readmore}
 ╭─「➿🄹🅄🄴🄶🄾🅂
 │.mate medium (ganar exp)
 │.adiv start (ganar exp)
