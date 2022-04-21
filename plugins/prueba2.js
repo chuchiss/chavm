@@ -1,11 +1,11 @@
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let readmore = readMore
-
+    conn.twit = conn.twit ? conn.twit : {}
 let handler  = async (m, { conn }) => {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     let id = m.all
-    conn.twit = conn.twit ? conn.twit : {}
+
     let [reason, si, no] = conn.twit[id]
     let mentionedJid = [ ...si, ...no]
 
@@ -62,7 +62,7 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
-if (!conn.twit[id]) {
+if (!(id in conn.twit)) {
 
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
@@ -116,7 +116,7 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
-
+return
 }
 
 handler.help = ['']
