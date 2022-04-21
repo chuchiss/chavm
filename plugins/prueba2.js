@@ -25,7 +25,7 @@ conn.reply(m.chat, `
 │.politica
 │.creditos
 ╰────
-%readmore
+${readmore}
 ╭─「🔹🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
 │.attp Texto
 │.ttp Texto 
