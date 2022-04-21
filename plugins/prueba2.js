@@ -64,7 +64,6 @@ ${readmore}
 if (!(id in conn.twit)) {
 return conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
-${reason}
 │.menu
 │.perfil
 │.ranking
