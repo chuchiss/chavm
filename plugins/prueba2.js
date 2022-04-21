@@ -5,9 +5,12 @@ let readmore = readMore
 let handler  = async (m, { conn }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
-    
+    let id = m.all
+    conn.twit = conn.twit ? conn.twit : {}
+    let [reason, si, no] = conn.twit[id]
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
+${reason}
 │.menu
 │.perfil
 │.ranking
@@ -58,6 +61,8 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
+//if (!(id in conn.vote))
+
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
 }
