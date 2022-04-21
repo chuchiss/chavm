@@ -11,7 +11,7 @@ let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banne
 
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
-${reason}
+//${reason}
 │.menu
 │.perfil
 │.ranking
