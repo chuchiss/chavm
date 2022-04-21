@@ -1,7 +1,8 @@
 let fs = require ('fs')
 let path = require('path')
 let os = require('os')
-let { performance } = require('perf_hooks')
+let { performance } = require('perf_hooks') 
+function handler(){
 let handler  = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
@@ -167,11 +168,13 @@ Para ver todos los comandos.
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     conn.sendFile(m.chat, 'media/comandos.jpg', '', text.trim(), m)
   } catch (e) {
+    return handler()
     conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
   }
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   
+}
 }
 handler.help = ['comandos']
 handler.tags = ['info']
