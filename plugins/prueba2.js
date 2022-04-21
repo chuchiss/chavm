@@ -5,8 +5,8 @@ let readmore = readMore
 let handler  = async (m, { conn }) => {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     let id = m.all
-conn.twit = conn.twit ? conn.twit : {}
-    let [reason, si, no] = conn.twit[id]
+//conn.twit = conn.twit ? conn.twit : {}
+//    let [reason, si, no] = conn.twit[id]
     
 
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
