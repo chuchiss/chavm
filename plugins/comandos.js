@@ -168,7 +168,7 @@ Para ver todos los comandos.
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     conn.sendFile(m.chat, 'media/comandos.jpg', '', text.trim(), m)
   } }catch (e) {
-    return handler()
+    await handler()
     conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
   }
