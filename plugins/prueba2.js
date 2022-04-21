@@ -5,8 +5,7 @@ let readmore = readMore
 let handler  = async (m, { conn }) => {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     
-conn.reply(m.chat, `
-╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
+conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
 │.menu
 │.perfil
