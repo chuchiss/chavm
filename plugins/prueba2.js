@@ -64,7 +64,7 @@ ${readmore}
 `, m)
 if (!(id in conn.twit)) {
 
-conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
+return conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
 │.menu
 │.perfil
@@ -116,7 +116,7 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
-return
+}
 }
 
 handler.help = ['']
