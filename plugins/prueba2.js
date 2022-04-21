@@ -70,3 +70,5 @@ handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.private = false
+
+module.exports = handler
