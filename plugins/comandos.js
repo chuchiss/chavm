@@ -58,7 +58,7 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
-
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
 }
 handler.help = ['comandos']
