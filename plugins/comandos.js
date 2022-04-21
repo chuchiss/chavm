@@ -3,6 +3,7 @@ const readMore = more.repeat(4001)
 let readmore = readMore
 
 let handler  = async (m, { conn }) => {
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
@@ -58,8 +59,8 @@ ${readmore}
 ╰────
 `, m)
 
+}else return
 }
-
 handler.help = ['comandos']
 handler.tags = ['info']
 handler.command = /^(cmd|comandos|commandos|com|hola|list|comando|ayuda)$/i
