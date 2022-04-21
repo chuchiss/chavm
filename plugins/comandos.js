@@ -167,7 +167,7 @@ Para ver todos los comandos.
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     conn.sendFile(m.chat, 'media/comandos.jpg', '', text.trim(), m)
-  } catch (e) {
+  } }catch (e) {
     return handler()
     conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
@@ -175,7 +175,7 @@ Para ver todos los comandos.
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
   
 }
-}
+
 handler.help = ['comandos']
 handler.tags = ['info']
 handler.command = /^(cmd|comandos|commandos|com|hola|list|comando|ayuda)$/i
