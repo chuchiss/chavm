@@ -1,7 +1,7 @@
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let readmore = readMore
-let handler  = async (m, { conn, usedPrefix: _p }) => {
+let handler  = async (m, { conn }) => {
 
 m.reply(`
 
