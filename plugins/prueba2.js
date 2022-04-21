@@ -3,7 +3,7 @@ const readMore = more.repeat(4001)
 let readmore = readMore
 
 let handler  = async (m, { conn }) => {
-let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]]
+let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     
 conn.reply(m.chat, `
 ╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
