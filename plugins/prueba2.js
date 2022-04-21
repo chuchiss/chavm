@@ -3,7 +3,7 @@ const readMore = more.repeat(4001)
 let readmore = readMore
 let handler  = async (m, { conn }) => {
 
-m.reply(`
+conn.reply(m.chat, `
 
 
 
@@ -59,7 +59,7 @@ m.reply(`
 │.palabra
 │.preguntados
 ╰────
-`.trim()) 
+`, m)
 
 }
 
