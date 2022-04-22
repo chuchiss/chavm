@@ -103,7 +103,26 @@ global.yeca = [
 'es lo mismo multiplicar 2x4 que 4x2 - si o no',
 'es lo mismo multiplicar 3x4 que 4x3 - si o no',
 'es lo mismo multiplicar 4x4 que 4x4 - si o no',
-'es lo mismo multiplicar 5x4 que 4x5 - si o no'
+'es lo mismo multiplicar 5x4 que 4x5 - si o no',
+'cual es el primer planeta del sistema solar - en cuanto a la distancia del sol',
+'cual es el segundo planeta del sistema solar - en cuanto a la distancia del sol',
+'cual es el cuarto planeta del sistema solar - en cuanto a la distancia del sol',
+'cual es el séptimo planeta del sistema solar - en cuanto a la distancia del sol',
+'cual es el sexto planeta del sistema solar - en cuanto a la distancia del sol',
+'cual es el octavo planeta del sistema solar - en cuanto a la distancia del sol',
+'que son los caballos: omnívoros - herbivoros o carnívoros',
+'que son los gacelas: omnívoros - herbivoros o carnívoros',
+'que son los asnos: omnívoros - herbivoros o carnívoros',
+'que son los cebras: omnívoros - herbivoros o carnívoros',
+'que son los elefantes: omnívoros - herbivoros o carnívoros',
+'que son los hipopótamos: omnívoros - herbivoros o carnívoros',
+'que son los tapires: omnívoros - herbivoros o carnívoros',
+'que son los osos: omnívoros - herbivoros o carnívoros',
+'que son los ratones: omnívoros - herbivoros o carnívoros',
+'que son las avestruzes: omnívoros - herbivoros o carnívoros',
+'que son los osos: omnívoros - herbivoros o carnívoros',
+'que son los leopardos: omnívoros - herbivoros o carnívoros',
+'que son los lobos: omnívoros - herbivoros o carnívoros'
 ] 
 global.logi = [
 'funda',
@@ -211,7 +230,26 @@ global.logi = [
 'si',
 'si',
 'si',
-'si'
+'si',
+'mercurio',
+'venus',
+'marte',
+'urano',
+'saturno',
+'neptuno',
+'herbivoros',
+'herbivoros',
+'herbivoros',
+'herbivoros',
+'herbivoros',
+'herbivoros',
+'herbivoros',
+'omnivoros',
+'omnivoros',
+'omnivoros',
+'carnivoros',
+'carnivoros',
+'carnivoros'
 ]
 
 global.lll = 0
