@@ -253,7 +253,7 @@ global.logi = [
 ]
 
 global.lll = 0
-let lui = 104
+let lui = 123
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
