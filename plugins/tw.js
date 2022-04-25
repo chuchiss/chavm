@@ -20,7 +20,9 @@ user.twiteos.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `
 *TWitteado ahora*
 
-${global.prueba}`, m)
+${global.prueba}
+..
+${user.twiteos}`, m)
 } else return
 }
 
