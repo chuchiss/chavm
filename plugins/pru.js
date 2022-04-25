@@ -364,7 +364,7 @@ global.logi = [
 'singular',
 'plural'
 ]
-//global.ruizdi = 0
+global.ruizdi = 0
 global.lll = 0
 let lui = 180
 let handler = async (m, {conn, usedPrefix}) => {
@@ -372,7 +372,7 @@ let veces = global.lll
 if (global.lll === 0) {
 let Numero = Math.ceil(lui * Math.random())
 global.lll += Numero
-//global.ruizdi += 2
+global.ruizdi += 2
 
 
 //Numero
@@ -406,7 +406,7 @@ return
 else{
 
 let veces = global.lll
-//global.ruizdi += 1
+global.ruizdi += 1
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[veces]}
   m.reply(`
