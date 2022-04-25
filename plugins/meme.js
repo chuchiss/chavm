@@ -2,25 +2,26 @@ let { promisify } = require('util')
 let _gis = require('g-i-s')
 let gis = promisify(_gis)
 let Rimage = require('../lib/image')
+
 let handler  = async (m, { conn, args }) => {
-  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
   let text = `“${pickkRandom(global.bucina)}”`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (!gis)  console.error(e)
+  if (e) return handler
+let churro = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2)
+
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
- global.DATABASE._data.users[m.sender].lastmp = new Date * 1
- } else return
+return
 }
 handler.help = ['meme', 'memes']
 handler.tags = ['internet', 'tools']
 handler.command = /^(me(me)|memes)$/i
 handler.group = true
 handler.exp = 750
-
+handler.owner= false
 module.exports = handler
 
 function pickRandom(arr) {
@@ -32,7 +33,6 @@ function pickkRandom(list) {
 }
 
 global.bucina = [
-  'meme graciosos jpg',
   'meme espanol 2019 jpg',
   'meme graciosos de autos',
   'meme espanol jpg',
@@ -64,5 +64,6 @@ global.bucina = [
   'meme afeminado',
   'meme chile',
   'meme venezuela',
-  'meme hd 4k',
+  'meme hd 4k'
+  
 ]

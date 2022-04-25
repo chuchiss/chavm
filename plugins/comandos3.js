@@ -1,15 +1,17 @@
 let handler = async (m, {conn}) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 m.reply(`
-        ➿🄹🅄🄴🄶🄾🅂
-_.mate_ medium (ganar exp)
-_.adiv_ start (ganar exp)
-_.tateti_
-_.tutti_ (beta)
-_.luck_
-_proximo a salir preguntados..._
-*___________________________________*
-  ȼøᵽɏɍɨǥħŧ©ɨnsȺnɇƀøŧ.øfɨȼɨȺł
+        
+╭─「➿🄹🅄🄴🄶🄾🅂
+│.mate medium (ganar exp)
+│.adiv start (ganar exp)
+│.tateti
+│.tutti
+│.luck
+│.pozo
+│.palabra
+│.preguntados
+╰────
                                         
 `.trim()) 
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
