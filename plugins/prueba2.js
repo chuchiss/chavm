@@ -5,7 +5,7 @@ global.chuki = 0
 let handler  = async (m, { conn }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
-if (global.chuki > 8) { global.chuki -= global.chuki}
+if (global.chuki > 3) { global.chuki -= global.chuki}
 if (global.chuki === 1) {
 conn.reply(m.chat, `╭─「🔹🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
 │ Tienes *${limit} Limit* *${exp} XP*
