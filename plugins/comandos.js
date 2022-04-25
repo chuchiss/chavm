@@ -32,6 +32,7 @@ ${readmore}
 │.imagen texto
 │.frases
 │.memes
+│.chatear (anonymous)
 │.play (nombre de la musica)
 │.play2 (nombre del video)
 │.random (canción random)
