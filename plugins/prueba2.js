@@ -2,7 +2,7 @@ global.prueba = ['']
 global.lupinn = 0
 let handler = async (m, { conn, text }) => {
 if (global.lupinn > 5) {global.prueba.splice(1, 1)
-global.lupinn -= 3
+global.lupinn -= 1
 }
 global.lupinn += 1
 global.prueba.push(`[${global.lupinn}] | ${text}\n`)
