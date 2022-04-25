@@ -6,7 +6,7 @@ let handler  = async (m, { conn }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     
-conn.reply(m.chat, ` ${global.chkn}
+conn.reply(m.chat, ` ${global.lurl}
 `, m)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
@@ -31,6 +31,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
+global.lurl= [' disk']
 global.chkn = [ '╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 //│ Tienes *${limit} Limit* *${exp} XP* 
 │.menu
