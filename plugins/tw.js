@@ -22,12 +22,11 @@ conn.reply(m.chat, `
 ${global.prueba}`, m)
 } else return
 }
-handler.help = ['']
-handler.tags = ['']
-handler.command = /^(prueba2)$/i
-handler.exp = 5
-handler.admin = false
-handler.premium = false
-handler.group = false
 
+handler.help = ['twitear (que esta pasando)']
+handler.tags = ['vote']
+handler.command = /^(tw|twit|(twit|twi)tear)$/i
+handler.limit = true
+handler.group = true
+handler.admin = false
 module.exports = handler
