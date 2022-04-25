@@ -364,7 +364,7 @@ global.logi = [
 'singular',
 'plural'
 ]
-global.ruizdi = 0
+//global.ruizdi = 0
 global.lll = 0
 let lui = 180
 let handler = async (m, {conn, usedPrefix}) => {
