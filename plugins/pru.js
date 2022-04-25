@@ -145,7 +145,7 @@ global.yeca = [
 'De qué país es originario el cóctel mojito',
 'En dónde se encuentra el monte Fuji',
 'En qué año murió Freddy Mercury',
-'Cuántos huesos tiene un adulto promedio'
+'Cuántos huesos tiene un adulto promedio',
 'que es mas pequeño un edificio o un perro',
 'que es mas pequeño un gato o una jirafa',
 'que es mas pequeño la luna o el sol'
@@ -304,7 +304,7 @@ global.logi = [
 ]
 
 global.lll = 0
-let lui = 146
+let lui = 149
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
