@@ -414,7 +414,7 @@ global.ruizdi += 1
 *pregunta:* ¿ ${global.yeca[veces]} ?
 
 tiempo: 5 minutos
-Jugadores detectados: ${global.ruizdi}
+Jugadores en linea: ${global.ruizdi}
 
 Todo minusculas y sin acento
 las respuestas tienen que ser exactas
