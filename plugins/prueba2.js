@@ -6,7 +6,7 @@ let handler  = async (m, { conn }) => {
 if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
 let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
     
-conn.reply(m.chat, ` $global.chkn
+conn.reply(m.chat, ` ${global.chkn}
 `, m)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
