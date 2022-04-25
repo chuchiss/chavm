@@ -1,35 +1,29 @@
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
-let readmore = readMore
-
 let handler  = async (m, { conn }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 5400) {
-let { name, limit, exp, lastclaim, preg, registered, warning, robos, like, banned, regTime, age, level } = global.DATABASE.data.users[m.sender]
-    
-conn.reply(m.chat, ` ${pickRandom(global.lurl)}
-`, m)
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
-}else return
+  conn.reply(m.chat,`“${pickRandom(global.lurl)}”`, m)
 }
+handler.command = /^(prueba2)$/i
 handler.help = ['']
 handler.tags = ['']
-handler.command = /^(prueba2)$/i
 handler.owner = false
 handler.mods = false
+handler.limit = true
 handler.premium = false
+handler.group = false
 handler.private = false
 
 handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 3
 
 module.exports = handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
+
+// https://jalantikus.com/tips/kata-kata-bucin/
+
 
 global.lurl= [' disk']
 global.chkn = [ '╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
