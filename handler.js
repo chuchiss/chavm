@@ -38,6 +38,7 @@ module.exports = {
           }
           if (!isNumber(user.afk)) user.afk = -1
           if (!'afkReason' in user) user.afkReason = ''
+          if (!'twiteos' in user) user.twiteos = ''
           if (!'banned' in user) user.banned = false
           if (!isNumber(user.level)) user.level = 0
           if (!'autolevelup' in user) user.autolevelup = false
@@ -60,6 +61,7 @@ module.exports = {
           afk: -1,
           point: 0,
           afkReason: '',
+          twiteos: '',
           banned: false,
           warning: 0,
           level: 0,
