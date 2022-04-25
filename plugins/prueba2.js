@@ -11,7 +11,10 @@ global.lupinn -= 1
 global.lupinn += 1
 global.chuch += 1
 global.prueba.push(`[${global.chuch}] | ${text}\n`)
-conn.reply(m.chat, `${global.prueba}`, m)
+conn.reply(m.chat, `
+*TWitteado ahora*
+
+${global.prueba}`, m)
 } else return
 }
 handler.help = ['']
