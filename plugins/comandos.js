@@ -183,9 +183,9 @@ global.chuki += 1
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
 }
-handler.help = ['']
-handler.tags = ['']
-handler.command = /^(prueba2)$/i
+handler.help = ['comandos']
+handler.tags = ['info']
+handler.command = /^(cmd|comandos|commandos|com|hola|list|comando|ayuda)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
