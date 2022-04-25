@@ -1,10 +1,12 @@
 global.prueba = ['']
 global.lupinn = 0
+global chuch = 0
 let handler = async (m, { conn, text }) => {
 if (global.lupinn > 5) {global.prueba.splice(1, 1)
 global.lupinn -= 1
 }
 global.lupinn += 1
+global.chuch += 1
 global.prueba.push(`[${global.lupinn}] | ${text}\n`)
 conn.reply(m.chat, `${global.prueba}`, m)
 }
