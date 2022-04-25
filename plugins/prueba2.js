@@ -1,8 +1,8 @@
 global.prueba = ['']
-
+global.lupinn = 0
 let handler = async (m, { conn, text }) => {
-let num = 0
-let numu = (num + 1)
+
+global.lupinn += 1
 global.prueba.push(`${text}${numu}\n`)
 conn.reply(m.chat, `${global.prueba}`, m)
 }
