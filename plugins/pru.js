@@ -372,7 +372,7 @@ let veces = global.lll
 if (global.lll === 0) {
 let Numero = Math.ceil(lui * Math.random())
 global.lll += Numero
-global.ruizdi += 2
+//global.ruizdi += 2
 
 
 //Numero
@@ -406,7 +406,7 @@ return
 else{
 
 let veces = global.lll
-global.ruizdi += 1
+//global.ruizdi += 1
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[veces]}
   m.reply(`
@@ -414,7 +414,7 @@ global.ruizdi += 1
 *pregunta:* ¿ ${global.yeca[veces]} ?
 
 tiempo: 5 minutos
-Jugadores en linea: ${global.ruizdi}
+//Jugadores en linea: ${global.ruizdi}
 
 Todo minusculas y sin acento
 las respuestas tienen que ser exactas
