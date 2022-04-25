@@ -331,7 +331,7 @@ global.logi = [
 '206',
 'perro',
 'gato',
-'luna'
+'luna',
 'plural',
 'singular',
 'plural',
