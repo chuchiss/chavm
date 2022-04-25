@@ -7,7 +7,7 @@ global.lupinn -= 1
 }
 global.lupinn += 1
 global.chuch += 1
-global.prueba.push(`[${global.lupinn}] | ${text}\n`)
+global.prueba.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `${global.prueba}`, m)
 }
 handler.help = ['']
