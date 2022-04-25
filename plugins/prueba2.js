@@ -1,7 +1,7 @@
 global.prueba = ['']
 global.lupinn = 0
 let handler = async (m, { conn, text }) => {
-
+if (global.lupinn > 10) delete global.prueba
 global.lupinn += 1
 global.prueba.push(`[${global.lupinn}] | ${text}\n`)
 conn.reply(m.chat, `${global.prueba}`, m)
