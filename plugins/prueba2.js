@@ -1,4 +1,5 @@
-let handler  = async (m, { conn }) => {
+let handler  = async (m, { conn, text}) => {
+let chant = text
   conn.reply(m.chat,`“${pickRandom(global.lurl)}”`, m)
 }
 handler.command = /^(prueba2)$/i
@@ -25,5 +26,5 @@ function pickRandom(list) {
 // https://jalantikus.com/tips/kata-kata-bucin/
 
 
-global.lurl= [' ╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻']
+global.lurl= [' ╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻 ${chant} ']
 
