@@ -364,7 +364,7 @@ global.logi = [
 'singular',
 'plural'
 ]
-
+global.ruizdi = 0
 global.lll = 0
 let lui = 180
 let handler = async (m, {conn, usedPrefix}) => {
@@ -372,11 +372,8 @@ let veces = global.lll
 if (global.lll === 0) {
 let Numero = Math.ceil(lui * Math.random())
 global.lll += Numero
-//if (!args || !args[0]) {
-//conn.reply(m.chat, `No es así!\n\n*tenes que po `, m)
-//return
-//}
-//let text = args.join` `
+global.ruizdi += 2
+
 
 //Numero
 
@@ -397,6 +394,7 @@ Tiempo: 5 minutos
 
 setTimeout(()=> {
 if(global.lll > 1) { global.lll -= global.lll}
+if(global.ruizdi > 1) { global.ruizdi -= global.ruizdi}
 return 
 }, 300000)
 
@@ -408,7 +406,7 @@ return
 else{
 
 let veces = global.lll
-
+global.ruizdi += 1
 //Respuesta : ${global.logi[veces]}
 //Respuesta: ${global.logi[veces]}
   m.reply(`
@@ -416,6 +414,7 @@ let veces = global.lll
 *pregunta:* ¿ ${global.yeca[veces]} ?
 
 tiempo: 5 minutos
+Jugadores detectados: ${global.ruizdi}
 
 Todo minusculas y sin acento
 las respuestas tienen que ser exactas
