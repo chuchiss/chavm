@@ -5,10 +5,10 @@ let handler = async (m, { conn, text }) => {
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 let isLink = linkRegex.exec(m.text)
 if (!isLink) {
-if (!text) { m.reply(` *TWitteado ahora*
+if (!text) { return m.reply(` *TWitteado ahora*
 
-${global.prueba} 
-return
+${global.prueba} `)
+
 }
 if (global.lupinn > 5) {global.prueba.splice(1, 1)
 global.lupinn -= 1
