@@ -2,7 +2,7 @@ global.prueba = ['']
 global.lupinn = 0
 global.chuch = 0
 let handler = async (m, { conn, text }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 2400) {
+
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 let isLink = linkRegex.exec(m.text)
 if (!isLink) {
@@ -11,6 +11,7 @@ if (!text) { return m.reply(` *TWitteado ahora*
 ${global.prueba} `)
 
 }
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 2400) {
 if (global.lupinn > 5) {global.prueba.splice(1, 1)
 global.lupinn -= 1
 }
@@ -21,7 +22,8 @@ conn.reply(m.chat, `*TWitteado ahora*
 
 ${global.prueba}
 `, m)
-} else return
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
+} else return m.reply (` espera 1 minuto para twitear.. `)
 } else return
 }
 
