@@ -146,6 +146,9 @@ global.yeca = [
 'En dónde se encuentra el monte Fuji',
 'En qué año murió Freddy Mercury',
 'Cuántos huesos tiene un adulto promedio'
+'que es mas pequeño un edificio o un perro',
+'que es mas pequeño un gato o una jirafa',
+'que es mas pequeño la luna o el sol'
 ]
 global.logi = [
 'funda',
@@ -294,7 +297,10 @@ global.logi = [
 'cuba',
 'japon',
 '1991',
-'206'
+'206',
+'perro',
+'gato',
+'luna'
 ]
 
 global.lll = 0
