@@ -1,9 +1,9 @@
-global.prueba[id] = ['']
+global.prueba = ['']
 
 let handler = async (m, { conn, text }) => {
-global.prueba.push(`${text}\n`)
+global.prueba.push(`${text[id]}\n`)
 let id = m.chat
-conn.reply(m.chat, `${global.prueba[id]}`, m)
+conn.reply(m.chat, `${global.prueba}`, m)
 }
 handler.help = ['']
 handler.tags = ['']
