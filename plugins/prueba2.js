@@ -25,5 +25,5 @@ function pickRandom(list) {
 // https://jalantikus.com/tips/kata-kata-bucin/
 
 
-global.lurl= [' disk']
+global.lurl= [' ╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻']
 
