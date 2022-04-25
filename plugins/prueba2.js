@@ -63,6 +63,7 @@ ${readmore}
 
 `, m)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.chuki += 1
 return }
 if (global.chuki > 4) {
 conn.reply(m.chat, `╭─「➿🄹🅄🄴🄶🄾🅂
@@ -122,6 +123,7 @@ ${readmore}
 
 `, m)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.chuki += 1
 return }
 conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │ Tienes *${limit} Limit* *${exp} XP* 
@@ -176,6 +178,8 @@ ${readmore}
 │.preguntados
 ╰────
 `, m)
+
+global.chuki += 1
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 }else return
 }
