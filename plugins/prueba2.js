@@ -32,7 +32,7 @@ function pickRandom(list) {
 }
 
 global.chkn = [ '╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
-│ Tienes *${limit} Limit* *${exp} XP* 
+//│ Tienes *${limit} Limit* *${exp} XP* 
 │.menu
 │.perfil
 │.ranking
@@ -48,7 +48,7 @@ global.chkn = [ '╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │.politica
 │.creditos
 ╰────
-${readmore}
+//${readmore}
 ╭─「🔹🄰🄲🅃🄸🅅🄸🄳🄰🄳🄴🅂  
 │.attp Texto
 │.ttp Texto 
@@ -72,7 +72,7 @@ ${readmore}
 │.twittear (quue esta pasando?)
 │.twit (ver twits)
 ╰────
-${readmore}
+//${readmore}
 ╭─「➿🄹🅄🄴🄶🄾🅂
 │.mate medium (ganar exp)
 │.adiv start (ganar exp)
