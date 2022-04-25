@@ -16,6 +16,7 @@ global.lupinn -= 1
 global.lupinn += 1
 global.chuch += 1
 global.prueba.push(`[${global.chuch}] | ${text}\n`)
+user.twiteos.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `
 *TWitteado ahora*
 
