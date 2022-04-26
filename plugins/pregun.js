@@ -498,7 +498,7 @@ global.logi = [
 'impresionante',
 'agravio',
 'sabiduria',
-'delegación',
+'reunion',
 'trabajo',
 'aceite',
 'rezar',
