@@ -29,7 +29,7 @@ global.DATABASE._data.users[m.sender].pregu -= global.DATABASE._data.users[m.sen
 m.reply(`Publicaron un nuevo Twit`)
 return
 }, 9000)
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
+//global.DATABASE._data.users[m.sender].lastme = new Date * 1
 } else return m.reply(` espera 1 minuto para twitear.. `)
 } else return
 }
