@@ -17,7 +17,7 @@ global.lupinn -= 1
 }
 global.lupinn += 1
 global.chuch += 1
-global.DATABASE._data.users[m.sender].pregu += global.chuch
+global.DATABASE._data.users[m.sender].preisi += global.chuch
 global.prueba.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `*TWitteado ahora*
 
@@ -26,10 +26,10 @@ ${global.DATABASE._data.users[m.sender].pregu}
 ${global.chuch}
 `, m)
 setTimeout(()=> {
-if (global.chuch === global.DATABASE.data.users[m.sender].pregu) return  
-global.DATABASE._data.users[m.sender].pregu -= global.DATABASE._data.users[m.sender].pregu
+if (global.chuch === global.DATABASE.data.users[m.sender].preisi) return  
+global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.sender].preisi
 m.reply(`Publicaron un nuevo Twit`)
-}, 9000)
+}, 120000)
 //global.DATABASE._data.users[m.sender].lastme = new Date * 1
 } else return m.reply(` espera 1 minuto para twitear.. `)
 } else return
