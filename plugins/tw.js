@@ -11,7 +11,7 @@ if (!text) { return m.reply(` *TWitteado ahora*
 ${global.prueba} `)
 
 }
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 60400) {
+if (new Date - global.DATABASE._data.users[m.sender].lastme > 30000) {
 if (global.lupinn > 5) {global.prueba.splice(1, 1)
 global.lupinn -= 1
 }
@@ -31,7 +31,7 @@ global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.se
 m.reply(`Publicaron un nuevo Twit`)
 }, 120000)
 //global.DATABASE._data.users[m.sender].lastme = new Date * 1
-} else return m.reply(` espera 1 minuto para twitear.. `)
+} else return m.reply(` espera 30 segundos para twitear.. `)
 } else return
 }
 
