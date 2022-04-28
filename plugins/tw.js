@@ -24,7 +24,7 @@ conn.reply(m.chat, `*TWitteado ahora*
 ${global.prueba}
 `, m)
 setTimeout(()=> {
-if (global.DATABASE._data.users[m.sender].pregu !== global.chuch)
+if (!(global.DATABASE._data.users[m.sender].pregu === global.chuch))
 global.DATABASE._data.users[m.sender].pregu -= global.DATABASE._data.users[m.sender].pregu
 m.reply(`Publicaron un nuevo Twit`)
 return
