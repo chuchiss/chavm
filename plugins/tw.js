@@ -22,8 +22,7 @@ global.prueba.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `*TWitteado ahora*
 
 ${global.prueba}
-${global.DATABASE._data.users[m.sender].pregu}
-${global.chuch}
+
 `, m)
 setTimeout(()=> {
 if (global.chuch === global.DATABASE.data.users[m.sender].preisi) return  
