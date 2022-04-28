@@ -17,11 +17,18 @@ global.lupinn -= 1
 }
 global.lupinn += 1
 global.chuch += 1
+global.DATABASE._data.users[m.sender].pregu += global.chuch
 global.prueba.push(`[${global.chuch}] | ${text}\n`)
 conn.reply(m.chat, `*TWitteado ahora*
 
 ${global.prueba}
 `, m)
+setTimeout(()=> {
+if (!global.DATABASE._data.users[m.sender].pregu === global.chuch)
+global.DATABASE._data.users[m.sender].pregu -= global.DATABASE._data.users[m.sender].pregu
+m.reply(`Publicaron un nuevo Twit`)
+return
+}, 9000)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 } else return m.reply(` espera 1 minuto para twitear.. `)
 } else return
