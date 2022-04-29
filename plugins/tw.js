@@ -25,9 +25,9 @@ ${global.prueba}
 
 `, m)
 setTimeout(()=> {
-if (global.chuch === global.DATABASE.data.users[m.sender].preisi){ return global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.sender].preisi
-} else { global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.sender].preisi
-m.reply(`Publicaron un nuevo Twit`) }
+if (global.chuch === global.DATABASE.data.users[m.sender].preisi){ return global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.sender].preisi }
+global.DATABASE._data.users[m.sender].preisi -= global.DATABASE._data.users[m.sender].preisi
+m.reply(`Publicaron un nuevo Twit`) 
 }, 60000)
 global.DATABASE._data.users[m.sender].lastme = new Date * 1
 } else return m.reply(` espera 30 segundos para twitear.. `)
