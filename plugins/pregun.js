@@ -302,7 +302,7 @@ global.yeca = [
 'gobierno es un sustantivo propio o comun',
 'botella es un sustantivo propio o comun',
 'Castillo es un sustantivo propio o comun',
-'enano es un sustantivo propio o comun'
+'enano es un sustantivo propio o comun',
 'Qué se celebra el 1 de mayo',
 ' que se celebra el 1 de enero',
 'Qué se celebra el día 8 de diciembre',
@@ -310,7 +310,7 @@ global.yeca = [
 'que se celebra el dia  8 de marzo',
 'que se celebra el dia 21 de agosto',
 'que se celebra el dia 19 de junio',
-'que se celebra el dia 11 de septiembre',
+'que se celebra el dia 11 de septiembre'
 
 ]
 global.logi = [
@@ -618,18 +618,18 @@ global.logi = [
 'comun',
 'comun',
 'comun',
-'dia del trabajador'
+'dia del trabajador',
 'año nuevo',
 'dia de la inmaculada concepcion',
 'dia del animal',
 'dia de la mujer',
 'dia del niño',
 'dia del padre',
-'dia del abuelo',
+'dia del abuelo'
 ]
 global.ruizdi = 0
 global.lll = 0
-let lui = 303
+let lui = 311
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
