@@ -303,7 +303,14 @@ global.yeca = [
 'botella es un sustantivo propio o comun',
 'Castillo es un sustantivo propio o comun',
 'enano es un sustantivo propio o comun'
-
+'Qué se celebra el 1 de mayo',
+' que se celebra el 1 de enero',
+'Qué se celebra el día 8 de diciembre',
+'que se celebra el dia 29 de abril',
+'que se celebra el dia  8 de marzo',
+'que se celebra el dia 21 de agosto',
+'que se celebra el dia 19 de junio',
+'que se celebra el dia 11 de septiembre',
 
 ]
 global.logi = [
@@ -610,8 +617,15 @@ global.logi = [
 'comun',
 'comun',
 'comun',
-'comun'
-
+'comun',
+'dia del trabajador'
+'año nuevo',
+'dia de la inmaculada concepcion',
+'dia del animal',
+'dia de la mujer',
+'dia del niño',
+'dia del padre',
+'dia del abuelo',
 ]
 global.ruizdi = 0
 global.lll = 0
