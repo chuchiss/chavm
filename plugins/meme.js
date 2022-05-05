@@ -4,11 +4,10 @@ let gis = promisify(_gis)
 let Rimage = require('../lib/image')
 let handler  = async (m, { conn, args }) => {
   if (new Date - global.DATABASE._data.users[m.sender].lastmp > 2400) {
-  let text = `“${pickkRandom(global.bucina)}”`
+  let text = `${pickkRandom(global.bucina)}`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return conn.reply(m.chat, `imagen no encontrado`, m)
-  if (!gis)  console.error(e)
   conn.sendFile(m.chat, url, 'gimage', `
 MEME
 `.trim(), m)
