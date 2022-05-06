@@ -1,6 +1,9 @@
 let { Presence } = require('@adiwajshing/baileys')
 let fetch = require('node-fetch')
-
+let gtts = require('node-gtts')
+let fs = require('fs')
+let path = require('path')
+let { spawn } = require('child_process')
 let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, isOwner}) => {
 
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
@@ -32,12 +35,12 @@ handler.limit = false
 module.exports = handler
 
 function tts(text, lang = 'id') {
-  console.log(lang, text)
+  console.log(lang, batch.success)
   return new Promise((resolve, reject) => {
     try {
       let tts = gtts(lang)
       let filePath = path.join(__dirname, '../tmp', (1 * new Date) + '.wav')
-      tts.save(filePath, text, () => {
+      tts.save(filePath, batch.success, () => {
           resolve(fs.readFileSync(filePath))
           fs.unlinkSync(filePath)
       })
