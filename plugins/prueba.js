@@ -7,7 +7,7 @@ let { spawn } = require('child_process')
 let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, isOwner}) => {
 
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
-        
+          let lang = 'id'
 	let text = args.join` `
 	fetch("https://api-sv2.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lc=es")
   .then(res => res.json())
@@ -16,8 +16,8 @@ let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, is
   conn.reply(m.chat, `${batch.success}`, m)
   }) .catch(() => { conn.reply(m.chat, `_Perdón :(_`, m) })
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
-lang = es
-res = await ttsi(batch.success, lang)
+
+res = await ttsi(batch.success)
   conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
 }
 handler.help = ['']
