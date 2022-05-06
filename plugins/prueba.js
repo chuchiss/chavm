@@ -16,8 +16,8 @@ let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, is
   conn.reply(m.chat, `${batch.success}`, m)
   }) .catch(() => { conn.reply(m.chat, `_Perdón :(_`, m) })
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
-lang = 'es'
-res = await tts(batch.success, lang)
+lang = es
+res = await ttsi(batch.success, lang)
   conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
 }
 handler.help = ['']
@@ -34,7 +34,7 @@ handler.fail = null
 handler.limit = false
 module.exports = handler
 
-function tts(text, lang = 'id') {
+function ttsi(text, lang = 'id') {
   console.log(lang, batch.success)
   return new Promise((resolve, reject) => {
     try {
