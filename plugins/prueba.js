@@ -14,11 +14,12 @@ let handler  = async (m, { conn, args, usedPrefix, command, isLimit, isPrems, is
   .then(batch => {
     conn.updatePresence(m.chat, Presence.composing)
   conn.reply(m.chat, `${batch.success}`, m)
+res = await ttsi(batch.success)
+  conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
   }) .catch(() => { conn.reply(m.chat, `_Perdón :(_`, m) })
 if (!isPrems && !isOwner) global.DATABASE._data.users[m.sender].limit -= 1
 
-res = await ttsi(batch.success)
-  conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
+
 }
 handler.help = ['']
 handler.tags = ['']
