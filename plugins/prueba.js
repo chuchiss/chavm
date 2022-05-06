@@ -35,7 +35,7 @@ handler.fail = null
 handler.limit = false
 module.exports = handler
 
-function ttsi(text, lang = 'id') {
+function ttsi(batch.success, lang = 'id') {
   console.log(lang, batch.success)
   return new Promise((resolve, reject) => {
     try {
