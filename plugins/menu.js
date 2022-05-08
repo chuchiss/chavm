@@ -55,7 +55,6 @@ if (new Date - global.DATABASE._data.users[m.sender].lastme > 12400) {
       'fun': 'Habla conmigo',
       'anony': 'Chat anónimos',
       'jadibot': 'Solo persona autorizada',
-      'owner': 'Owner 𝗺𝗲𝗻𝘂',
       'host': '𝗛𝗼𝘀𝘁',
       'advanced': 'Avanzado',
       'info': '𝗜𝗻𝗳𝗼',
