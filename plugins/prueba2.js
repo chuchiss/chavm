@@ -2,8 +2,8 @@ let handler = async (m, { conn, args }) => {
  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
   let sortedExp = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].exp - a[1].exp)
   let sortedLim = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].limit - a[1].limit)
-  let usersExp = sortedExp.map(v => v[0] && m.isGroup)
-  let usersLim = sortedLim.map(v => v[0] && m.isGroup)
+  let usersExp = sortedExp.map(v => v[0] )
+  let usersLim = sortedLim.map(v => v[0] )
   let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
 
  let text = `
