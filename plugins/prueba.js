@@ -1,42 +1,48 @@
-let handler = async (m, { conn, args }) => {
- if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
-let member = participants.map(u => u.jid)
-  let sortedExp = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].exp - a[1].exp)
-  let sortedLim = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].limit - a[1].limit)
-  let usersExp = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
-  let usersLim = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
-  let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
-  let text = `
-• *XP Ranking top ${len}* •
-${sortedExp.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.exp + ' Exp*').join`\n`}
-
-• *Limit Ranking ${len}* •
-${sortedLim.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.limit + ' Limit*').join`\n`}
-`.trim()
-  conn.reply(m.chat, text, m, {
-    contextInfo: {
-      mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len)]
-    }
-  })
-global.DATABASE._data.users[m.sender].lastmp = new Date * 1
+let { MessageType, Presence } = require('@adiwajshing/baileys')
+let handler = async (m, { conn, text, participants }) => {
+  if (new Date - global.DATABASE._data.users[m.sender].lastme > 2200) {
+	await conn.updatePresence(m.chat, Presence.composing) 
+	let member = participants.map(u => u.jid)
+	if(!text) {
+		var sum = member.length
+	} else {
+		var sum = text
+	}
+	var total = 0
+	var sider = []
+	for(let i = 0; i < sum; i++) {
+		let users = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
+		if((typeof global.DATABASE.data.users[member[i]] == 'undefined' || global.DATABASE.data.users[member[i]].chat > 0) && !users.isAdmin && !users.isSuperAdmin) { 
+			if (typeof global.DATABASE.data.users[member[i]] !== 'undefined'){
+				if(global.DATABASE.data.users[member[i]].whitelist == false){
+					total++
+					sider.push(member[i])
+				}
+			}else {
+				total++
+				sider.push(member[i])
+			}
+		}
+	}
+	if(total == 0) return conn.reply(m.chat, `*Este grupo no tiene fantasmas:D.*`, m) 
+	// conn.reply(m.chat, `*[ SIDER CHECK ]*\n\n*Grup ${conn.getName(m.chat)}, memiliki anggota ${sum} orang dan terdapat sider (penyimak profesional) sebanyak ${total} orang.*\n\n*NB* : *“Akurasi dari fitur ini akan mencapai 85% apabila BOT sudah berada didalam grup minimal 7hr dan fitur ini tidak menghitung admin sider.”*${%readmore}\n\n${sider.map(v => '  ○ @' + v.replace(/@.+/, '')).join('\n')}`, m,{ contextInfo: { mentionedJid: sider } })
+	conn.reply(m.chat, `*[ LISTA DE ]*\n\n*Grupo ${conn.getName(m.chat)}, miembros: ${sum} participantes (Activos)*\n*${total} Fantasmitas👻.*\n\n*NB* : *“Manténgase activo en el grupo porque habrá limpieza de miembros todo el tiempo.”*\n\n*[ LIST SIDER ]*\n${sider.map(v => '  ○ @' + v.replace(/@.+/, '')).join('\n')}`, m,{ contextInfo: { mentionedJid: sider } })
+global.DATABASE._data.users[m.sender].lastme = new Date * 1
   } else return
 }
-handler.help = ['ranking', 'top']
-handler.tags = ['xp']
+handler.help = ['sider']
+handler.tags = ['group']
 handler.command = /^(prueba)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.group = true
 handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
+handler.limit = true
+handler.admin = true
+handler.botAdmin = true
 handler.fail = null
-handler.exp = 0
-
 module.exports = handler
 
-
-
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
