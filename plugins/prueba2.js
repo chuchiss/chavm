@@ -1,7 +1,6 @@
 let handler = async (m, { conn, args }) => {
  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
 let member = participants.map(u => u.jid)
-let i = 0
 let users = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
   let sortedExp = Object.entries(global.DATABASE.data.users[member[i]]).sort((a, b) => b[1].exp - a[1].exp)
   let sortedLim = Object.entries(global.DATABASE.data.users[member[i]]).sort((a, b) => b[1].limit - a[1].limit)
