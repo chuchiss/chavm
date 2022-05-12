@@ -10,8 +10,8 @@ let handler = async (m, { conn }) => {
         totalM++
     }, 1000)
     let sorted = Object.entries(mCount).sort((a, b) => b[1] - a[1])
-    let pesan = sorted.map(v => `${v[0].replace(/(\d+)@.+/, '@$1')}: ${v[1]} pesan`).join('\n')
-    m.reply(`${totalM} p\n${pesan}`, false, { contextInfo: { mentionedJid: sorted.map(v => v[0]) } })
+    let pesan = sorted.map(v => `${v[0].replace(/(\d+)@.+/, '@$1')}: ${v[1]} mensajes`).join('\n')
+    m.reply(`Total de mensajes en el grupo ${totalM} \n${pesan}`, false, { contextInfo: { mentionedJid: sorted.map(v => v[0]) } })
 }
 handler.help = ['totalpesan']
 handler.tags = ['group']
