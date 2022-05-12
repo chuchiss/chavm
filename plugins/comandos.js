@@ -37,6 +37,7 @@ ${readmore}
 │.perfil
 │.ranking
 │.top2
+│.top3
 │.comandos
 │.buy (comprar exp)
 │.buyall (comprar toda la exp)
@@ -84,6 +85,7 @@ ${readmore}
 │.perfil
 │.ranking
 │.top2
+│.top3
 │.comandos
 │.buy (comprar exp)
 │.buyall (comprar toda la exp)
@@ -131,6 +133,7 @@ conn.reply(m.chat, `╭╭─「⚫🄿🅁🄸🄽🄲🄸🄿🄰🄻」
 │.perfil
 │.ranking
 │.top2
+│.top3
 │.comandos
 │.buy (comprar exp)
 │.buyall (comprar toda la exp)
