@@ -1,42 +1,21 @@
-let handler = async (m, { conn, args, participants }) => {
- if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
-let id = m.isGroup
-  let sortedExp = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].exp - a[1].exp)
-  let sortedLim = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].limit - a[1].limit)
-  let usersExp = sortedExp.map(v => v[0])
-  let usersLim = sortedLim.map(v => v[0])
-  let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length) 
- let text = `
-• *XP Ranking top ${len}* •
-${sortedExp.slice(0, len).map(([m.isGroup, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.exp + ' Exp*').join`\n`}
-
-• *Limit Ranking ${len}* •
-${sortedLim.slice(0, len).map(([m.isGroup, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.limit + ' Limit*').join`\n`}
-`.trim()
-  conn.reply(m.chat, text, m, {
-    contextInfo: {
-      mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len)]
-    }
-  })
-global.DATABASE._data.users[m.sender].lastmp = new Date * 1
-  } else return
+let handler = async (m, { conn }) => {
+    let id = m.chat
+    let mCount = {}
+    let totalM = 0
+    await conn.loadAllMessages(id, m => {
+        let user = m.key.fromMe ? conn.user.jid : m.participant ? m.participant : id.includes('g.us') ? '' : id
+        if (!user) return
+        if (user in mCount) mCount[user]++
+        else mCount[user] = 1
+        totalM++
+    }, 1000)
+    let sorted = Object.entries(mCount).sort((a, b) => b[1] - a[1])
+    let pesan = sorted.map(v => `${v[0].replace(/(\d+)@.+/, '@$1')}: ${v[1]} pesan`).join('\n')
+    m.reply(`${totalM} p\n${pesan}`, false, { contextInfo: { mentionedJid: sorted.map(v => v[0]) } })
 }
-handler.help = ['ranking', 'top']
-handler.tags = ['xp']
-handler.command = /^(prueba2)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
+handler.help = ['totalpesan']
+handler.tags = ['group']
 
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.exp = 0
+handler.command = /^prueba2$/i
 
 module.exports = handler
-
-
-
