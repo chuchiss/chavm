@@ -3,7 +3,9 @@ let handler = async (m, { conn, args }) => {
   let sortedExp = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].exp - a[1].exp)
   let sortedLim = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].limit - a[1].limit)
   let usersExp = sortedExp.map(v => v[0])
-  let usersLim = sortedLim.map(v => v[0])
+   let user = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
+
+let usersLim = sortedLim.map(v => v[0])
   let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
   let text = `
 • *XP Ranking top ${len}* •
