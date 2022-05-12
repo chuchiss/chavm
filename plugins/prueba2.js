@@ -1,9 +1,7 @@
 let handler = async (m, { conn, args, participants }) => {
  if (new Date - global.DATABASE._data.users[m.sender].lastmp > 4400) {
-let i = 0
-let member = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
-  let sortedExp = Object.entries(global.DATABASE.data.users[member[i]]).sort((a, b) => b[1].exp - a[1].exp)
-  let sortedLim = Object.entries(global.DATABASE.data.users[member[i]]).sort((a, b) => b[1].limit - a[1].limit)
+  let sortedExp = Object.entries(global.DATABASE.data.users[m.isGroup]).sort((a, b) => b[1].exp - a[1].exp)
+  let sortedLim = Object.entries(global.DATABASE.data.users[m.isGroup]).sort((a, b) => b[1].limit - a[1].limit)
   let usersExp = sortedExp.map(v => v[0])
   let usersLim = sortedLim.map(v => v[0])
   let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
