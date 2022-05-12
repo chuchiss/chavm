@@ -5,7 +5,7 @@ let handler = async (m, { conn, args }) => {
   let usersExp = sortedExp.map(v => v[0])
   let usersLim = sortedLim.map(v => v[0])
   let len = args[0] && args[0].length > 0 ? Math.min(5, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
- let user = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
+ //let user = m.isGroup ? participants.find(u => u.jid == member[i]) : {}
  let text = `
 • *XP Ranking top ${len}* •
 ${sortedExp.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.exp + ' Exp*').join`\n`}
