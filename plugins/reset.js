@@ -6,6 +6,7 @@ let handler = async (m, { conn }) => {
 
  if (users[m.sender].limit > 200) {
 users[m.sender].limit -= 200
+users[m.sender].resets += 1
   m.reply (` Reseteado con éxito`)
 } else return m.reply(`Tienes que tener más de 200 limit para hacer reset`)
 } 
