@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
  if (users[m.sender].limit > 200) {
 users[m.sender].limit -= 200
   m.reply (` Reseteado con éxito`)
-} else m.reply(`Tienes que tener más de 200 limit para hacer reset
+} else m.reply(`Tienes que tener más de 200 limit para hacer reset`)
 } }
 handler.help = ['reset <resetea tu status>']
 handler.tags = ['xp']
