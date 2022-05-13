@@ -11,7 +11,7 @@ users[m.sender].limit -= 200
 } }
 handler.help = ['reset <resetea tu status>']
 handler.tags = ['xp']
-handler.command = /^reset$/
+handler.command = /^reset$/i
 handler.rowner = false
 
 module.exports = handler
