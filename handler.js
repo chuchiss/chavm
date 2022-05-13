@@ -26,6 +26,7 @@ module.exports = {
           if (!isNumber(user.robos)) user.robos = 0
           if (!isNumber(user.preg)) user.preg = 0
           if (!isNumber(user.pregu)) user.pregu = 0
+          if (!isNumber(user.resets)) user.resets = 0
           if (!isNumber(user.preisi)) user.preisi = 0
           if (!isNumber(user.like)) user.like = 0
           if (!isNumber(user.point)) user.point = 0
@@ -52,6 +53,7 @@ module.exports = {
           robos: 0,
           preg: 0,
           pregu: 0,
+          resets: 0,
           preisi: 0,
           lastmp: 0,
           lastme: 0,
