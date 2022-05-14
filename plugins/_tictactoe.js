@@ -52,7 +52,6 @@ return delete this.game[room.id]
             }[v]
         })
         if (isSurrender) {
-           if (new Date - global.DATABASE._data.users[m.sender].lastme < 22200) return m.reply(`todavia no puedes abandonar`)
             room.game._currentTurn = m.sender === room.game.playerX
             isWin = true
         }
