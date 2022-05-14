@@ -21,7 +21,7 @@ let handler = async (m, { text, usedPrefix }) => {
         m.reply(`*Tú pierdes*\n\n${state}\n\nPoin (-)300 XP`)
     } else return m.reply(` Terjadi kesalahan`)
 }
-handler.help = ['suit [gunting|batu|kertas]']
+handler.help = ['suit [piedra|papel|tijera]']
 handler.tags = ['game']
 
 handler.command = /^suit$/i
