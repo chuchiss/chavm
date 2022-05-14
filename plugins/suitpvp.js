@@ -12,9 +12,9 @@ _*SUIT PvP*_
 @${m.sender.split`@`[0]} vs  @${m.mentionedJid[0].split`@`[0]} \n A jugar suit!
 Esperando que @${m.mentionedJid[0].split`@`[0]} 
 `.trim()
-  let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
+  let footer = `Escribe "aceptar/ok/gas" para iniciar la demanda\nEscribe "rechazar/no puedo/más tarde" para rechazar`
   conn.suit[id] = {
-    chat: await conn.reply(m.chat, `${caption} compañero escriba ok para empezar`, m),
+    chat: await conn.reply(m.chat, `${caption} ${footer}`, m),
     id: id,
     p: m.sender,
     p2: m.mentionedJid[0],
