@@ -28,7 +28,7 @@ module.exports = {
           if (!isNumber(user.pregu)) user.pregu = 0
           if (!isNumber(user.resets)) user.resets = 0
           if (!isNumber(user.preisi)) user.preisi = 0
-          if (!isNumber(user.like)) user.like = 0
+          if (!isNumber(user.suit)) user.suit = 0
           if (!isNumber(user.point)) user.point = 0
           if (!isNumber(user.mismo)) user.mismo = 0
           if (!isNumber(user.warning)) user.warning = 0
@@ -49,7 +49,7 @@ module.exports = {
           limit: 10,
           lastclaim: 0,
           lastrob: 0,
-          like: 0,
+          suit: 0,
           robos: 0,
           preg: 0,
           pregu: 0,
