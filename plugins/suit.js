@@ -12,13 +12,13 @@ let handler = async (m, { text, usedPrefix }) => {
     let user = global.DATABASE._data.users[m.sender]
     if (suitP1 === suitPC) {
         user.exp += 10
-        m.reply(`▫️ *Empate* ▫️\n\n${state}\n\n🔸Poin (±)100 XP`)
+        m.reply(`▫️ *Empate* ▫️\n\n${state}\n\n🔸Poin (±)10 XP`)
     } else if ((suitP1 + 1) % 3 === suitPC) {
         user.exp -= 100
-        m.reply(`▪️ *Tú pierdes* ▪️\n\n${state}\n\n🔸Poin (-)300 XP`)
+        m.reply(`▪️ *Tú pierdes* ▪️\n\n${state}\n\n🔸Poin (-)100 XP`)
     } else if ((suitP1 - 1) % 3 === suitPC) {
         user.exp += 100
-        m.reply(`▫️ *Tu ganas* ▫️\n\n${state}\n\n🔸Poin (+)300 XP`)
+        m.reply(`▫️ *Tu ganas* ▫️\n\n${state}\n\n🔸Poin (+)100 XP`)
     } else return m.reply(` Terjadi kesalahan`)
 }
 handler.help = ['suit [piedra|papel|tijera]']
