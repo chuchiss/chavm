@@ -9,12 +9,12 @@ let handler = async (m, { conn, usedPrefix }) => {
   let id = 'suit_' + new Date() * 1
   let caption = `
 _*SUIT PvP*_
-@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} untuk bermain suit
-Silahkan @${m.mentionedJid[0].split`@`[0]} 
+@${m.sender.split`@`[0]} vs  @${m.mentionedJid[0].split`@`[0]} \n A jugar suit!
+Esperando que @${m.mentionedJid[0].split`@`[0]} 
 `.trim()
   let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
   conn.suit[id] = {
-    chat: await conn.reply(m.chat, `${caption} Dile a tu compañero que escriba escribe ok `, m),
+    chat: await conn.reply(m.chat, `${caption} compañero escriba ok para empezar`, m),
     id: id,
     p: m.sender,
     p2: m.mentionedJid[0],
