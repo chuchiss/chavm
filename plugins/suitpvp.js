@@ -20,7 +20,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]}
     p2: m.mentionedJid[0],
     status: 'wait',
     waktu: setTimeout(() => {
-      if (conn.suit[id]) conn.reply(m.chat, `_Waktu suit habis_`, m)
+      if (conn.suit[id]) conn.reply(m.chat, `_Se terminó el tiempo_`, m)
       delete conn.suit[id]
     }, timeout), poin, poin_lose, timeout
   }
