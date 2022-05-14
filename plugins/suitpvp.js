@@ -14,7 +14,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]}
 `.trim()
   let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
   conn.suit[id] = {
-    chat: await conn.reply(m.chat, 'caption', m)
+    chat: await conn.reply(m.chat, `${caption} Dile a tu compañero que escriba escribe ok `, m)
     id: id,
     p: m.sender,
     p2: m.mentionedJid[0],
