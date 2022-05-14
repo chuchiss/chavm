@@ -16,7 +16,7 @@ setTimeout(()=> {
 return delete this.game[room.id]
 }, 600000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
-        if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) 
+        if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
         isSurrender = !/^[1-9]$/.test(m.text)
         if (m.sender !== room.game.currentTurn) { // nek wayahku
             if (!isSurrender) return !0
