@@ -16,7 +16,7 @@ setTimeout(()=> {
 return delete this.game[room.id]
 }, 600000)
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
-        if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) return !0
+        if (!/^([1-9]|abandonar|rendirme)$/i.test(m.text)) 
         isSurrender = !/^[1-9]$/.test(m.text)
         if (m.sender !== room.game.currentTurn) { // nek wayahku
             if (!isSurrender) return !0
@@ -52,7 +52,7 @@ return delete this.game[room.id]
             }[v]
         })
         if (isSurrender) {
-           if (new Date - global.DATABASE._data.users[m.sender].lastme < 22200) return 0!
+           if (new Date - global.DATABASE._data.users[m.sender].lastme < 22200) return m.reply(`todavia no puedes abandonar`)
             room.game._currentTurn = m.sender === room.game.playerX
             isWin = true
         }
