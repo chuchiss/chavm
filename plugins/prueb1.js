@@ -1,13 +1,13 @@
 let handler = m => m
 handler.before = async function (m) {
   this.suit = this.suit ? this.suit : {}
-  if (global.DATABASE.data.users[m.sender].suit < 0) db.data.users[m.sender].suit = 0
+  if (global.DATABASE.data.users[m.sender].suit < 0) global.DATABASE.data.users[m.sender].suit = 0
   let room = Object.values(this.suit).find(room => room.id && room.status && [room.p, room.p2].includes(m.sender))
   if (room) {
     let win = ''
     let tie = false
-    if (m.sender == room.p2 && /^(acc(ept)?|terima|gas|oke?|tolak|gamau|nanti|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
-      if (/^(tolak|gamau|nanti|ga(k.)?bisa)/i.test(m.text)) {
+    if (m.sender == room.p2 && /^(acc(ept)?|terima|gas|oke?|ok|gamau|nanti|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
+      if (/^(ok|gamau|nanti|ga(k.)?bisa)/i.test(m.text)) {
         this.reply(m.chat, `@${room.p2.split`@`[0]} menolak suit, suit dibatalkan`, m)
         delete this.suit[room.id]
         return !0
@@ -42,10 +42,10 @@ klik wa.me/${conn.user.jid.split`@`[0]}`, m.chat, {
     }
     let jwb = m.sender == room.p
     let jwb2 = m.sender == room.p2
-    let g = /gunting/i
-    let b = /batu/i
+    let g = /tijera/i
+    let b = /piedra/i
     let k = /papel/i
-    let reg = /^(gunting|batu|kertas)/i
+    let reg = /^(tijera|piedra|papel)/i
     if (jwb && reg.test(m.text) && !room.pilih && !m.isGroup) {
       room.pilih = reg.exec(m.text.toLowerCase())[0]
       room.text = m.text
