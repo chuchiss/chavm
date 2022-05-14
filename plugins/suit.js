@@ -1,4 +1,4 @@
-const pilihan = ['piedra🪨', 'papel📄', 'tijera✂️']
+const pilihan = ['piedra', 'papel', 'tijera']
 const Case = str => str[0].toUpperCase() + str.slice(1).toLowerCase()
 let handler = async (m, { text, usedPrefix }) => {
     let salah = `Opciones disponibles Tijeras, Papel, Piedra\n\n*Más usado* : ${usedPrefix}suit tijera\n`
