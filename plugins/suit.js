@@ -1,4 +1,4 @@
-const pilihan = ['piedra', 'papel', 'tijera']
+const pilihan = ['piedra🪨', 'papel📄', 'tijera✂️']
 const Case = str => str[0].toUpperCase() + str.slice(1).toLowerCase()
 let handler = async (m, { text, usedPrefix }) => {
     let salah = `Opciones disponibles Tijeras, Papel, Piedra\n\n*Más usado* : ${usedPrefix}suit tijera\n`
@@ -8,7 +8,7 @@ let handler = async (m, { text, usedPrefix }) => {
     let suitPC = Math.floor(Math.random() * 3)
     let kamu = Case(pilihan[suitP1])
     let bot = Case(pilihan[suitPC])
-    let state = `Kamu: ${kamu}\nBot: ${bot}`
+    let state = `🤠Tu: ${kamu}\n🤖Bot: ${bot}`
     let user = global.DATABASE._data.users[m.sender]
     if (suitP1 === suitPC) {
         user.exp += 100
