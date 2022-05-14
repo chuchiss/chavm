@@ -1,7 +1,7 @@
 const TicTacToe = require("../lib/tictactoe")
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastme > 22200) {
+if (new Date - global.DATABASE._data.users[m.sender].lastmp > 22200) {
     conn.game = conn.game ? conn.game : {}
     if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return conn.reply(m.chat, `Aun estas en juego o esperando contrincante dile qe escriba .ttt para continuar`, m)
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
@@ -56,7 +56,7 @@ Para salir del juego escribe abandonar
 ${usedPrefix}${command} ${text}` : ''))
         conn.game[room.id] = room
     }
-global.DATABASE._data.users[m.sender].lastme = new Date * 1
+global.DATABASE._data.users[m.sender].lastmp = new Date * 1
   } else return 
 }
 
