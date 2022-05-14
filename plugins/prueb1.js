@@ -6,9 +6,9 @@ handler.before = async function (m) {
   if (room) {
     let win = ''
     let tie = false
-    if (m.sender == room.p2 && /^(acc(ept)?|terima|gas|oke?|ok|gamau|nanti|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
-      if (/^(ok|gamau|nanti|ga(k.)?bisa)/i.test(m.text)) {
-        this.reply(m.chat, `@${room.p2.split`@`[0]} menolak suit, suit dibatalkan`, m)
+    if (m.sender == room.p2 && /^(ac(eptar)?|aceptar|ok|oke?|no|ignorar|abandonar|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
+      if (/^(no|rechazar|abandonar|ga(k.)?bisa)/i.test(m.text)) {
+        this.reply(m.chat, `@${room.p2.split`@`[0]} se canceló`, m)
         delete this.suit[room.id]
         return !0
       }
@@ -19,7 +19,7 @@ handler.before = async function (m) {
       m.reply(`Suit telah dikirimkan ke chat
 @${room.p.split`@`[0]} dan 
 @${room.p2.split`@`[0]}
-Silahkan pilih suit di chat masing"
+Por favor elige un traje en el chat respectivo
 klik wa.me/${conn.user.jid.split`@`[0]}`, m.chat, {
         contextInfo: {
           mentionedJid: [room.p, room.p2]
