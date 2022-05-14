@@ -14,11 +14,11 @@ let handler = async (m, { text, usedPrefix }) => {
         user.exp += 10
         m.reply(`▫️ *Empate* ▫️\n\n${state}\n\n🔸Poin (±)100 XP`)
     } else if ((suitP1 + 1) % 3 === suitPC) {
-        user.exp += 100
-        m.reply(`▫️ *Tu ganas* ▫️\n\n${state}\n\n🔸Poin (+)300 XP`)
-    } else if ((suitP1 - 1) % 3 === suitPC) {
         user.exp -= 100
         m.reply(`▪️ *Tú pierdes* ▪️\n\n${state}\n\n🔸Poin (-)300 XP`)
+    } else if ((suitP1 - 1) % 3 === suitPC) {
+        user.exp += 100
+        m.reply(`▫️ *Tu ganas* ▫️\n\n${state}\n\n🔸Poin (+)300 XP`)
     } else return m.reply(` Terjadi kesalahan`)
 }
 handler.help = ['suit [piedra|papel|tijera]']
