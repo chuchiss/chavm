@@ -56,6 +56,7 @@ ${readmore}
 │.tateti
 │.tutti
 │.luck
+│.suit
 │.pozo
 │.palabra
 │.preguntados
@@ -76,6 +77,7 @@ conn.reply(m.chat, `╭─「➿🄹🅄🄴🄶🄾🅂
 │.tutti
 │.luck
 │.pozo
+│.suit
 │.palabra
 │.preguntados
 ╰────
@@ -176,6 +178,7 @@ ${readmore}
 │.tateti
 │.tutti
 │.luck
+│.suit
 │.pozo
 │.palabra
 │.preguntados
