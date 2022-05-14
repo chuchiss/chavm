@@ -8,7 +8,7 @@ let handler = async (m, { text, usedPrefix }) => {
     let suitPC = Math.floor(Math.random() * 3)
     let kamu = Case(pilihan[suitP1])
     let bot = Case(pilihan[suitPC])
-    let state = `🙎Tu: ${kamu}\n🤖Bot: ${bot}`
+    let state = `🙎Tu: ${kamu}\n🤖Insane: ${bot}`
     let user = global.DATABASE._data.users[m.sender]
     if (suitP1 === suitPC) {
         user.exp += 10
