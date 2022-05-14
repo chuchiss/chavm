@@ -1,8 +1,8 @@
-const pilihan = ['batu', 'gunting', 'kertas']
+const pilihan = ['piedra', 'papel', 'tijera']
 const Case = str => str[0].toUpperCase() + str.slice(1).toLowerCase()
 let handler = async (m, { text, usedPrefix }) => {
-    let salah = `Pilihan yang tersedia Gunting, Kertas, Batu\n\n*Contoh* : ${usedPrefix}suit gunting\n`
-    if (!text) throw salah
+    let salah = `Opciones disponibles Tijeras, Papel, Piedra\n\n*Más usado* : ${usedPrefix}suit tijera\n`
+    if (!text) return m.reply(` ${salah}`)
     if (!pilihan.includes(text.toLowerCase())) throw salah
     let suitP1 = pilihan.indexOf(text.toLowerCase())
     let suitPC = Math.floor(Math.random() * 3)
@@ -12,14 +12,14 @@ let handler = async (m, { text, usedPrefix }) => {
     let user = global.DATABASE._data.users[m.sender]
     if (suitP1 === suitPC) {
         user.exp += 100
-        m.reply(`*Kita Seri*\n\n${state}\n\nPoin (±)100 XP`)
+        m.reply(`*Empate*\n\n${state}\n\nPoin (±)100 XP`)
     } else if ((suitP1 + 1) % 3 === suitPC) {
         user.exp += 300
-        m.reply(`*Kamu Menang*\n\n${state}\n\nPoin (+)300 XP`)
+        m.reply(`*Tu ganas*\n\n${state}\n\nPoin (+)300 XP`)
     } else if ((suitP1 - 1) % 3 === suitPC) {
         user.exp -= 300
-        m.reply(`*Kamu Kalah*\n\n${state}\n\nPoin (-)300 XP`)
-    } else throw 'Terjadi kesalahan'
+        m.reply(`*Tú pierdes*\n\n${state}\n\nPoin (-)300 XP`)
+    } else return m.reply(` Terjadi kesalahan`)
 }
 handler.help = ['suit [gunting|batu|kertas]']
 handler.tags = ['game']
