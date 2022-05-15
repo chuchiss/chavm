@@ -334,7 +334,14 @@ global.yeca = [
 'Cuántos elementos tiene la tabla periódica',
 'Qué gas de la atmósfera nos protege de la radiación ultravioleta',
 'Qué elemento está presente en absolutamente todas las moléculas orgánicas',
-'Cómo se llama el proceso celular en el que una célula se divide para dar lugar a dos células hijas iguales'
+'Cómo se llama el proceso celular en el que una célula se divide para dar lugar a dos células hijas iguales',
+'la nariz de quien se alargaba cada vez que mentia',
+'como se llama el hada de peter pan',
+'si congelas el agua que obtienes',
+'de que colores son las estrellas en la bandera estadounidense',
+'donde vive el presidente de los ee.uu. mientras esta en el cargo',
+'cuantos planetas hay en nuestro sistema solar',
+'que oceano esta en frente a la costa de california'
 ]
 global.logi = [
 'funda',
@@ -672,11 +679,18 @@ global.logi = [
 '118',
 'ozono',
 'carbono',
-'mitosis'
+'mitosis',
+'pinocho',
+'campanita',
+'hielo',
+'blanco'
+'casa blanca',
+'8',
+'pacifico',
 ]
 global.ruizdi = 0
 global.lll = 0
-let lui = 335
+let lui = 33
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
