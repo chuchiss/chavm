@@ -686,11 +686,11 @@ global.logi = [
 'blanco'
 'casa blanca',
 '8',
-'pacifico',
+'pacifico'
 ]
 global.ruizdi = 0
 global.lll = 0
-let lui = 33
+let lui = 342
 let handler = async (m, {conn, usedPrefix}) => {
 let veces = global.lll
 if (global.lll === 0) {
