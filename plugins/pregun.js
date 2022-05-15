@@ -384,7 +384,7 @@ global.logi = [
 'dirham',
 'ulan bator',
 'cafe',
-'1983',
+'1939',
 'atletismo',
 'jupiter',
 'china',
