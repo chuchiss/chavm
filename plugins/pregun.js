@@ -683,7 +683,7 @@ global.logi = [
 'pinocho',
 'campanita',
 'hielo',
-'blanco'
+'blanco',
 'casa blanca',
 '8',
 'pacifico'
