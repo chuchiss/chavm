@@ -47,6 +47,7 @@ let handler = async (m, { conn, text }) => {
 	global.DATABASE.data.users[user].warning += 1
 	var warn = global.DATABASE.data.users[user].warning
  	if(warn > 4) {
+                global.DATABASE.data.users[user].warning -= 3
  		conn.reply(m.chat, `*[Advertencias]*\n\nChau, llegaste a las 5 advertencias\n no te queremos en este grupo !`, null, {contextInfo: {
           mentionedJid: [user]
  	}}).then(() => {
