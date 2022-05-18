@@ -2,7 +2,7 @@ let handler = async m => m.reply(`
 •Hola para usar este servicio
 tienes que escribir los comando poniendo un 
 puntito ante cada palabra
-ejemplo .hola 
+ejemplo .simi hola 
 •para saber los comandos pone .comandos
 •para saber todos los comandos pone .menu
 
