@@ -1,7 +1,5 @@
 let handler = async (m, { conn, user }) => {
-if (new Date - global.DATABASE._data.users[m.sender].lastmp > 9500) {
 let lui = 35
-global.luchi = 0
 let lupun = (global.luchi + 1)
 global.luchi += 1
 let Numero = Math.ceil(lui * Math.random())
@@ -18,8 +16,6 @@ Jugadores en linea ${lupun}
 Las palabras tienen que ser exactas
 si es correcto Ganarás!
 }
-global.DATABASE._data.users[m.sender].lastmp = new Date * 1
-} else return
 }
 handler.help = ['palabra']
 handler.tags = ['game']
@@ -39,3 +35,4 @@ global.reee = [ 'himNo','shampoo','pergamino','sArten', 'Equilatero','trapiTO','
 ]
 
 global.reeu = 0
+global.luchi = 0
