@@ -1,6 +1,5 @@
 let handler = async (m, { conn, user }) => {
 let lui = 35
-let lupun = (global.luchi + 1)
 global.luchi += 1
 let Numero = Math.ceil(lui * Math.random())
  conn.reply(m.chat, `
@@ -11,7 +10,7 @@ global.reeu += Numero
 if (global.luchi > 1) {
 conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}* `, m)
 
-Jugadores en linea ${lupun}
+Jugadores en linea ${global.luchi}
 
 Las palabras tienen que ser exactas
 si es correcto Ganarás!
