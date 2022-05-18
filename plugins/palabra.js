@@ -8,7 +8,7 @@ Di la palabra a continuación..
 La palabra es *${global.reee[Numero]}* `, m)
 global.reeu += Numero
 if (global.luchi > 1) {
-conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}* `, m)
+conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}* 
 
 Jugadores en linea ${global.luchi}
 
