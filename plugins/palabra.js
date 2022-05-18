@@ -8,7 +8,7 @@ conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}*
 Jugadores en linea ${lupun}
 
 Las palabras tienen que ser exactas
-si es correcto Ganarás!`, m)
+si es correcto *Ganarás*!`, m)
 return
 }
 let Numero = Math.ceil(lui * Math.random())
