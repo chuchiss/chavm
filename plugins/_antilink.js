@@ -12,6 +12,7 @@ if (m.text === global.reee[cec]) {
 global.DATABASE._data.users[m.sender].exp += 10
 global.reeu -= global.reeu
 global.ruizdi -= global.ruizdi
+global.luchi -= global.luchi
  conn.reply(m.chat, `*Palabra* - Ganaste +10 exp`, m)
 return
 }
