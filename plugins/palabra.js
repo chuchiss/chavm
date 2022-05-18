@@ -13,7 +13,7 @@ conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}* `, m)
 Jugadores en linea ${global.luchi}
 
 Las palabras tienen que ser exactas
-si es correcto Ganarás!
+si es correcto Ganarás!`, m)
 }
 }
 handler.help = ['palabra']
