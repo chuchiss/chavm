@@ -8,6 +8,7 @@ m.reply(`
 │.tateti
 │.tutti
 │.luck
+│.suit
 │.pozo
 │.palabra
 │.preguntados
