@@ -1,11 +1,11 @@
 let handler = async (m, { conn, user }) => {
 let lui = 35
 global.luchi += 1
-
+let lupun = (global.luchi + 1)
 if (global.luchi > 1) {
 conn.reply(m.chat, `La palabra es *${global.reee[global.reeu]}* 
 
-Jugadores en linea ${global.luchi}
+Jugadores en linea ${lupun}
 
 Las palabras tienen que ser exactas
 si es correcto Ganarás!`, m)
